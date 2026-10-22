@@ -1,0 +1,209 @@
+# Хроника — the street itself: doors, windows, entrances, stairs, benches, fences
+# thing|level|seasons|weather|time|en|ru   (empty = any; seasons w sp su au; level 1 easy, 2 trickier)
+door|1||||The nearest door, straight on|Ближайшая дверь, прямо в лоб
+door|1||||The most colourful door on your way|Самая яркая дверь по пути
+door|1||||The shabbiest door on your way|Самая облупленная дверь по дороге
+door|2||||A door handle, so close the door is gone|Дверная ручка так близко, что двери не видно
+door|1||||A door that is open|Дверь, которая открыта
+door|1||||A door with a number on it|Дверь с номером
+door|2||||Two doors in one frame|Две двери в одном кадре
+door|1||||A door with a mat in front of it|Дверь, перед которой лежит коврик
+door|2||||A door that looks like nobody uses it|Дверь, которой будто никто не пользуется
+door|1||||A metal door|Железная дверь
+door|1||||A wooden door|Деревянная дверь
+door|2||||A door with something stuck to it|Дверь, на которую что-то наклеено
+door|1||||A door with glass in it|Дверь со стеклом
+door|2||||A door photographed from the side, flat against the wall|Дверь сбоку, вдоль стены
+door|1||||A door painted the same colour as the wall|Дверь того же цвета, что и стена
+door|1||||The keyhole of any door|Замочная скважина любой двери
+door|2||||A door hinge|Дверная петля
+door|1||||A shop door|Дверь магазина
+door|2||||A door with a sign telling you what to do|Дверь с табличкой, которая что-то велит
+door|1|w|snow||A door with snow at its foot|Дверь со снегом у порога
+door|1||rain||A wet door|Мокрая дверь
+door|1|||dark|A door lit by a lamp above it|Дверь под горящей лампой
+door|2||||A door and the step in front of it, from very low|Дверь и ступенька перед ней, совсем снизу
+window|1||||The nearest window|Ближайшее окно
+window|1||||A window with something on the sill|Окно, на подоконнике которого что-то стоит
+window|1||||A window with a plant in it|Окно с цветком
+window|1||||A window with curtains|Окно со шторами
+window|1||||An open window|Открытое окно
+window|2||||A window reflecting the sky|Окно, в котором отражается небо
+window|2||||A window reflecting a tree|Окно, в котором отражается дерево
+window|1||||A window with bars|Окно с решёткой
+window|1||||A round or arched window|Круглое или арочное окно
+window|1||||The smallest window you can find|Самое маленькое окно по пути
+window|1||||A window under the roof|Окно под самой крышей
+window|1||||A basement window at ground level|Подвальное окошко у земли
+window|2||||A row of windows, all different|Ряд окон, все разные
+window|2||||A row of windows, all the same|Ряд окон, все одинаковые
+window|2||||One window that is not like the others|Одно окно, не похожее на соседей
+window|1|||dusk|A window where the light is already on|Окно, где уже зажгли свет
+window|1|||dark|Three lit windows|Три светящихся окна
+window|2|||dark|A lit window with a coloured lampshade|Светящееся окно с цветным абажуром
+window|1|||dark|A dark window among lit ones|Тёмное окно среди светлых
+window|1||rain||Drops on a window|Капли на окне
+window|1|w|frost||Frost on a window|Иней на стекле
+window|2||||A window frame, close up|Оконная рама крупно
+window|1||||A window with a toy or a figure on the sill|Окно с игрушкой или фигуркой на подоконнике
+window|2||||A window with a sticker or a sign on the glass|Окно с наклейкой или надписью на стекле
+window|1||||A window with a cat-sized gap: open a little|Чуть приоткрытое окно
+window|1||||A shop window|Витрина
+window|2||||A shop window and your reflection in it|Витрина и твоё отражение в ней
+window|1||||A window with blinds|Окно с жалюзи
+window|1||||A window with a mosquito net|Окно с москитной сеткой
+window|2||||A window with laundry hanging near it|Окно, рядом с которым сушится бельё
+entrance|1||||Your own entrance as you leave|Твой подъезд на выходе
+entrance|1||||The entrance next to yours|Соседний подъезд
+entrance|1||||An entrance canopy|Козырёк над подъездом
+entrance|2||||An entrance canopy from below|Козырёк подъезда снизу
+entrance|1||||An intercom panel|Домофон
+entrance|2||||The buttons of an intercom, close|Кнопки домофона крупно
+entrance|1||||The steps up to an entrance|Ступеньки у подъезда
+entrance|1||||An entrance with a bench beside it|Подъезд со скамейкой рядом
+entrance|1||||Notices by an entrance|Объявления у подъезда
+entrance|2||||An entrance where the door is propped open|Подъезд, где дверь подпёрли
+entrance|1|||dark|An entrance at night, lamp on|Подъезд ночью, с лампой
+entrance|1||||An entrance with flowers or a flower bed|Подъезд с цветами или клумбой
+entrance|1||||A ramp next to steps|Пандус рядом со ступеньками
+stairs|1||||Any stairs|Любая лестница
+stairs|1||||Stairs from the bottom step|Лестница с нижней ступеньки
+stairs|1||||Stairs from the top|Лестница сверху
+stairs|2||||Three steps and their shadows|Три ступеньки и их тени
+stairs|1||||A worn step|Стёртая ступенька
+stairs|1||||A railing|Перила
+stairs|2||||A railing going off into the distance|Перила, уходящие вдаль
+stairs|1||||A metal staircase|Железная лестница
+stairs|1||||Steps outdoors that lead nowhere special|Уличные ступеньки куда-нибудь
+stairs|1|w|snow||Footprints on snowy steps|Следы на заснеженных ступеньках
+stairs|1|au|||Leaves on steps|Листья на ступеньках
+stairs|2||||A ladder fixed to a wall|Лестница, прикрученная к стене
+bench|1||||The nearest bench|Ближайшая скамейка
+bench|1||||An empty bench|Пустая скамейка
+bench|1||||A bench in the sun|Скамейка на солнце
+bench|1||||A bench in the shade|Скамейка в тени
+bench|2||||A bench from behind|Скамейка со спины
+bench|2||||The slats of a bench, close|Доски скамейки крупно
+bench|1||||A bench with something left on it|Скамейка, на которой что-то оставили
+bench|1||||A bench under a tree|Скамейка под деревом
+bench|1||||A painted bench|Покрашенная скамейка
+bench|1||||A bench with a carving or a scratch|Скамейка с вырезанной надписью или царапиной
+bench|2||||A bench and the bin beside it|Скамейка и урна рядом с ней
+bench|1|w|snow||A bench covered in snow|Скамейка под снегом
+bench|1||rain||A wet bench|Мокрая скамейка
+bench|1|au|||A leaf on a bench|Лист на скамейке
+bench|2||||Two benches facing each other|Две скамейки друг напротив друга
+bench|1||||A bench where a bird sits|Скамейка, на которой сидит птица
+bench|2||||The leg of a bench|Ножка скамейки
+fence|1||||Any fence|Любой забор
+fence|1||||A fence going off into the distance|Забор, уходящий вдаль
+fence|1||||A fence with a plant growing through it|Забор, сквозь который проросло растение
+fence|2||||The world seen through a fence|Мир сквозь забор
+fence|1||||A painted fence|Покрашенный забор
+fence|1||||A wooden fence|Деревянный забор
+fence|1||||A wire mesh fence|Забор из сетки-рабицы
+fence|2||||A gap in a fence|Дыра в заборе
+fence|1||||A low fence around a flower bed|Низкая оградка у клумбы
+fence|2||||The shadow of a fence|Тень забора
+fence|1||||A fence with a sign on it|Забор с табличкой
+fence|1|w|snow||Snow on top of a fence|Снег поверх забора
+fence|2||||The top of a fence, close|Верх забора крупно
+fence|1||||A fence post|Столбик забора
+gate|1||||Any gate|Любые ворота или калитка
+gate|1||||A closed gate|Закрытые ворота
+gate|1||||An open gate|Открытая калитка
+gate|2||||The latch of a gate|Щеколда калитки
+gate|1||||A barrier arm|Шлагбаум
+gate|2||||An archway into a courtyard|Арка во двор
+gate|1||||The view through an archway|Вид сквозь арку
+balcony|1||||Any balcony|Любой балкон
+balcony|1||||A balcony with plants|Балкон с цветами
+balcony|1||||A balcony with laundry|Балкон с бельём
+balcony|1||||A balcony full of stuff|Балкон, заставленный вещами
+balcony|1||||An open balcony|Открытый балкон
+balcony|1||||A glazed balcony|Застеклённый балкон
+balcony|2||||A balcony from directly below|Балкон снизу, прямо под ним
+balcony|2||||Two neighbouring balconies, nothing alike|Два соседних балкона, совсем непохожих
+balcony|1||||A balcony with a bike or skis on it|Балкон с велосипедом или лыжами
+balcony|1|w|snow||A balcony with a snowcap|Балкон со снежной шапкой
+balcony|1|||dark|A lit balcony|Освещённый балкон
+balcony|1||||A balcony with a satellite dish|Балкон с тарелкой антенны
+roof|1||||Any roof|Любая крыша
+roof|1||||A roof edge against the sky|Край крыши на фоне неба
+roof|1||||A chimney or a vent on a roof|Труба или вытяжка на крыше
+roof|1||||Antennas on a roof|Антенны на крыше
+roof|2||||Roofs of different heights in one frame|Крыши разной высоты в одном кадре
+roof|1||||A bird on a roof|Птица на крыше
+roof|1|w|snow||A snowy roof|Заснеженная крыша
+roof|1|w|||Icicles on a roof edge|Сосульки на краю крыши
+roof|1||||A roof over a kiosk or a shed|Крыша ларька или сарайчика
+roof|2||||A pitched roof that makes a triangle|Двускатная крыша-треугольник
+drainpipe|1||||A drainpipe|Водосточная труба
+drainpipe|1||||The mouth of a drainpipe|Устье водосточной трубы
+drainpipe|2||||A drainpipe from the bottom up|Водосточная труба снизу вверх
+drainpipe|1||rain||Water pouring out of a drainpipe|Вода из водосточной трубы
+drainpipe|1|w|||Ice at the foot of a drainpipe|Лёд у водосточной трубы
+drainpipe|2||||Where a drainpipe bends|Колено водосточной трубы
+hatch|1||||A manhole cover|Канализационный люк
+hatch|2||||A manhole cover, the whole of it, from right above|Люк целиком, строго сверху
+hatch|1||||A drain grate|Решётка ливнёвки
+hatch|1||||A manhole cover with letters on it|Люк с надписью
+hatch|1||rain||Water going into a drain|Вода, уходящая в решётку
+hatch|1|w|snow||A manhole cover with no snow on it|Люк, на котором растаял снег
+hatch|1|au|||A leaf on a drain grate|Лист на решётке ливнёвки
+curb|1||||A curb|Бордюр
+curb|2||||A curb running off into the distance|Бордюр, уходящий вдаль
+curb|1||||A painted curb|Покрашенный бордюр
+curb|1||||A broken bit of curb|Сколотый бордюр
+curb|1||||Grass along a curb|Трава вдоль бордюра
+curb|1|au|||Leaves along a curb|Листья вдоль бордюра
+mailbox|1||||Letterboxes|Почтовые ящики
+mailbox|1||||A postbox in the street|Почтовый ящик на улице
+mailbox|2||||A letterbox stuffed with flyers|Почтовый ящик, набитый листовками
+bin|1||||A bin|Урна
+bin|1||||The most beautiful bin on your way|Самая красивая урна по пути
+bin|1||||Bins for different waste|Баки для раздельного мусора
+bin|2||||A bin with something left on top of it|Урна, на которую что-то положили
+bin|1||||Big rubbish containers|Мусорные контейнеры
+playground|1||||A swing|Качели
+playground|1||||A slide|Горка
+playground|1||||A sandpit|Песочница
+playground|2||||A toy forgotten in a sandpit|Игрушка, забытая в песочнице
+playground|1||||A playground from a distance|Детская площадка издалека
+playground|2||||The chain of a swing, close|Цепь качелей крупно
+playground|1||||Something on a playground painted in three colours|Что-то на площадке, покрашенное в три цвета
+playground|1|w|snow||A snowy slide|Горка в снегу
+playground|1||||A climbing frame|Лазалка
+playground|1||||A seesaw|Качалка-балансир
+wall|1||||The wall of your own house|Стена твоего дома
+wall|1||||A wall with ivy or a creeper on it|Стена с плющом или вьюном
+wall|1||||A blank wall with no windows|Глухая стена без окон
+wall|2||||A wall with a patch of different colour|Стена с заплаткой другого цвета
+wall|1||||An air conditioner on a wall|Кондиционер на стене
+wall|1||||A pipe running along a wall|Труба вдоль стены
+wall|2||||Something attached to a wall that nobody needs any more|Что-то на стене, что уже никому не нужно
+wall|1||||A plaque on a wall|Табличка на стене
+wall|1||||A wall lamp|Фонарь на стене
+wall|1||||Wires running along a wall|Провода по стене
+wall|2||||A corner of a building, straight on|Угол дома, ровно в угол
+wall|1||||A wall in the sun|Стена на солнце
+yard|1||||Your courtyard from your doorstep|Твой двор с порога
+yard|1||||A clothesline in a yard|Бельевая верёвка во дворе
+yard|1||||A shed or a garage|Сарай или гараж
+yard|1||||A row of garages|Ряд гаражей
+yard|2||||A garage door with something written on it|Ворота гаража с надписью
+yard|1||||A flower bed made by someone|Клумба, которую кто-то сделал сам
+yard|2||||A flower bed made out of a tyre or something odd|Клумба из шины или чего-то неожиданного
+yard|1||||A carpet beater rail or a bar|Турник или перекладина во дворе
+yard|1||||A hose or a tap outside|Шланг или кран на улице
+yard|2||||A path somebody has trodden across the grass|Тропинка, протоптанная по газону
+yard|1|w|snow||A snowman or what is left of one|Снеговик или то, что от него осталось
+yard|1|w|snow||Footprints across fresh snow|Следы через свежий снег
+yard|1||||A parked pram or a sled|Оставленная коляска или санки
+kiosk|1||||A kiosk|Ларёк
+kiosk|1||||A small shop on the ground floor|Магазинчик на первом этаже
+kiosk|2||||A shop front with goods outside|Магазин, выставивший товар на улицу
+kiosk|1||||A café table outside|Столик кафе на улице
+kiosk|1||||A vending machine|Автомат с чем-нибудь
+kiosk|1||||A pharmacy cross|Аптечный крест
+kiosk|1|||dark|A shop sign glowing at night|Светящаяся вывеска магазина в темноте

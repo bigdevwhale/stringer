@@ -1,0 +1,120 @@
+# Транспорт — cars, buses, stops, road signs, lights, markings, bikes
+car|1||||A car|Машина
+car|1||||The oldest car on your way|Самая старая машина по пути
+car|1||||The cleanest car on your way|Самая чистая машина по пути
+car|1||||The dirtiest car on your way|Самая грязная машина по пути
+car|1||||A red car|Красная машина
+car|1||||A yellow car|Жёлтая машина
+car|1||||A blue or a green car|Синяя или зелёная машина
+car|2||||Three cars of the same colour|Три машины одного цвета
+car|1||||A white car next to a black one|Белая машина рядом с чёрной
+car|1||||A car headlight, close|Фара крупно
+car|1||||A wheel|Колесо
+car|2||||A wheel hub, straight on|Колпак колеса прямо в лоб
+car|1||||A car badge|Значок на машине
+car|1||||Something on a dashboard, seen through the windscreen|Что-то на приборной панели, сквозь лобовое стекло
+car|1||||A toy or a charm hanging in a car|Игрушка или амулет, висящие в машине
+car|2||||A car with something written in the dust|Машина с надписью по пыли
+car|1||||A car parked oddly|Странно припаркованная машина
+car|1||||A small car|Маленькая машина
+car|1||||A big van or a truck|Большой фургон или грузовик
+car|1||||A taxi|Такси
+car|1||||A delivery van|Фургон доставки
+car|1||||A car with a roof rack|Машина с багажником на крыше
+car|2||||A row of parked cars, from the side|Ряд припаркованных машин сбоку
+car|1||||A car under a tree|Машина под деревом
+car|1||||A car under a cover|Машина под чехлом
+car|1||||A car that hasn't moved for a long time|Машина, которая давно не двигалась
+car|1||||A side mirror|Боковое зеркало
+car|1||||A windscreen wiper with a leaf or a flyer under it|Дворник, под которым лист или листовка
+car|1||||A car door handle|Ручка двери машины
+car|1|w|snow||A car buried in snow|Машина, заваленная снегом
+car|1|w|snow||A car somebody has just dug out|Машина, которую только что откопали
+car|1||rain||A wet car roof|Мокрая крыша машины
+car|1|au|||A car covered in leaves|Машина, усыпанная листьями
+car|1|||dark|Tail lights|Задние фары
+car|1||||A car tyre track|След шин
+car|1||||A motorbike or a scooter|Мотоцикл или мопед
+car|2||||A car reflected in a window|Машина в отражении окна
+bus|1||||A bus or a tram|Автобус или трамвай
+bus|1||||A bus stop|Остановка
+bus|1||||A bus stop sign|Табличка остановки
+bus|1||||A timetable at a stop|Расписание на остановке
+bus|1||||An empty bus stop|Пустая остановка
+bus|2||||The view from inside a bus stop|Вид изнутри остановки
+bus|1||||A bus route number|Номер маршрута
+bus|1||||The front of a bus|Перед автобуса
+bus|2||||A bus leaving|Уходящий автобус
+bus|1||||Tram rails|Трамвайные рельсы
+bus|1||||Wires over a road for trams or trolleybuses|Контактные провода над дорогой
+bus|1||||A ticket or a card for the ride|Проездной или билет
+bus|1||||The view from a bus window|Вид из окна автобуса
+bus|1|||dark|A bus with its lights on|Автобус с горящими огнями
+bus|1||||A bench at a stop|Скамейка на остановке
+bus|1||||A railway, a crossing or a train|Железная дорога, переезд или поезд
+sign|1||||A road sign|Дорожный знак
+sign|1||||A round road sign|Круглый дорожный знак
+sign|1||||A triangular road sign|Треугольный дорожный знак
+sign|1||||A square or rectangular road sign|Квадратный или прямоугольный знак
+sign|1||||A sign with an arrow|Знак со стрелкой
+sign|1||||A sign with a person on it|Знак с человечком
+sign|1||||A sign with an animal on it|Знак с животным
+sign|1||||A no-parking sign|Знак «стоянка запрещена»
+sign|1||||A pedestrian crossing sign|Знак пешеходного перехода
+sign|2||||A road sign from behind|Дорожный знак с обратной стороны
+sign|1||||A bent or faded sign|Погнутый или выцветший знак
+sign|2||||A road sign with a sticker on it|Дорожный знак с наклейкой
+sign|1||||Two signs on one pole|Два знака на одном столбе
+sign|1||||A speed limit|Ограничение скорости
+sign|1||||A street name plate|Табличка с названием улицы
+sign|1||||A direction sign pointing somewhere|Указатель куда-нибудь
+sign|1|w|snow||A sign with snow on it|Знак со снегом
+tlight|1||||A traffic light|Светофор
+tlight|1||||A traffic light on red|Красный сигнал светофора
+tlight|1||||A traffic light on green|Зелёный сигнал светофора
+tlight|1||||A pedestrian light with the little man|Пешеходный светофор с человечком
+tlight|2||||The little green man, mid-stride|Зелёный человечек на полушаге
+tlight|1||||A traffic light from below|Светофор снизу
+tlight|1||||A traffic light with a countdown|Светофор с обратным отсчётом
+tlight|1||||The button you press to cross|Кнопка вызова на переходе
+tlight|1|||dark|A traffic light at night|Светофор ночью
+tlight|2||rain|dark|Traffic light colours on a wet road|Цвета светофора на мокрой дороге
+road|1||||A pedestrian crossing|Пешеходный переход
+road|1||||A zebra crossing from the curb|Зебра с бордюра
+road|2||||The stripes of a zebra, from above|Полосы зебры сверху
+road|1||||Road markings|Дорожная разметка
+road|1||||An arrow painted on the road|Стрелка на асфальте
+road|1||||A word or a number painted on the road|Слово или цифра на асфальте
+road|2||||Two lines on the road that merge|Две линии на дороге, которые сливаются
+road|1||||A road going off into the distance|Дорога, уходящая вдаль
+road|1||||A crossroads|Перекрёсток
+road|1||||A pothole|Яма на дороге
+road|1||||A patched bit of asphalt|Заплатка на асфальте
+road|1||||A speed bump|Лежачий полицейский
+road|1||||Bollards or posts|Столбики или ограничители
+road|1||||A parking lot|Парковка
+road|1||||Parking lines|Разметка парковки
+road|1||||A road cone|Дорожный конус
+road|1||||Roadworks|Дорожные работы
+road|1||||A bridge or a flyover|Мост или эстакада
+road|1||||An underpass|Подземный переход
+road|1||||A bend in the road|Поворот дороги
+road|1|||dark|A road with lamps along it|Дорога с фонарями вдоль
+road|1||||A pavement with nobody on it|Тротуар, на котором никого
+road|1||||A pavement, from very low|Тротуар с самой земли
+bike|1||||A bicycle|Велосипед
+bike|1||||A parked bicycle|Припаркованный велосипед
+bike|1||||A bike rack|Велопарковка
+bike|1||||A bicycle bell or a bicycle basket|Велосипедный звонок или корзинка
+bike|1||||A bicycle wheel, close|Колесо велосипеда крупно
+bike|1||||A bicycle lock|Велосипедный замок
+bike|1||||A bicycle saddle|Велосипедное седло
+bike|1||||A child's bike or a scooter|Детский велосипед или самокат
+bike|1||||An electric scooter|Электросамокат
+bike|1||||A row of rental bikes or scooters|Ряд прокатных велосипедов или самокатов
+bike|1||||A bike lane|Велодорожка
+bike|1||||A bicycle sign|Знак с велосипедом
+bike|2||||A bicycle leaning on something|Велосипед, прислонённый к чему-то
+bike|1|w|snow||A bicycle in the snow|Велосипед в снегу
+bike|1||||A pram or a shopping trolley|Коляска или тележка
+bike|1||||Anything with wheels that is not a car|Что угодно на колёсах, кроме машины

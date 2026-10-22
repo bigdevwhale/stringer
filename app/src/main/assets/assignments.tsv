@@ -1,0 +1,1272 @@
+id	rubric	thing	level	seasons	weather	time	task_en	task_ru
+ch001	chronicle	door	1				The nearest door, straight on	Ближайшая дверь, прямо в лоб
+ch002	chronicle	door	1				The most colourful door on your way	Самая яркая дверь по пути
+ch003	chronicle	door	1				The shabbiest door on your way	Самая облупленная дверь по дороге
+ch004	chronicle	door	2				A door handle, so close the door is gone	Дверная ручка так близко, что двери не видно
+ch005	chronicle	door	1				A door that is open	Дверь, которая открыта
+ch006	chronicle	door	1				A door with a number on it	Дверь с номером
+ch007	chronicle	door	2				Two doors in one frame	Две двери в одном кадре
+ch008	chronicle	door	1				A door with a mat in front of it	Дверь, перед которой лежит коврик
+ch009	chronicle	door	2				A door that looks like nobody uses it	Дверь, которой будто никто не пользуется
+ch010	chronicle	door	1				A metal door	Железная дверь
+ch011	chronicle	door	1				A wooden door	Деревянная дверь
+ch012	chronicle	door	2				A door with something stuck to it	Дверь, на которую что-то наклеено
+ch013	chronicle	door	1				A door with glass in it	Дверь со стеклом
+ch014	chronicle	door	2				A door photographed from the side, flat against the wall	Дверь сбоку, вдоль стены
+ch015	chronicle	door	1				A door painted the same colour as the wall	Дверь того же цвета, что и стена
+ch016	chronicle	door	1				The keyhole of any door	Замочная скважина любой двери
+ch017	chronicle	door	2				A door hinge	Дверная петля
+ch018	chronicle	door	1				A shop door	Дверь магазина
+ch019	chronicle	door	2				A door with a sign telling you what to do	Дверь с табличкой, которая что-то велит
+ch020	chronicle	door	1	w	snow		A door with snow at its foot	Дверь со снегом у порога
+ch021	chronicle	door	1		rain		A wet door	Мокрая дверь
+ch022	chronicle	door	1			dark	A door lit by a lamp above it	Дверь под горящей лампой
+ch023	chronicle	door	2				A door and the step in front of it, from very low	Дверь и ступенька перед ней, совсем снизу
+ch024	chronicle	window	1				The nearest window	Ближайшее окно
+ch025	chronicle	window	1				A window with something on the sill	Окно, на подоконнике которого что-то стоит
+ch026	chronicle	window	1				A window with a plant in it	Окно с цветком
+ch027	chronicle	window	1				A window with curtains	Окно со шторами
+ch028	chronicle	window	1				An open window	Открытое окно
+ch029	chronicle	window	2				A window reflecting the sky	Окно, в котором отражается небо
+ch030	chronicle	window	2				A window reflecting a tree	Окно, в котором отражается дерево
+ch031	chronicle	window	1				A window with bars	Окно с решёткой
+ch032	chronicle	window	1				A round or arched window	Круглое или арочное окно
+ch033	chronicle	window	1				The smallest window you can find	Самое маленькое окно по пути
+ch034	chronicle	window	1				A window under the roof	Окно под самой крышей
+ch035	chronicle	window	1				A basement window at ground level	Подвальное окошко у земли
+ch036	chronicle	window	2				A row of windows, all different	Ряд окон, все разные
+ch037	chronicle	window	2				A row of windows, all the same	Ряд окон, все одинаковые
+ch038	chronicle	window	2				One window that is not like the others	Одно окно, не похожее на соседей
+ch039	chronicle	window	1			dusk	A window where the light is already on	Окно, где уже зажгли свет
+ch040	chronicle	window	1			dark	Three lit windows	Три светящихся окна
+ch041	chronicle	window	2			dark	A lit window with a coloured lampshade	Светящееся окно с цветным абажуром
+ch042	chronicle	window	1			dark	A dark window among lit ones	Тёмное окно среди светлых
+ch043	chronicle	window	1		rain		Drops on a window	Капли на окне
+ch044	chronicle	window	1	w	frost		Frost on a window	Иней на стекле
+ch045	chronicle	window	2				A window frame, close up	Оконная рама крупно
+ch046	chronicle	window	1				A window with a toy or a figure on the sill	Окно с игрушкой или фигуркой на подоконнике
+ch047	chronicle	window	2				A window with a sticker or a sign on the glass	Окно с наклейкой или надписью на стекле
+ch048	chronicle	window	1				A window with a cat-sized gap: open a little	Чуть приоткрытое окно
+ch049	chronicle	window	1				A shop window	Витрина
+ch050	chronicle	window	2				A shop window and your reflection in it	Витрина и твоё отражение в ней
+ch051	chronicle	window	1				A window with blinds	Окно с жалюзи
+ch052	chronicle	window	1				A window with a mosquito net	Окно с москитной сеткой
+ch053	chronicle	window	2				A window with laundry hanging near it	Окно, рядом с которым сушится бельё
+ch054	chronicle	entrance	1				Your own entrance as you leave	Твой подъезд на выходе
+ch055	chronicle	entrance	1				The entrance next to yours	Соседний подъезд
+ch056	chronicle	entrance	1				An entrance canopy	Козырёк над подъездом
+ch057	chronicle	entrance	2				An entrance canopy from below	Козырёк подъезда снизу
+ch058	chronicle	entrance	1				An intercom panel	Домофон
+ch059	chronicle	entrance	2				The buttons of an intercom, close	Кнопки домофона крупно
+ch060	chronicle	entrance	1				The steps up to an entrance	Ступеньки у подъезда
+ch061	chronicle	entrance	1				An entrance with a bench beside it	Подъезд со скамейкой рядом
+ch062	chronicle	entrance	1				Notices by an entrance	Объявления у подъезда
+ch063	chronicle	entrance	2				An entrance where the door is propped open	Подъезд, где дверь подпёрли
+ch064	chronicle	entrance	1			dark	An entrance at night, lamp on	Подъезд ночью, с лампой
+ch065	chronicle	entrance	1				An entrance with flowers or a flower bed	Подъезд с цветами или клумбой
+ch066	chronicle	entrance	1				A ramp next to steps	Пандус рядом со ступеньками
+ch067	chronicle	stairs	1				Any stairs	Любая лестница
+ch068	chronicle	stairs	1				Stairs from the bottom step	Лестница с нижней ступеньки
+ch069	chronicle	stairs	1				Stairs from the top	Лестница сверху
+ch070	chronicle	stairs	2				Three steps and their shadows	Три ступеньки и их тени
+ch071	chronicle	stairs	1				A worn step	Стёртая ступенька
+ch072	chronicle	stairs	1				A railing	Перила
+ch073	chronicle	stairs	2				A railing going off into the distance	Перила, уходящие вдаль
+ch074	chronicle	stairs	1				A metal staircase	Железная лестница
+ch075	chronicle	stairs	1				Steps outdoors that lead nowhere special	Уличные ступеньки куда-нибудь
+ch076	chronicle	stairs	1	w	snow		Footprints on snowy steps	Следы на заснеженных ступеньках
+ch077	chronicle	stairs	1	au			Leaves on steps	Листья на ступеньках
+ch078	chronicle	stairs	2				A ladder fixed to a wall	Лестница, прикрученная к стене
+ch079	chronicle	bench	1				The nearest bench	Ближайшая скамейка
+ch080	chronicle	bench	1				An empty bench	Пустая скамейка
+ch081	chronicle	bench	1				A bench in the sun	Скамейка на солнце
+ch082	chronicle	bench	1				A bench in the shade	Скамейка в тени
+ch083	chronicle	bench	2				A bench from behind	Скамейка со спины
+ch084	chronicle	bench	2				The slats of a bench, close	Доски скамейки крупно
+ch085	chronicle	bench	1				A bench with something left on it	Скамейка, на которой что-то оставили
+ch086	chronicle	bench	1				A bench under a tree	Скамейка под деревом
+ch087	chronicle	bench	1				A painted bench	Покрашенная скамейка
+ch088	chronicle	bench	1				A bench with a carving or a scratch	Скамейка с вырезанной надписью или царапиной
+ch089	chronicle	bench	2				A bench and the bin beside it	Скамейка и урна рядом с ней
+ch090	chronicle	bench	1	w	snow		A bench covered in snow	Скамейка под снегом
+ch091	chronicle	bench	1		rain		A wet bench	Мокрая скамейка
+ch092	chronicle	bench	1	au			A leaf on a bench	Лист на скамейке
+ch093	chronicle	bench	2				Two benches facing each other	Две скамейки друг напротив друга
+ch094	chronicle	bench	1				A bench where a bird sits	Скамейка, на которой сидит птица
+ch095	chronicle	bench	2				The leg of a bench	Ножка скамейки
+ch096	chronicle	fence	1				Any fence	Любой забор
+ch097	chronicle	fence	1				A fence going off into the distance	Забор, уходящий вдаль
+ch098	chronicle	fence	1				A fence with a plant growing through it	Забор, сквозь который проросло растение
+ch099	chronicle	fence	2				The world seen through a fence	Мир сквозь забор
+ch100	chronicle	fence	1				A painted fence	Покрашенный забор
+ch101	chronicle	fence	1				A wooden fence	Деревянный забор
+ch102	chronicle	fence	1				A wire mesh fence	Забор из сетки-рабицы
+ch103	chronicle	fence	2				A gap in a fence	Дыра в заборе
+ch104	chronicle	fence	1				A low fence around a flower bed	Низкая оградка у клумбы
+ch105	chronicle	fence	2				The shadow of a fence	Тень забора
+ch106	chronicle	fence	1				A fence with a sign on it	Забор с табличкой
+ch107	chronicle	fence	1	w	snow		Snow on top of a fence	Снег поверх забора
+ch108	chronicle	fence	2				The top of a fence, close	Верх забора крупно
+ch109	chronicle	fence	1				A fence post	Столбик забора
+ch110	chronicle	gate	1				Any gate	Любые ворота или калитка
+ch111	chronicle	gate	1				A closed gate	Закрытые ворота
+ch112	chronicle	gate	1				An open gate	Открытая калитка
+ch113	chronicle	gate	2				The latch of a gate	Щеколда калитки
+ch114	chronicle	gate	1				A barrier arm	Шлагбаум
+ch115	chronicle	gate	2				An archway into a courtyard	Арка во двор
+ch116	chronicle	gate	1				The view through an archway	Вид сквозь арку
+ch117	chronicle	balcony	1				Any balcony	Любой балкон
+ch118	chronicle	balcony	1				A balcony with plants	Балкон с цветами
+ch119	chronicle	balcony	1				A balcony with laundry	Балкон с бельём
+ch120	chronicle	balcony	1				A balcony full of stuff	Балкон, заставленный вещами
+ch121	chronicle	balcony	1				An open balcony	Открытый балкон
+ch122	chronicle	balcony	1				A glazed balcony	Застеклённый балкон
+ch123	chronicle	balcony	2				A balcony from directly below	Балкон снизу, прямо под ним
+ch124	chronicle	balcony	2				Two neighbouring balconies, nothing alike	Два соседних балкона, совсем непохожих
+ch125	chronicle	balcony	1				A balcony with a bike or skis on it	Балкон с велосипедом или лыжами
+ch126	chronicle	balcony	1	w	snow		A balcony with a snowcap	Балкон со снежной шапкой
+ch127	chronicle	balcony	1			dark	A lit balcony	Освещённый балкон
+ch128	chronicle	balcony	1				A balcony with a satellite dish	Балкон с тарелкой антенны
+ch129	chronicle	roof	1				Any roof	Любая крыша
+ch130	chronicle	roof	1				A roof edge against the sky	Край крыши на фоне неба
+ch131	chronicle	roof	1				A chimney or a vent on a roof	Труба или вытяжка на крыше
+ch132	chronicle	roof	1				Antennas on a roof	Антенны на крыше
+ch133	chronicle	roof	2				Roofs of different heights in one frame	Крыши разной высоты в одном кадре
+ch134	chronicle	roof	1				A bird on a roof	Птица на крыше
+ch135	chronicle	roof	1	w	snow		A snowy roof	Заснеженная крыша
+ch136	chronicle	roof	1	w			Icicles on a roof edge	Сосульки на краю крыши
+ch137	chronicle	roof	1				A roof over a kiosk or a shed	Крыша ларька или сарайчика
+ch138	chronicle	roof	2				A pitched roof that makes a triangle	Двускатная крыша-треугольник
+ch139	chronicle	drainpipe	1				A drainpipe	Водосточная труба
+ch140	chronicle	drainpipe	1				The mouth of a drainpipe	Устье водосточной трубы
+ch141	chronicle	drainpipe	2				A drainpipe from the bottom up	Водосточная труба снизу вверх
+ch142	chronicle	drainpipe	1		rain		Water pouring out of a drainpipe	Вода из водосточной трубы
+ch143	chronicle	drainpipe	1	w			Ice at the foot of a drainpipe	Лёд у водосточной трубы
+ch144	chronicle	drainpipe	2				Where a drainpipe bends	Колено водосточной трубы
+ch145	chronicle	hatch	1				A manhole cover	Канализационный люк
+ch146	chronicle	hatch	2				A manhole cover, the whole of it, from right above	Люк целиком, строго сверху
+ch147	chronicle	hatch	1				A drain grate	Решётка ливнёвки
+ch148	chronicle	hatch	1				A manhole cover with letters on it	Люк с надписью
+ch149	chronicle	hatch	1		rain		Water going into a drain	Вода, уходящая в решётку
+ch150	chronicle	hatch	1	w	snow		A manhole cover with no snow on it	Люк, на котором растаял снег
+ch151	chronicle	hatch	1	au			A leaf on a drain grate	Лист на решётке ливнёвки
+ch152	chronicle	curb	1				A curb	Бордюр
+ch153	chronicle	curb	2				A curb running off into the distance	Бордюр, уходящий вдаль
+ch154	chronicle	curb	1				A painted curb	Покрашенный бордюр
+ch155	chronicle	curb	1				A broken bit of curb	Сколотый бордюр
+ch156	chronicle	curb	1				Grass along a curb	Трава вдоль бордюра
+ch157	chronicle	curb	1	au			Leaves along a curb	Листья вдоль бордюра
+ch158	chronicle	mailbox	1				Letterboxes	Почтовые ящики
+ch159	chronicle	mailbox	1				A postbox in the street	Почтовый ящик на улице
+ch160	chronicle	mailbox	2				A letterbox stuffed with flyers	Почтовый ящик, набитый листовками
+ch161	chronicle	bin	1				A bin	Урна
+ch162	chronicle	bin	1				The most beautiful bin on your way	Самая красивая урна по пути
+ch163	chronicle	bin	1				Bins for different waste	Баки для раздельного мусора
+ch164	chronicle	bin	2				A bin with something left on top of it	Урна, на которую что-то положили
+ch165	chronicle	bin	1				Big rubbish containers	Мусорные контейнеры
+ch166	chronicle	playground	1				A swing	Качели
+ch167	chronicle	playground	1				A slide	Горка
+ch168	chronicle	playground	1				A sandpit	Песочница
+ch169	chronicle	playground	2				A toy forgotten in a sandpit	Игрушка, забытая в песочнице
+ch170	chronicle	playground	1				A playground from a distance	Детская площадка издалека
+ch171	chronicle	playground	2				The chain of a swing, close	Цепь качелей крупно
+ch172	chronicle	playground	1				Something on a playground painted in three colours	Что-то на площадке, покрашенное в три цвета
+ch173	chronicle	playground	1	w	snow		A snowy slide	Горка в снегу
+ch174	chronicle	playground	1				A climbing frame	Лазалка
+ch175	chronicle	playground	1				A seesaw	Качалка-балансир
+ch176	chronicle	wall	1				The wall of your own house	Стена твоего дома
+ch177	chronicle	wall	1				A wall with ivy or a creeper on it	Стена с плющом или вьюном
+ch178	chronicle	wall	1				A blank wall with no windows	Глухая стена без окон
+ch179	chronicle	wall	2				A wall with a patch of different colour	Стена с заплаткой другого цвета
+ch180	chronicle	wall	1				An air conditioner on a wall	Кондиционер на стене
+ch181	chronicle	wall	1				A pipe running along a wall	Труба вдоль стены
+ch182	chronicle	wall	2				Something attached to a wall that nobody needs any more	Что-то на стене, что уже никому не нужно
+ch183	chronicle	wall	1				A plaque on a wall	Табличка на стене
+ch184	chronicle	wall	1				A wall lamp	Фонарь на стене
+ch185	chronicle	wall	1				Wires running along a wall	Провода по стене
+ch186	chronicle	wall	2				A corner of a building, straight on	Угол дома, ровно в угол
+ch187	chronicle	wall	1				A wall in the sun	Стена на солнце
+ch188	chronicle	yard	1				Your courtyard from your doorstep	Твой двор с порога
+ch189	chronicle	yard	1				A clothesline in a yard	Бельевая верёвка во дворе
+ch190	chronicle	yard	1				A shed or a garage	Сарай или гараж
+ch191	chronicle	yard	1				A row of garages	Ряд гаражей
+ch192	chronicle	yard	2				A garage door with something written on it	Ворота гаража с надписью
+ch193	chronicle	yard	1				A flower bed made by someone	Клумба, которую кто-то сделал сам
+ch194	chronicle	yard	2				A flower bed made out of a tyre or something odd	Клумба из шины или чего-то неожиданного
+ch195	chronicle	yard	1				A carpet beater rail or a bar	Турник или перекладина во дворе
+ch196	chronicle	yard	1				A hose or a tap outside	Шланг или кран на улице
+ch197	chronicle	yard	2				A path somebody has trodden across the grass	Тропинка, протоптанная по газону
+ch198	chronicle	yard	1	w	snow		A snowman or what is left of one	Снеговик или то, что от него осталось
+ch199	chronicle	yard	1	w	snow		Footprints across fresh snow	Следы через свежий снег
+ch200	chronicle	yard	1				A parked pram or a sled	Оставленная коляска или санки
+ch201	chronicle	kiosk	1				A kiosk	Ларёк
+ch202	chronicle	kiosk	1				A small shop on the ground floor	Магазинчик на первом этаже
+ch203	chronicle	kiosk	2				A shop front with goods outside	Магазин, выставивший товар на улицу
+ch204	chronicle	kiosk	1				A café table outside	Столик кафе на улице
+ch205	chronicle	kiosk	1				A vending machine	Автомат с чем-нибудь
+ch206	chronicle	kiosk	1				A pharmacy cross	Аптечный крест
+ch207	chronicle	kiosk	1			dark	A shop sign glowing at night	Светящаяся вывеска магазина в темноте
+fa001	fauna	pigeon	1				A pigeon	Голубь
+fa002	fauna	pigeon	1				A pigeon from its own height	Голубь с высоты голубя
+fa003	fauna	pigeon	1				Three pigeons together	Три голубя вместе
+fa004	fauna	pigeon	2				A pigeon in flight	Голубь в полёте
+fa005	fauna	pigeon	1				A pigeon on a roof or a ledge	Голубь на крыше или карнизе
+fa006	fauna	pigeon	1				A pigeon on a wire	Голубь на проводе
+fa007	fauna	pigeon	2				The feathers on a pigeon's neck, as close as it allows	Перья на шее голубя, насколько подпустит
+fa008	fauna	pigeon	1				A pigeon walking	Идущий голубь
+fa009	fauna	pigeon	2				A pigeon that is not grey	Голубь не серого цвета
+fa010	fauna	pigeon	1				Pigeons eating	Голуби едят
+fa011	fauna	pigeon	1		rain		A pigeon in the rain	Голубь под дождём
+fa012	fauna	pigeon	1	w			A puffed-up pigeon in the cold	Нахохлившийся от холода голубь
+fa013	fauna	pigeon	2				A pigeon's footprints or a pigeon's shadow	Следы голубя или его тень
+fa014	fauna	sparrow	1				A sparrow	Воробей
+fa015	fauna	sparrow	1				Sparrows in a bush	Воробьи в кусте
+fa016	fauna	sparrow	2				A sparrow bathing in dust or a puddle	Воробей купается в пыли или луже
+fa017	fauna	sparrow	1				A sparrow on a fence	Воробей на заборе
+fa018	fauna	sparrow	2				A sparrow with something in its beak	Воробей с чем-то в клюве
+fa019	fauna	sparrow	1	w			A round winter sparrow	Круглый зимний воробей
+fa020	fauna	sparrow	1				A flock of small birds	Стайка мелких птиц
+fa021	fauna	crow	1				A crow	Ворона
+fa022	fauna	crow	1				A crow on a branch	Ворона на ветке
+fa023	fauna	crow	1				A crow on the ground	Ворона на земле
+fa024	fauna	crow	2				A crow looking at you	Ворона смотрит на тебя
+fa025	fauna	crow	2				A crow with something it found	Ворона с находкой
+fa026	fauna	crow	1				A crow on a lamp post	Ворона на фонаре
+fa027	fauna	crow	1				A black bird against the sky	Чёрная птица на фоне неба
+fa028	fauna	crow	1	w	snow		A crow on snow	Ворона на снегу
+fa029	fauna	crow	1				A magpie or a jackdaw	Сорока или галка
+fa030	fauna	crow	2				A big bird and a small bird in one frame	Большая и маленькая птица в одном кадре
+fa031	fauna	bird	1				Any bird	Любая птица
+fa032	fauna	bird	1				A bird on a wire	Птица на проводе
+fa033	fauna	bird	1				Birds on wires, as many as you can	Птицы на проводах, сколько поместится
+fa034	fauna	bird	2				A bird high in the sky	Птица высоко в небе
+fa035	fauna	bird	1				A tit or any yellow bird	Синица или любая жёлтая птица
+fa036	fauna	bird	1				A bird feeder	Кормушка
+fa037	fauna	bird	2				A bird at a feeder	Птица у кормушки
+fa038	fauna	bird	1				A birdhouse	Скворечник
+fa039	fauna	bird	1				A nest	Гнездо
+fa040	fauna	bird	2				A bird half-hidden in leaves	Птица, наполовину спрятанная в листве
+fa041	fauna	bird	1				A bird drinking	Пьющая птица
+fa042	fauna	bird	1				The tallest place a bird is sitting	Самое высокое место, где сидит птица
+fa043	fauna	bird	1				A flock flying over	Пролетающая стая
+fa044	fauna	bird	1	sp,au			Birds flying south or coming back	Птицы, которые улетают или вернулись
+fa045	fauna	bird	1				A duck	Утка
+fa046	fauna	bird	1				A gull	Чайка
+fa047	fauna	bird	2				A bird mid-landing	Птица, которая садится
+fa048	fauna	bird	1				Breadcrumbs and whoever came for them	Крошки и те, кто за ними пришёл
+fa049	fauna	cat	1				A cat	Кот
+fa050	fauna	cat	1				A cat in a window	Кот в окне
+fa051	fauna	cat	1				A sleeping cat	Спящий кот
+fa052	fauna	cat	1				A cat on a car	Кот на машине
+fa053	fauna	cat	1				A cat sitting in a doorway	Кот в дверном проёме
+fa054	fauna	cat	2				A cat looking straight at you	Кот смотрит прямо на тебя
+fa055	fauna	cat	1				A cat from behind	Кот со спины
+fa056	fauna	cat	1				A cat's tail	Хвост кота
+fa057	fauna	cat	2				Only a cat's eyes or ears	Только глаза или уши кота
+fa058	fauna	cat	1				A ginger cat	Рыжий кот
+fa059	fauna	cat	1				A black cat	Чёрный кот
+fa060	fauna	cat	1				A striped cat	Полосатый кот
+fa061	fauna	cat	1				A white or a spotted cat	Белый или пятнистый кот
+fa062	fauna	cat	1				A cat in the sun	Кот на солнце
+fa063	fauna	cat	1				A cat under a car	Кот под машиной
+fa064	fauna	cat	1				A cat on a fence or a wall	Кот на заборе или стене
+fa065	fauna	cat	2				Two cats in one frame	Два кота в одном кадре
+fa066	fauna	cat	1				A cat bowl outside	Кошачья миска на улице
+fa067	fauna	cat	1				A cat walking away	Уходящий кот
+fa068	fauna	cat	2				A cat that pretends not to see you	Кот, который делает вид, что тебя нет
+fa069	fauna	cat	1				Cat footprints	Кошачьи следы
+fa070	fauna	cat	1				A cat on a balcony	Кот на балконе
+fa071	fauna	cat	1				A cat washing itself	Кот умывается
+fa072	fauna	dog	1				A dog	Собака
+fa073	fauna	dog	1				A dog on a lead	Собака на поводке
+fa074	fauna	dog	1				A dog's nose	Собачий нос
+fa075	fauna	dog	1				A dog lying down	Лежащая собака
+fa076	fauna	dog	2				A dog waiting for someone	Собака, которая кого-то ждёт
+fa077	fauna	dog	1				A small dog	Маленькая собака
+fa078	fauna	dog	1				A big dog	Большая собака
+fa079	fauna	dog	1				A dog from behind, tail and all	Собака сзади, с хвостом
+fa080	fauna	dog	2				A dog and its owner's shoes	Собака и ботинки хозяина
+fa081	fauna	dog	1				A dog in clothes	Собака в одёжке
+fa082	fauna	dog	1				A dog sniffing something	Собака что-то нюхает
+fa083	fauna	dog	1				A dog running	Бегущая собака
+fa084	fauna	dog	1				A dog behind a fence	Собака за забором
+fa085	fauna	dog	1				A dog-walking sign or a dog bin	Табличка для собачников или собачья урна
+fa086	fauna	dog	1				Paw prints	Следы лап
+fa087	fauna	dog	1	w	snow		A dog in the snow	Собака в снегу
+fa088	fauna	dog	2				Two dogs meeting	Две собаки знакомятся
+fa089	fauna	dog	1				A dog in a car window	Собака в окне машины
+fa090	fauna	dog	1				A dog's ears	Собачьи уши
+fa091	fauna	dog	1				A dog with a stick or a toy	Собака с палкой или игрушкой
+fa092	fauna	bug	1	sp,su,au			Any insect	Любое насекомое
+fa093	fauna	bug	1	sp,su			A butterfly	Бабочка
+fa094	fauna	bug	1	sp,su			A bee or a bumblebee	Пчела или шмель
+fa095	fauna	bug	2	sp,su			An insect on a flower	Насекомое на цветке
+fa096	fauna	bug	1	sp,su,au			An ant	Муравей
+fa097	fauna	bug	1	sp,su			Ants on a path	Муравьи на тропинке
+fa098	fauna	bug	1	sp,su			A ladybird	Божья коровка
+fa099	fauna	bug	1	sp,su			A beetle	Жук
+fa100	fauna	bug	1	sp,su,au			A fly sitting somewhere sunny	Муха на солнце
+fa101	fauna	bug	1	sp,su,au			A spider	Паук
+fa102	fauna	bug	1	su,au			A spider's web	Паутина
+fa103	fauna	bug	1	au	fog		A web with dew on it	Паутина в росе
+fa104	fauna	bug	1	sp,su,au	rain		A snail or a slug	Улитка или слизень
+fa105	fauna	bug	1	sp,su,au	rain		An earthworm on the path	Дождевой червь на дорожке
+fa106	fauna	bug	1	sp,su			A dragonfly or a mosquito	Стрекоза или комар
+fa107	fauna	bug	1	su			Moths around a lamp	Мотыльки у фонаря
+fa108	fauna	bug	2	sp,su			A caterpillar	Гусеница
+fa109	fauna	bug	1	sp,su,au			A leaf someone has been eating	Лист, который кто-то ел
+fa110	fauna	bug	2	sp,su			An anthill	Муравейник
+fa111	fauna	animal	1				A squirrel	Белка
+fa112	fauna	animal	1				Any animal that is not a cat, dog or bird	Любое животное, кроме кота, собаки и птицы
+fa113	fauna	animal	1				An animal drawn or painted somewhere	Нарисованное где-то животное
+fa114	fauna	animal	1				An animal figure: statue, toy or sign	Фигура животного: статуя, игрушка или вывеска
+fa115	fauna	animal	1				An animal on a sign or an ad	Животное на вывеске или рекламе
+fa116	fauna	animal	1				Somebody's footprints in mud or sand	Чьи-то следы в грязи или песке
+fa117	fauna	animal	2				Proof that an animal lives here	Доказательство, что здесь кто-то живёт
+fa118	fauna	animal	1				A bird's feather	Птичье перо
+fa119	fauna	animal	1				Fish in a pond or ducks on water	Рыбы в пруду или утки на воде
+fa120	fauna	animal	2				Any animal, and its shadow	Любое животное и его тень
+fa121	fauna	animal	1				A cat or a dog toy left outside	Игрушка для кошки или собаки на улице
+fa122	fauna	animal	1				A pet waiting outside a shop	Питомец ждёт у магазина
+fa123	fauna	animal	2				An animal shaped like something else	Животное, похожее на что-то другое
+we001	weather	sky	1				The sky right now	Небо прямо сейчас
+we002	weather	sky	1				The sky straight above you	Небо прямо над головой
+we003	weather	sky	1				The sky between two buildings	Небо между двумя домами
+we004	weather	sky	1				The sky through branches	Небо сквозь ветки
+we005	weather	sky	1				The sky through wires	Небо сквозь провода
+we006	weather	sky	2				Only sky, nothing else in the frame	Только небо, больше ничего в кадре
+we007	weather	sky	1				The sky and one roof	Небо и одна крыша
+we008	weather	sky	1				A blue patch of sky	Голубой кусочек неба
+we009	weather	sky	1				The bluest sky of the day	Самое синее небо за день
+we010	weather	sky	1			dusk	The sky at sunset	Небо на закате
+we011	weather	sky	1			dusk	The sky after sunset, still bright	Небо после заката, ещё светлое
+we012	weather	sky	1			dark	The night sky with something lit in it	Ночное небо и что-то светящееся в нём
+we013	weather	sky	1			dark	The moon	Луна
+we014	weather	sky	2			dark	The moon over a roof	Луна над крышей
+we015	weather	sky	2				The moon in daylight	Луна днём
+we016	weather	sky	1				A vapour trail	След от самолёта
+we017	weather	sky	2				Two vapour trails crossing	Два пересекающихся следа самолётов
+we018	weather	sky	1				A plane	Самолёт
+we019	weather	sky	1				Something in the sky that is not a cloud	Что-то в небе, кроме облаков
+we020	weather	sky	2				The sky reflected in something on the ground	Небо, отражённое в чём-то на земле
+we021	weather	sky	1				The sky above your house	Небо над твоим домом
+we022	weather	sky	1				Where the sky meets the farthest thing you can see	Где небо встречается с самым дальним, что видно
+we023	weather	sky	1				A street lamp from below, against the sky	Фонарь снизу, на фоне неба
+we024	weather	sky	1			dusk	The first lights against the evening sky	Первые огни на фоне вечернего неба
+we025	weather	sky	1			dark	A star or a planet	Звезда или планета
+we026	weather	cloud	1				A cloud	Облако
+we027	weather	cloud	1				The biggest cloud	Самое большое облако
+we028	weather	cloud	1				The smallest cloud	Самое маленькое облако
+we029	weather	cloud	2				A cloud that looks like something	Облако, похожее на что-то
+we030	weather	cloud	1				A cloud over a roof	Облако над крышей
+we031	weather	cloud	1				Clouds in a row	Облака рядком
+we032	weather	cloud	1				A grey sky with no shape at all	Серое небо без единой формы
+we033	weather	cloud	2				The edge of a cloud with the sun behind it	Край облака, за которым солнце
+we034	weather	cloud	1				Clouds reflected in a window	Облака в отражении окна
+we035	weather	cloud	1			dusk	A pink or orange cloud	Розовое или оранжевое облако
+we036	weather	cloud	1				Fluffy clouds	Кучевые облака
+we037	weather	cloud	1				Thin feathery clouds	Перистые облака
+we038	weather	cloud	2				A dark cloud coming	Надвигающаяся туча
+we039	weather	cloud	1				Clouds through a gap in the trees	Облака в просвете деревьев
+we040	weather	cloud	2				A cloud with a shadow on the ground	Облако и его тень на земле
+we041	weather	sun	1		sun		A patch of sunlight on a wall	Солнечное пятно на стене
+we042	weather	sun	1		sun		A patch of sunlight on the ground	Солнечное пятно на земле
+we043	weather	sun	2		sun		Sunlight through leaves	Солнце сквозь листья
+we044	weather	sun	1		sun		Something glowing because the sun is behind it	Что-то светится, потому что за ним солнце
+we045	weather	sun	1		sun		A sunbeam bouncing off a window	Солнечный зайчик от окна
+we046	weather	sun	2		sun		A sun flare or a star in your lens	Солнечный блик в объективе
+we047	weather	sun	1		sun		The warmest-looking thing on your way	Самое тёплое на вид, что есть по пути
+we048	weather	sun	1		sun		A sunlit corner	Освещённый солнцем угол
+we049	weather	sun	1		sun		Something shiny in the sun	Что-то блестящее на солнце
+we050	weather	sun	2		sun		A sunlit stripe across a shadowed street	Полоса солнца поперёк тенистой улицы
+we051	weather	sun	1			dusk	Long evening light on a wall	Длинный вечерний свет на стене
+we052	weather	sun	1			dusk	The last sunlit spot on a building	Последнее освещённое место на доме
+we053	weather	sun	1	w	sun		Winter sun, low over the roofs	Зимнее солнце, низко над крышами
+we054	weather	shadow	1		sun		A shadow	Тень
+we055	weather	shadow	1		sun		The shadow of a tree	Тень дерева
+we056	weather	shadow	1		sun		The shadow of a tree on asphalt	Тень дерева на асфальте
+we057	weather	shadow	1		sun		The shadow of a lamp post	Тень фонаря
+we058	weather	shadow	2		sun		A shadow longer than the thing that casts it	Тень длиннее своего хозяина
+we059	weather	shadow	1		sun		The shadow of a fence or railings, striped	Полосатая тень забора или перил
+we060	weather	shadow	1		sun		A shadow on a wall	Тень на стене
+we061	weather	shadow	2		sun		Two shadows crossing	Две пересекающиеся тени
+we062	weather	shadow	1		sun		The shadow of a bench	Тень скамейки
+we063	weather	shadow	2		sun		A shadow that looks like something else	Тень, похожая на что-то другое
+we064	weather	shadow	1		sun		The shadow of a bird or a cat	Тень птицы или кота
+we065	weather	shadow	1		sun		The shadow of leaves on a car	Тень листвы на машине
+we066	weather	shadow	2		sun		Only shadows, no objects	Только тени, без самих предметов
+we067	weather	shadow	1		sun		The shadow of a bicycle	Тень велосипеда
+we068	weather	shadow	1		sun		The shadow of a sign	Тень дорожного знака
+we069	weather	shadow	1			dark	A shadow cast by a street lamp	Тень от уличного фонаря
+we070	weather	shadow	2			dark	Your two shadows from two lamps	Две твои тени от двух фонарей
+we071	weather	shadow	1		sun		The shadow of a balcony or a canopy	Тень балкона или козырька
+we072	weather	shadow	1		sun		A shadow on stairs, bent at every step	Тень на ступеньках, сломанная на каждой
+we073	weather	puddle	1		wet		A puddle	Лужа
+we074	weather	puddle	1		wet		A puddle with the sky in it	Лужа с небом
+we075	weather	puddle	1		wet		A puddle with a tree in it	Лужа с деревом
+we076	weather	puddle	2		wet		A building upside down in a puddle	Дом вверх ногами в луже
+we077	weather	puddle	1		wet		The biggest puddle on your way	Самая большая лужа по пути
+we078	weather	puddle	1		wet		A tiny puddle	Крошечная лужица
+we079	weather	puddle	1	au	wet		A leaf in a puddle	Лист в луже
+we080	weather	puddle	2		wet		Ripples in a puddle	Круги на луже
+we081	weather	puddle	1		wet		Your shoes at the edge of a puddle	Твои ботинки у края лужи
+we082	weather	puddle	1			dark	A puddle with a lamp in it	Лужа с фонарём
+we083	weather	puddle	2		wet		A puddle with a car in it	Машина в отражении лужи
+we084	weather	puddle	1		wet		A puddle you had to walk around	Лужа, которую пришлось обходить
+we085	weather	puddle	1	w,sp			A puddle with ice at the edges	Лужа со льдом по краям
+we086	weather	rain	1		rain		Rain itself	Сам дождь
+we087	weather	rain	1		rain		Raindrops on a leaf	Капли на листе
+we088	weather	rain	1		rain		Raindrops on a car	Капли на машине
+we089	weather	rain	1		rain		Drops hanging from a railing	Капли, висящие на перилах
+we090	weather	rain	1		rain		An umbrella	Зонт
+we091	weather	rain	2		rain		The street through your umbrella's edge	Улица из-под края зонта
+we092	weather	rain	1		rain		A wet bench or a wet seat	Мокрая скамейка или сиденье
+we093	weather	rain	1		rain		Water running along the curb	Вода, бегущая вдоль бордюра
+we094	weather	rain	1		rain		Wet asphalt shining	Блестящий мокрый асфальт
+we095	weather	rain	1		rain		A drop hanging off something	Капля, которая вот-вот упадёт
+we096	weather	rain	2		rain		Rain in the light of a lamp	Дождь в свете фонаря
+we097	weather	rain	1		rain		Someone's dripping umbrella left by a door	Чей-то мокрый зонт у двери
+we098	weather	rain	1		wet		Drops on a spider's web or a wire	Капли на паутине или проводе
+we099	weather	rain	1		wet		A dry patch under a car or a tree	Сухое пятно под машиной или деревом
+we100	weather	rain	1		rain		Rain on a window	Дождь на окне
+we101	weather	snow	1	w	snow		Falling snow	Падающий снег
+we102	weather	snow	1	w	snow		Snow on a branch	Снег на ветке
+we103	weather	snow	1	w	snow		Snow on a car	Снег на машине
+we104	weather	snow	2	w	snow		A snowflake on your sleeve	Снежинка на рукаве
+we105	weather	snow	1	w	snow		Snow on a lamp post	Снег на фонаре
+we106	weather	snow	1	w	snow		The first footprints in fresh snow	Первые следы на свежем снегу
+we107	weather	snow	1	w	snow		Your own footprints behind you	Твои собственные следы позади
+we108	weather	snow	1	w	snow		A cleared path through snow	Расчищенная дорожка в снегу
+we109	weather	snow	1	w	snow		A snowdrift	Сугроб
+we110	weather	snow	1	w	snow		Snow in the light of a lamp	Снег в свете фонаря
+we111	weather	snow	2	w	snow		Something small sticking out of the snow	Что-то маленькое, торчащее из снега
+we112	weather	snow	1	w	snow		A snow shovel	Лопата для снега
+we113	weather	snow	1	w	snow		Sled tracks	Следы санок
+we114	weather	snow	1	w	snow		Snow on a fence, like icing	Снег на заборе, как глазурь
+we115	weather	snow	1	w	snow		Bird tracks in snow	Птичьи следы на снегу
+we116	weather	snow	2	w	snow		A heart, a name or a smiley drawn in snow	Сердечко, имя или смайлик, нарисованные на снегу
+we117	weather	snow	1	w,sp			Melting snow	Тающий снег
+we118	weather	snow	1	sp			The last patch of snow	Последний сугроб
+we119	weather	snow	1	w			Snow piled up by a snowplough	Снег, сгребённый в кучу
+we120	weather	snow	1	w			Grey slush	Серая каша из снега
+we121	weather	ice	1	w			Ice on a puddle	Лёд на луже
+we122	weather	ice	1	w			Icicles	Сосульки
+we123	weather	ice	2	w			One icicle, as close as you can	Одна сосулька, как можно ближе
+we124	weather	ice	1	w			Bubbles frozen in ice	Пузырьки, вмёрзшие в лёд
+we125	weather	ice	1	w	frost		Frost on a car	Иней на машине
+we126	weather	ice	1	w,au	frost		Frost on grass or a leaf	Иней на траве или листе
+we127	weather	ice	2	w	frost		Frost patterns, close	Узоры инея крупно
+we128	weather	ice	1	w			A slippery path somebody sanded	Скользкая дорожка, посыпанная песком
+we129	weather	ice	1	w			Ice on a branch	Лёд на ветке
+we130	weather	ice	1	w			Frozen water anywhere	Замёрзшая вода где угодно
+we131	weather	fog	1		fog		A street disappearing in fog	Улица, тающая в тумане
+we132	weather	fog	1		fog		A tree in fog	Дерево в тумане
+we133	weather	fog	1		fog		A lamp in fog	Фонарь в тумане
+we134	weather	fog	2		fog		Three things, each fainter than the last	Три предмета, каждый бледнее предыдущего
+we135	weather	fog	1		fog		Droplets of mist on something	Капельки тумана на чём-нибудь
+we136	weather	wind	1		wind		Something moving in the wind	Что-то, что качает ветер
+we137	weather	wind	1		wind		A flag or a ribbon in the wind	Флаг или лента на ветру
+we138	weather	wind	1		wind		Trees bending in the wind	Деревья гнутся на ветру
+we139	weather	wind	1		wind		Laundry in the wind	Бельё на ветру
+we140	weather	wind	2		wind		Leaves or rubbish flying	Летящие листья или мусор
+we141	weather	wind	1				Anything that shows which way the wind blows	Что-нибудь, что показывает направление ветра
+we142	weather	light	1			dusk	A street lamp just switched on	Только что зажёгшийся фонарь
+we143	weather	light	1			dark	A row of street lamps	Ряд фонарей
+we144	weather	light	1			dark	The brightest light on your way	Самый яркий свет по пути
+we145	weather	light	1			dark	A coloured light	Цветной свет
+we146	weather	light	2			dark	A light reflected on a wet road	Огни, отражённые в мокрой дороге
+we147	weather	light	1			dark	Car lights going by	Фары проезжающей машины
+we148	weather	light	2			dark	A lit sign reflected in something	Светящаяся вывеска в отражении
+we149	weather	light	1			dark	A dark corner between two lights	Тёмный угол между двумя фонарями
+we150	weather	light	1			dark	Light falling out of a doorway	Свет, падающий из двери
+we151	weather	light	1			dark	A lit bus stop	Освещённая остановка
+we152	weather	light	1			dark	A garland or festive lights	Гирлянда или праздничные огни
+we153	weather	light	1	w		dark	A window with a garland	Окно с гирляндой
+we154	weather	light	1				Your street at the hour you went out	Твоя улица в час, когда {вышел|вышла} из дома
+we155	weather	light	2				Something lit from the side	Что-то, освещённое сбоку
+we156	weather	reflection	1				Your reflection in a window	Твоё отражение в окне
+we157	weather	reflection	1				A reflection in a car	Отражение в машине
+we158	weather	reflection	2				A reflection in a car mirror	Отражение в автомобильном зеркале
+we159	weather	reflection	1				A reflection in something round	Отражение в чём-то круглом
+we160	weather	reflection	2				A reflection that looks like a second street	Отражение, похожее на вторую улицу
+we161	weather	reflection	1				A road mirror at a corner	Дорожное зеркало на повороте
+we162	weather	reflection	1				A reflection in a shop window	Отражение в витрине
+we163	weather	reflection	2				A reflection in water	Отражение в воде
+gr001	green	tree	1				The nearest tree	Ближайшее дерево
+gr002	green	tree	1				A tree from its roots up	Дерево от корней вверх
+gr003	green	tree	2				A tree from right underneath, looking up the trunk	Дерево снизу, вдоль ствола
+gr004	green	tree	1				The tallest tree on your way	Самое высокое дерево по пути
+gr005	green	tree	1				The thickest trunk on your way	Самый толстый ствол по пути
+gr006	green	tree	1				A young thin tree	Молодое тонкое деревце
+gr007	green	tree	1				A tree with a bent trunk	Дерево с кривым стволом
+gr008	green	tree	1				Two trees growing close together	Два дерева, растущих вплотную
+gr009	green	tree	1				A tree standing alone	Дерево, стоящее в одиночку
+gr010	green	tree	1				A row of trees	Ряд деревьев
+gr011	green	tree	2				A tree that has grown around something	Дерево, обросшее что-то
+gr012	green	tree	1				A birch	Берёза
+gr013	green	tree	1				A fir or a pine	Ель или сосна
+gr014	green	tree	1				A tree with a whitewashed trunk	Дерево с побелённым стволом
+gr015	green	tree	1				A tree with something tied or nailed to it	Дерево, к которому что-то привязано или прибито
+gr016	green	tree	1				Tree roots coming out of the ground	Корни, вылезшие из земли
+gr017	green	tree	2				Roots that cracked the asphalt	Корни, которые проломили асфальт
+gr018	green	tree	1				Tree bark, close	Кора крупно
+gr019	green	tree	2				Bark of two different trees side by side	Кора двух разных деревьев рядом
+gr020	green	tree	1				A hollow or a knot in a tree	Дупло или сучок
+gr021	green	tree	1				A stump	Пень
+gr022	green	tree	2				The rings on a stump	Кольца на пне
+gr023	green	tree	1				A fallen or a cut branch	Упавшая или спиленная ветка
+gr024	green	tree	1				A treetop against the sky	Верхушка дерева на фоне неба
+gr025	green	tree	1				A tree reflected in something	Дерево в отражении
+gr026	green	tree	1				A tree in front of a building	Дерево перед домом
+gr027	green	tree	2				A tree hiding a window	Дерево, закрывающее окно
+gr028	green	tree	1				A tree with a bench or a fence around it	Дерево со скамейкой или оградкой вокруг
+gr029	green	tree	1	w			A bare tree	Голое дерево
+gr030	green	tree	2	w			Bare branches like a drawing	Голые ветки, как рисунок
+gr031	green	tree	1	w	snow		A tree in snow	Дерево в снегу
+gr032	green	tree	1	sp			A tree just starting to turn green	Дерево, которое только начинает зеленеть
+gr033	green	tree	1	sp			A tree in blossom	Цветущее дерево
+gr034	green	tree	2	sp			Blossom petals on the ground	Лепестки на земле
+gr035	green	tree	1	su			The greenest tree	Самое зелёное дерево
+gr036	green	tree	1	su			A tree giving the deepest shade	Дерево с самой густой тенью
+gr037	green	tree	1	au			A tree that has turned yellow	Пожелтевшее дерево
+gr038	green	tree	1	au			A tree that is half green, half yellow	Дерево наполовину зелёное, наполовину жёлтое
+gr039	green	tree	1	au			A red-leafed tree	Дерево с красными листьями
+gr040	green	tree	1	au			A tree that has almost lost its leaves	Дерево, почти сбросившее листья
+gr041	green	tree	1			dark	A tree lit by a street lamp	Дерево в свете фонаря
+gr042	green	tree	1		wind		A tree in the wind	Дерево на ветру
+gr043	green	branch	1				A branch	Ветка
+gr044	green	branch	1				A branch against the sky	Ветка на фоне неба
+gr045	green	branch	2				A branch that crosses another	Ветка, перекрещивающая другую
+gr046	green	branch	1				A branch hanging over a path	Ветка, нависшая над дорожкой
+gr047	green	branch	1				A branch with a bird on it	Ветка с птицей
+gr048	green	branch	1	sp			Buds on a branch	Почки на ветке
+gr049	green	branch	2	sp			A bud opening	Раскрывающаяся почка
+gr050	green	branch	1	w			A branch with snow along it	Ветка с полоской снега
+gr051	green	branch	1	w			An icy branch	Обледеневшая ветка
+gr052	green	branch	1				A branch someone has broken	Кем-то сломанная ветка
+gr053	green	leaf	1				A leaf	Лист
+gr054	green	leaf	1				The biggest leaf you can find	Самый большой лист, какой найдёшь
+gr055	green	leaf	1				The smallest leaf you can find	Самый маленький лист, какой найдёшь
+gr056	green	leaf	2				A leaf with the light behind it	Лист на просвет
+gr057	green	leaf	1				A leaf on your palm	Лист на ладони
+gr058	green	leaf	2				The veins of a leaf, close	Прожилки листа крупно
+gr059	green	leaf	1				A leaf with a hole in it	Лист с дыркой
+gr060	green	leaf	1				Two leaves of different shapes	Два листа разной формы
+gr061	green	leaf	1				A heart-shaped leaf	Лист в форме сердца
+gr062	green	leaf	1	sp			A brand-new leaf	Совсем новый лист
+gr063	green	leaf	1	su			The greenest leaf of the day	Самый зелёный лист за день
+gr064	green	leaf	1	au			A yellow leaf	Жёлтый лист
+gr065	green	leaf	1	au			A red leaf	Красный лист
+gr066	green	leaf	1	au			A leaf with three colours on it	Лист трёх цветов сразу
+gr067	green	leaf	1	au			A leaf on a car	Лист на машине
+gr068	green	leaf	1	au			A leaf on a bench or a step	Лист на скамейке или ступеньке
+gr069	green	leaf	1	au			Fallen leaves, a whole carpet	Опавшие листья, целый ковёр
+gr070	green	leaf	1	au			A pile of raked leaves	Куча сгребённых листьев
+gr071	green	leaf	2	au			A leaf falling	Падающий лист
+gr072	green	leaf	1	au			The last leaf on a branch	Последний лист на ветке
+gr073	green	leaf	1	au			A leaf stuck to the asphalt	Лист, прилипший к асфальту
+gr074	green	leaf	2	au			A leaf on water	Лист на воде
+gr075	green	leaf	1	au,w			A brown dry leaf	Сухой коричневый лист
+gr076	green	leaf	1	w	snow		A leaf on snow	Лист на снегу
+gr077	green	leaf	1				A maple leaf	Кленовый лист
+gr078	green	leaf	1				A leaf in a crack or a corner	Лист в трещине или углу
+gr079	green	grass	1	sp,su,au			Grass	Трава
+gr080	green	grass	1	sp,su,au			Grass from ground level	Трава с уровня земли
+gr081	green	grass	1	sp,su,au			Grass growing between paving stones	Трава между плитками
+gr082	green	grass	2	sp,su,au			One blade of grass, alone	Одна травинка отдельно
+gr083	green	grass	1	sp,su,au			Grass by a wall	Трава у стены
+gr084	green	grass	1	sp,su			Freshly mown grass	Только что скошенная трава
+gr085	green	grass	1	sp,su,au			A lawn with a path across it	Газон с тропинкой поперёк
+gr086	green	grass	1	su			Tall grass	Высокая трава
+gr087	green	grass	1	su,au			Dry yellow grass	Сухая жёлтая трава
+gr088	green	grass	1	sp			The first green grass	Первая зелёная трава
+gr089	green	grass	1	sp,su,au	wet		Drops on grass	Капли на траве
+gr090	green	grass	2	sp,su,au			Grass growing somewhere it shouldn't	Трава, растущая там, где не положено
+gr091	green	grass	1	sp,su,au			Clover	Клевер
+gr092	green	grass	1	sp,su,au			A plantain leaf	Подорожник
+gr093	green	grass	1	sp,su			A nettle	Крапива
+gr094	green	grass	1	sp,su,au			A weed taller than the others	Сорняк выше остальных
+gr095	green	flower	1	sp,su,au			A flower	Цветок
+gr096	green	flower	1	sp,su			A dandelion	Одуванчик
+gr097	green	flower	1	sp,su			A dandelion clock	Пушистый одуванчик
+gr098	green	flower	2	sp,su			A dandelion growing through asphalt	Одуванчик сквозь асфальт
+gr099	green	flower	1	sp,su,au			A flower bed	Клумба
+gr100	green	flower	1	sp,su,au			A flower growing in a crack	Цветок в трещине
+gr101	green	flower	1	sp,su,au			A white flower	Белый цветок
+gr102	green	flower	1	sp,su,au			A yellow flower	Жёлтый цветок
+gr103	green	flower	1	sp,su,au			A purple or blue flower	Фиолетовый или синий цветок
+gr104	green	flower	1	sp,su,au			A red flower	Красный цветок
+gr105	green	flower	2	sp,su,au			A flower from below, against the sky	Цветок снизу, на фоне неба
+gr106	green	flower	2	sp,su,au			The centre of a flower, close	Серединка цветка крупно
+gr107	green	flower	1	sp,su,au			The smallest flower you can find	Самый маленький цветок, какой найдёшь
+gr108	green	flower	1	sp,su,au			Flowers in a pot outside	Цветы в горшке на улице
+gr109	green	flower	1	sp,su,au			Flowers in a window box	Цветы в балконном ящике
+gr110	green	flower	1	sp,su			A flowering bush	Цветущий куст
+gr111	green	flower	1	sp			The first spring flower	Первый весенний цветок
+gr112	green	flower	1	sp			Tulips	Тюльпаны
+gr113	green	flower	1	su			A rose	Роза
+gr114	green	flower	1	su,au			Flowers in someone's front garden	Цветы в палисаднике
+gr115	green	flower	1	su			Wildflowers	Полевые цветы
+gr116	green	flower	1	su			Clover flowers	Цветущий клевер
+gr117	green	flower	1	au			The last flower of the year	Последний цветок в году
+gr118	green	flower	1	sp,su,au			A flower with an insect on it	Цветок с насекомым
+gr119	green	flower	1				Flowers painted, printed or plastic	Нарисованные, напечатанные или пластиковые цветы
+gr120	green	flower	1				A flower shop or flowers on sale	Цветочный магазин или цветы на продажу
+gr121	green	flower	2	sp,su,au			A flower and its shadow	Цветок и его тень
+gr122	green	flower	1	sp,su,au			A flower that is wilting	Увядающий цветок
+gr123	green	bush	1				A bush	Куст
+gr124	green	bush	1				A trimmed hedge	Подстриженная живая изгородь
+gr125	green	bush	1				A bush with berries	Куст с ягодами
+gr126	green	bush	2				Something hidden in a bush	Что-то, спрятанное в кусте
+gr127	green	bush	1	w	snow		A bush under snow	Куст под снегом
+gr128	green	bush	1	au			A bush that turned red	Покрасневший куст
+gr129	green	bush	1	sp,su			A bush covered in blossom	Куст, весь в цветах
+gr130	green	moss	1				Moss	Мох
+gr131	green	moss	1				Moss on a wall or a step	Мох на стене или ступеньке
+gr132	green	moss	2				Moss, as close as your camera allows	Мох так близко, как позволит камера
+gr133	green	moss	1				Lichen on bark or stone	Лишайник на коре или камне
+gr134	green	moss	1				Something green growing on something old	Что-то зелёное, растущее на чём-то старом
+gr135	green	moss	1				A plant growing out of a wall	Растение, растущее из стены
+gr136	green	moss	1				A plant growing on a roof or a ledge	Растение на крыше или карнизе
+gr137	green	berry	1	su,au			Berries on a branch	Ягоды на ветке
+gr138	green	berry	1	au,w			Rowan berries	Рябина
+gr139	green	berry	1	w	snow		Red berries on snow	Красные ягоды на снегу
+gr140	green	berry	1	au			Apples on a tree or on the ground	Яблоки на дереве или на земле
+gr141	green	berry	1	au			A chestnut or an acorn	Каштан или жёлудь
+gr142	green	berry	1	au,w			A cone	Шишка
+gr143	green	berry	1	su,au			Seeds blowing or lying around	Разлетевшиеся семена
+gr144	green	berry	1	su			Poplar fluff	Тополиный пух
+gr145	green	berry	2	au			Something a tree dropped today	Что-то, что дерево уронило сегодня
+gr146	green	berry	1	sp,su,au			Rosehips or any wild fruit	Шиповник или любой дикий плод
+gr147	green	plant	1				A potted plant left outside	Горшок с растением на улице
+gr148	green	plant	1				A plant in a strange container	Растение в странной посудине
+gr149	green	plant	1				A vegetable patch or a little garden	Огородик или маленький сад
+gr150	green	plant	1				Ivy or a creeper climbing something	Плющ или вьюн, который куда-то лезет
+gr151	green	plant	1				A plant in a shop window	Растение в витрине
+gr152	green	plant	1				A plant on a windowsill, seen from outside	Растение на подоконнике, снаружи
+gr153	green	plant	2				A plant taller than a person	Растение выше человека
+gr154	green	plant	1				Leaves of three different greens	Листья трёх разных оттенков зелёного
+gr155	green	plant	2				Green in a place that is all grey	Зелень посреди сплошного серого
+gr156	green	plant	1	sp,su,au			A park lawn	Газон в парке
+gr157	green	plant	1	sp,su,au			A tree trunk with grass at its foot	Ствол дерева и трава у подножия
+gr158	green	plant	1	w			Anything green in winter	Что угодно зелёное зимой
+gr159	green	plant	1	sp,su,au			A thistle or a burdock	Чертополох или репейник
+gr160	green	plant	1	au,w			Dry stems sticking out	Торчащие сухие стебли
+tr001	transport	car	1				A car	Машина
+tr002	transport	car	1				The oldest car on your way	Самая старая машина по пути
+tr003	transport	car	1				The cleanest car on your way	Самая чистая машина по пути
+tr004	transport	car	1				The dirtiest car on your way	Самая грязная машина по пути
+tr005	transport	car	1				A red car	Красная машина
+tr006	transport	car	1				A yellow car	Жёлтая машина
+tr007	transport	car	1				A blue or a green car	Синяя или зелёная машина
+tr008	transport	car	2				Three cars of the same colour	Три машины одного цвета
+tr009	transport	car	1				A white car next to a black one	Белая машина рядом с чёрной
+tr010	transport	car	1				A car headlight, close	Фара крупно
+tr011	transport	car	1				A wheel	Колесо
+tr012	transport	car	2				A wheel hub, straight on	Колпак колеса прямо в лоб
+tr013	transport	car	1				A car badge	Значок на машине
+tr014	transport	car	1				Something on a dashboard, seen through the windscreen	Что-то на приборной панели, сквозь лобовое стекло
+tr015	transport	car	1				A toy or a charm hanging in a car	Игрушка или амулет, висящие в машине
+tr016	transport	car	2				A car with something written in the dust	Машина с надписью по пыли
+tr017	transport	car	1				A car parked oddly	Странно припаркованная машина
+tr018	transport	car	1				A small car	Маленькая машина
+tr019	transport	car	1				A big van or a truck	Большой фургон или грузовик
+tr020	transport	car	1				A taxi	Такси
+tr021	transport	car	1				A delivery van	Фургон доставки
+tr022	transport	car	1				A car with a roof rack	Машина с багажником на крыше
+tr023	transport	car	2				A row of parked cars, from the side	Ряд припаркованных машин сбоку
+tr024	transport	car	1				A car under a tree	Машина под деревом
+tr025	transport	car	1				A car under a cover	Машина под чехлом
+tr026	transport	car	1				A car that hasn't moved for a long time	Машина, которая давно не двигалась
+tr027	transport	car	1				A side mirror	Боковое зеркало
+tr028	transport	car	1				A windscreen wiper with a leaf or a flyer under it	Дворник, под которым лист или листовка
+tr029	transport	car	1				A car door handle	Ручка двери машины
+tr030	transport	car	1	w	snow		A car buried in snow	Машина, заваленная снегом
+tr031	transport	car	1	w	snow		A car somebody has just dug out	Машина, которую только что откопали
+tr032	transport	car	1		rain		A wet car roof	Мокрая крыша машины
+tr033	transport	car	1	au			A car covered in leaves	Машина, усыпанная листьями
+tr034	transport	car	1			dark	Tail lights	Задние фары
+tr035	transport	car	1				A car tyre track	След шин
+tr036	transport	car	1				A motorbike or a scooter	Мотоцикл или мопед
+tr037	transport	car	2				A car reflected in a window	Машина в отражении окна
+tr038	transport	bus	1				A bus or a tram	Автобус или трамвай
+tr039	transport	bus	1				A bus stop	Остановка
+tr040	transport	bus	1				A bus stop sign	Табличка остановки
+tr041	transport	bus	1				A timetable at a stop	Расписание на остановке
+tr042	transport	bus	1				An empty bus stop	Пустая остановка
+tr043	transport	bus	2				The view from inside a bus stop	Вид изнутри остановки
+tr044	transport	bus	1				A bus route number	Номер маршрута
+tr045	transport	bus	1				The front of a bus	Перед автобуса
+tr046	transport	bus	2				A bus leaving	Уходящий автобус
+tr047	transport	bus	1				Tram rails	Трамвайные рельсы
+tr048	transport	bus	1				Wires over a road for trams or trolleybuses	Контактные провода над дорогой
+tr049	transport	bus	1				A ticket or a card for the ride	Проездной или билет
+tr050	transport	bus	1				The view from a bus window	Вид из окна автобуса
+tr051	transport	bus	1			dark	A bus with its lights on	Автобус с горящими огнями
+tr052	transport	bus	1				A bench at a stop	Скамейка на остановке
+tr053	transport	bus	1				A railway, a crossing or a train	Железная дорога, переезд или поезд
+tr054	transport	sign	1				A road sign	Дорожный знак
+tr055	transport	sign	1				A round road sign	Круглый дорожный знак
+tr056	transport	sign	1				A triangular road sign	Треугольный дорожный знак
+tr057	transport	sign	1				A square or rectangular road sign	Квадратный или прямоугольный знак
+tr058	transport	sign	1				A sign with an arrow	Знак со стрелкой
+tr059	transport	sign	1				A sign with a person on it	Знак с человечком
+tr060	transport	sign	1				A sign with an animal on it	Знак с животным
+tr061	transport	sign	1				A no-parking sign	Знак «стоянка запрещена»
+tr062	transport	sign	1				A pedestrian crossing sign	Знак пешеходного перехода
+tr063	transport	sign	2				A road sign from behind	Дорожный знак с обратной стороны
+tr064	transport	sign	1				A bent or faded sign	Погнутый или выцветший знак
+tr065	transport	sign	2				A road sign with a sticker on it	Дорожный знак с наклейкой
+tr066	transport	sign	1				Two signs on one pole	Два знака на одном столбе
+tr067	transport	sign	1				A speed limit	Ограничение скорости
+tr068	transport	sign	1				A street name plate	Табличка с названием улицы
+tr069	transport	sign	1				A direction sign pointing somewhere	Указатель куда-нибудь
+tr070	transport	sign	1	w	snow		A sign with snow on it	Знак со снегом
+tr071	transport	tlight	1				A traffic light	Светофор
+tr072	transport	tlight	1				A traffic light on red	Красный сигнал светофора
+tr073	transport	tlight	1				A traffic light on green	Зелёный сигнал светофора
+tr074	transport	tlight	1				A pedestrian light with the little man	Пешеходный светофор с человечком
+tr075	transport	tlight	2				The little green man, mid-stride	Зелёный человечек на полушаге
+tr076	transport	tlight	1				A traffic light from below	Светофор снизу
+tr077	transport	tlight	1				A traffic light with a countdown	Светофор с обратным отсчётом
+tr078	transport	tlight	1				The button you press to cross	Кнопка вызова на переходе
+tr079	transport	tlight	1			dark	A traffic light at night	Светофор ночью
+tr080	transport	tlight	2		rain	dark	Traffic light colours on a wet road	Цвета светофора на мокрой дороге
+tr081	transport	road	1				A pedestrian crossing	Пешеходный переход
+tr082	transport	road	1				A zebra crossing from the curb	Зебра с бордюра
+tr083	transport	road	2				The stripes of a zebra, from above	Полосы зебры сверху
+tr084	transport	road	1				Road markings	Дорожная разметка
+tr085	transport	road	1				An arrow painted on the road	Стрелка на асфальте
+tr086	transport	road	1				A word or a number painted on the road	Слово или цифра на асфальте
+tr087	transport	road	2				Two lines on the road that merge	Две линии на дороге, которые сливаются
+tr088	transport	road	1				A road going off into the distance	Дорога, уходящая вдаль
+tr089	transport	road	1				A crossroads	Перекрёсток
+tr090	transport	road	1				A pothole	Яма на дороге
+tr091	transport	road	1				A patched bit of asphalt	Заплатка на асфальте
+tr092	transport	road	1				A speed bump	Лежачий полицейский
+tr093	transport	road	1				Bollards or posts	Столбики или ограничители
+tr094	transport	road	1				A parking lot	Парковка
+tr095	transport	road	1				Parking lines	Разметка парковки
+tr096	transport	road	1				A road cone	Дорожный конус
+tr097	transport	road	1				Roadworks	Дорожные работы
+tr098	transport	road	1				A bridge or a flyover	Мост или эстакада
+tr099	transport	road	1				An underpass	Подземный переход
+tr100	transport	road	1				A bend in the road	Поворот дороги
+tr101	transport	road	1			dark	A road with lamps along it	Дорога с фонарями вдоль
+tr102	transport	road	1				A pavement with nobody on it	Тротуар, на котором никого
+tr103	transport	road	1				A pavement, from very low	Тротуар с самой земли
+tr104	transport	bike	1				A bicycle	Велосипед
+tr105	transport	bike	1				A parked bicycle	Припаркованный велосипед
+tr106	transport	bike	1				A bike rack	Велопарковка
+tr107	transport	bike	1				A bicycle bell or a bicycle basket	Велосипедный звонок или корзинка
+tr108	transport	bike	1				A bicycle wheel, close	Колесо велосипеда крупно
+tr109	transport	bike	1				A bicycle lock	Велосипедный замок
+tr110	transport	bike	1				A bicycle saddle	Велосипедное седло
+tr111	transport	bike	1				A child's bike or a scooter	Детский велосипед или самокат
+tr112	transport	bike	1				An electric scooter	Электросамокат
+tr113	transport	bike	1				A row of rental bikes or scooters	Ряд прокатных велосипедов или самокатов
+tr114	transport	bike	1				A bike lane	Велодорожка
+tr115	transport	bike	1				A bicycle sign	Знак с велосипедом
+tr116	transport	bike	2				A bicycle leaning on something	Велосипед, прислонённый к чему-то
+tr117	transport	bike	1	w	snow		A bicycle in the snow	Велосипед в снегу
+tr118	transport	bike	1				A pram or a shopping trolley	Коляска или тележка
+tr119	transport	bike	1				Anything with wheels that is not a car	Что угодно на колёсах, кроме машины
+le001	letters	number	1				The number of your house	Номер твоего дома
+le002	letters	number	1				The nearest house number, close	Номер ближайшего дома крупно
+le003	letters	number	1				The digit 1 anywhere	Цифра 1 где угодно
+le004	letters	number	1				The digit 2 anywhere	Цифра 2 где угодно
+le005	letters	number	1				The digit 3 anywhere	Цифра 3 где угодно
+le006	letters	number	1				The digit 4 anywhere	Цифра 4 где угодно
+le007	letters	number	1				The digit 5 anywhere	Цифра 5 где угодно
+le008	letters	number	1				The digit 6 anywhere	Цифра 6 где угодно
+le009	letters	number	1				The digit 7 anywhere	Цифра 7 где угодно
+le010	letters	number	1				The digit 8 anywhere	Цифра 8 где угодно
+le011	letters	number	1				The digit 9 anywhere	Цифра 9 где угодно
+le012	letters	number	1				The digit 0 anywhere	Цифра 0 где угодно
+le013	letters	number	1				Today's date somewhere in the street	Сегодняшнее число где-нибудь на улице
+le014	letters	number	2				The current hour as a number somewhere	Номер текущего часа где-нибудь на улице
+le015	letters	number	1				The biggest number you can find	Самое большое число, какое найдёшь
+le016	letters	number	1				A price	Цена
+le017	letters	number	1				A phone number on a sign	Телефон на вывеске
+le018	letters	number	1				A number painted by hand	Номер, написанный от руки
+le019	letters	number	1				An apartment number	Номер квартиры
+le020	letters	number	1				A number on a pole or a box	Номер на столбе или ящике
+le021	letters	number	2				Two numbers next to each other that add up to ten	Два числа рядом, в сумме десять
+le022	letters	number	1				A clock in the street	Часы на улице
+le023	letters	number	1				A thermometer or a temperature display	Термометр или табло с температурой
+le024	letters	number	1				An old house number plate	Старая табличка с номером
+le025	letters	letter	1				The first letter of your name	Первая буква твоего имени
+le026	letters	letter	1				The letter A	Буква А
+le027	letters	letter	1				The letter O	Буква О
+le028	letters	letter	1				The letter M	Буква М
+le029	letters	letter	1				The letter T	Буква Т
+le030	letters	letter	1				The letter K	Буква К
+le031	letters	letter	1				The letter P	Буква П
+le032	letters	letter	1				The letter S	Буква С
+le033	letters	letter	1				The letter E	Буква Е
+le034	letters	letter	2				A letter made by something that is not a letter	Буква, которую образует не буква
+le035	letters	letter	1				A huge letter	Огромная буква
+le036	letters	letter	1				A tiny letter	Крошечная буква
+le037	letters	letter	1				A letter missing from a sign	Выпавшая из вывески буква
+le038	letters	letter	1				A handwritten word	Слово, написанное от руки
+le039	letters	letter	1				A word in another language	Слово на другом языке
+le040	letters	letter	2				A word that describes your mood	Слово, которое описывает твоё настроение
+le041	letters	letter	1				A word that is also a name	Слово, которое заодно чьё-то имя
+le042	letters	letter	1				The longest word you can find	Самое длинное слово по пути
+le043	letters	letter	1				A three-letter word	Слово из трёх букв, приличное
+le044	letters	letter	1				A sign with only one word	Вывеска из одного слова
+le045	letters	letter	2				A word cut in half by something	Слово, перерезанное чем-то пополам
+le046	letters	letter	1				Letters in gold or silver	Золотые или серебряные буквы
+le047	letters	letter	1				Letters made of metal	Металлические буквы
+le048	letters	letter	1			dark	Letters that glow	Светящиеся буквы
+le049	letters	signboard	1				A shop sign	Вывеска магазина
+le050	letters	signboard	1				The oldest-looking sign on your way	Самая старая на вид вывеска
+le051	letters	signboard	1				A sign with a picture of food	Вывеска с едой
+le052	letters	signboard	1				A café sign	Вывеска кафе
+le053	letters	signboard	1				A hairdresser's sign	Вывеска парикмахерской
+le054	letters	signboard	1				A sign telling you opening hours	Табличка с часами работы
+le055	letters	signboard	1				A sign that says closed	Табличка «закрыто»
+le056	letters	signboard	1				A sign that says open	Табличка «открыто»
+le057	letters	signboard	2				A sign with a typo or a funny phrase	Вывеска с опечаткой или смешной фразой
+le058	letters	signboard	1				A sign with an arrow pointing to a shop	Вывеска со стрелкой к магазину
+le059	letters	signboard	1				A painted sign, not printed	Нарисованная вручную вывеска
+le060	letters	signboard	1				A chalkboard sign	Меловая доска у входа
+le061	letters	signboard	1				A sign on a door telling you to push or pull	Табличка «от себя» или «на себя»
+le062	letters	signboard	1				A sign telling you not to do something	Табличка, которая что-то запрещает
+le063	letters	signboard	1				A sign with a dog on it	Табличка с собакой
+le064	letters	signboard	1				A memorial plaque	Мемориальная доска
+le065	letters	signboard	1				A plaque with a year on it	Табличка с годом
+le066	letters	signboard	1				A map of the area	Карта района на улице
+le067	letters	signboard	1				An exit or entrance sign	Табличка «вход» или «выход»
+le068	letters	signboard	1				A sign on a fence	Табличка на заборе
+le069	letters	notice	1				A notice on a board	Объявление на доске
+le070	letters	notice	1				A handwritten notice	Объявление от руки
+le071	letters	notice	1				A notice with tear-off strips	Объявление с отрывными телефонами
+le072	letters	notice	1				A notice with some strips already taken	Объявление, где уже оторвали телефоны
+le073	letters	notice	1				A lost-pet notice	Объявление о пропавшем питомце
+le074	letters	notice	2				A notice that someone wrote with feeling	Объявление, написанное с чувством
+le075	letters	notice	1				A notice board with many layers	Доска объявлений во много слоёв
+le076	letters	notice	1				A poster for an event	Афиша
+le077	letters	notice	1				A torn poster	Порванная афиша
+le078	letters	notice	1				An advertising pillar or a billboard	Тумба или рекламный щит
+le079	letters	notice	2				An ad and something that ruins it	Реклама и что-то, что её портит
+le080	letters	notice	1				Stickers on a pole	Наклейки на столбе
+le081	letters	notice	1				A sticker on a sign	Наклейка на знаке
+le082	letters	graffiti	1				Graffiti	Граффити
+le083	letters	graffiti	1				A small drawing on a wall	Маленький рисунок на стене
+le084	letters	graffiti	1				A mural	Роспись на стене
+le085	letters	graffiti	1				A word sprayed on a wall	Слово баллончиком на стене
+le086	letters	graffiti	2				Graffiti somebody tried to paint over	Граффити, которое пытались закрасить
+le087	letters	graffiti	1				A chalk drawing on the asphalt	Рисунок мелом на асфальте
+le088	letters	graffiti	1				Hopscotch	Классики на асфальте
+le089	letters	graffiti	1				A heart drawn or carved somewhere	Нарисованное или вырезанное сердечко
+le090	letters	graffiti	1				Initials carved somewhere	Вырезанные где-то инициалы
+le091	letters	graffiti	1				A painted face	Нарисованное лицо
+le092	letters	graffiti	1				A stencil	Трафарет на стене
+le093	letters	graffiti	2				A drawing made by a child	Рисунок, сделанный ребёнком
+le094	letters	arrow	1				An arrow	Стрелка
+le095	letters	arrow	1				An arrow pointing up	Стрелка вверх
+le096	letters	arrow	1				An arrow pointing left	Стрелка влево
+le097	letters	arrow	1				An arrow pointing right	Стрелка вправо
+le098	letters	arrow	1				An arrow pointing down	Стрелка вниз
+le099	letters	arrow	2				Something that points the way without being an arrow	Что-то, что указывает путь, но не стрелка
+le100	letters	arrow	1				A painted arrow on the ground	Нарисованная стрелка на земле
+le101	letters	arrow	2				Two arrows pointing at each other	Две стрелки навстречу друг другу
+le102	letters	symbol	1				A heart symbol	Сердечко
+le103	letters	symbol	1				A star symbol	Звёздочка
+le104	letters	symbol	1				A cross or an X	Крестик
+le105	letters	symbol	1				A circle with a line through it	Перечёркнутый круг
+le106	letters	symbol	1				A logo you recognise	Знакомый логотип
+le107	letters	symbol	1				A smiley	Смайлик
+le108	letters	symbol	1				A pictogram of a person	Пиктограмма человечка
+le109	letters	symbol	1				A coat of arms or an emblem	Герб или эмблема
+le110	letters	symbol	1				A flag	Флаг
+le111	letters	symbol	1				A QR code in the street	QR-код на улице
+le112	letters	symbol	1				An exclamation mark	Восклицательный знак
+le113	letters	symbol	1				A question mark	Вопросительный знак
+se001	self	shoes	1				Your shoes	Твои ботинки
+se002	self	shoes	1				Your shoes and what they stand on	Твои ботинки и то, на чём они стоят
+se003	self	shoes	1				Your shoes on a line or a stripe	Твои ботинки на линии или полоске
+se004	self	shoes	1				Your shoes on grass	Твои ботинки на траве
+se005	self	shoes	1				Your shoes on a manhole cover	Твои ботинки на люке
+se006	self	shoes	1				Your shoes on a step	Твои ботинки на ступеньке
+se007	self	shoes	2				Your shoes in a patch of sunlight	Твои ботинки в солнечном пятне
+se008	self	shoes	1	au			Your shoes in fallen leaves	Твои ботинки в опавших листьях
+se009	self	shoes	1	w	snow		Your shoes in snow	Твои ботинки в снегу
+se010	self	shoes	1		wet		Your shoes next to a puddle	Твои ботинки рядом с лужей
+se011	self	shoes	1				Your shoes on something painted	Твои ботинки на чём-то нарисованном
+se012	self	shoes	2				Your shoes at the farthest point of the walk	Твои ботинки в самой дальней точке прогулки
+se013	self	shoes	1				Your shoes on a crossing	Твои ботинки на зебре
+se014	self	shoes	1				Your shoes on the threshold, back home	Твои ботинки на пороге, уже дома
+se015	self	hand	1				Your hand touching something rough	Твоя рука на чём-то шершавом
+se016	self	hand	1				Your hand touching something smooth	Твоя рука на чём-то гладком
+se017	self	hand	1				Your hand touching a tree	Твоя рука на дереве
+se018	self	hand	1				Your hand next to a leaf	Твоя рука рядом с листом
+se019	self	hand	1				Something small in your palm	Что-то маленькое на ладони
+se020	self	hand	2				Your hand pointing at something worth seeing	Твоя рука указывает на что-то интересное
+se021	self	hand	1				Your hand on a railing	Твоя рука на перилах
+se022	self	hand	1	w			Your glove or mitten	Твоя перчатка или варежка
+se023	self	hand	1	w	snow		Snow in your palm	Снег на ладони
+se024	self	hand	1		rain		Rain in your palm	Дождь на ладони
+se025	self	hand	2				Your hand framing something with your fingers	Твои пальцы как рамка вокруг чего-то
+se026	self	hand	1				Your hand holding a door	Твоя рука держит дверь
+se027	self	myshadow	1		sun		Your shadow	Твоя тень
+se028	self	myshadow	1		sun		Your shadow on a wall	Твоя тень на стене
+se029	self	myshadow	1		sun		Your shadow on grass	Твоя тень на траве
+se030	self	myshadow	2		sun		Your shadow touching another shadow	Твоя тень касается другой тени
+se031	self	myshadow	2		sun		Your shadow doing something silly	Твоя тень делает что-то смешное
+se032	self	myshadow	1		sun		Your shadow on stairs	Твоя тень на ступеньках
+se033	self	myshadow	1		sun		Your shadow, long	Твоя длинная тень
+se034	self	myshadow	1		sun		Your shadow, short	Твоя короткая тень
+se035	self	myshadow	1			dark	Your shadow under a lamp	Твоя тень под фонарём
+se036	self	myshadow	2		sun		Your shadow wearing a tree as a hat	Твоя тень в кроне дерева, как в шляпе
+se037	self	pocket	1				What's in your pocket right now	Что сейчас у тебя в кармане
+se038	self	pocket	1				Your keys	Твои ключи
+se039	self	pocket	1				Your bag or backpack, open	Твоя сумка или рюкзак, раскрытые
+se040	self	pocket	1				The thing you are carrying home	То, что ты несёшь домой
+se041	self	pocket	1				Your sleeve and the weather on it	Твой рукав и погода на нём
+se042	self	pocket	1				A receipt from today	Чек за сегодня
+se043	self	pocket	1				Something you bought on the way	Что-то, купленное по дороге
+se044	self	pocket	1				Your cup of coffee or tea outside	Твой кофе или чай на улице
+se045	self	pocket	1				Your snack on the go	Твой перекус на ходу
+se046	self	pocket	1				Your scarf, hat or hood	Твой шарф, шапка или капюшон
+se047	self	way	1				The first thing you see when you step outside	Первое, что видно за порогом
+se048	self	way	1				The view from your doorstep	Вид с твоего порога
+se049	self	way	1				Where you are going, from where you are	Куда идёшь — оттуда, где стоишь
+se050	self	way	1				The way back home	Путь обратно домой
+se051	self	way	1				The farthest point of your walk	Самая дальняя точка прогулки
+se052	self	way	1				The place you stopped for a moment	Место, где ты на минуту {остановился|остановилась}
+se053	self	way	2				A turn you have never taken	Поворот, куда ты ни разу не {сворачивал|сворачивала}
+se054	self	way	1				A path you take every day	Дорожка, по которой ходишь каждый день
+se055	self	way	2				Your everyday route from a new side	Твой привычный путь с непривычной стороны
+se056	self	way	1				A shortcut	Короткая дорога
+se057	self	way	1				A place where you have to wait	Место, где приходится ждать
+se058	self	way	1				Your favourite place on this walk	Твоё любимое место на этой прогулке
+se059	self	way	1				The place where you usually meet someone	Место, где ты обычно с кем-то встречаешься
+se060	self	way	2				Something you have walked past a hundred times and never seen	То, мимо чего ходишь сто раз и ни разу не {заметил|заметила}
+se061	self	way	1				The view behind you	Вид за спиной
+se062	self	way	1				The view to your left right now	Вид слева прямо сейчас
+se063	self	way	1				The view to your right right now	Вид справа прямо сейчас
+se064	self	way	1				Straight up, wherever you are	Прямо вверх, где бы ты ни {был|была}
+se065	self	way	1				Straight down, wherever you are	Прямо вниз, где бы ты ни {был|была}
+se066	self	way	1				The last thing before your front door	Последнее перед дверью домой
+se067	self	way	1				A sound you heard, shown with a photo	Звук, который ты {услышал|услышала}, — фотографией
+se068	self	way	1				A smell you noticed, shown with a photo	Запах, который ты {почувствовал|почувствовала}, — фотографией
+se069	self	way	2				The most peaceful corner on your walk	Самый тихий уголок прогулки
+se070	self	way	1				Something that made you smile	Что-то, от чего ты {улыбнулся|улыбнулась}
+se071	self	way	1				Something you would show a friend	Что-то, что ты {показал|показала} бы другу
+se072	self	way	2				Something that wasn't here yesterday	Что-то, чего вчера здесь не было
+se073	self	way	1				Something that will be gone tomorrow	Что-то, чего завтра здесь уже не будет
+se074	self	way	1				A bench you would sit on	Скамейка, на которую ты бы {присел|присела}
+tx001	texture	brick	1				A brick wall	Кирпичная стена
+tx002	texture	brick	1				One brick, close	Один кирпич крупно
+tx003	texture	brick	2				One brick that is not like the others	Один кирпич, не похожий на соседей
+tx004	texture	brick	1				A brick with a stamp or letters on it	Кирпич с клеймом или буквами
+tx005	texture	brick	1				Bricks of two colours	Кирпичи двух цветов
+tx006	texture	brick	1				A broken brick on the ground	Битый кирпич на земле
+tx007	texture	brick	1				Bricks laid in a pattern	Кирпичи, уложенные узором
+tx008	texture	rust	1				Rust	Ржавчина
+tx009	texture	rust	1				A rusty bolt or nail	Ржавый болт или гвоздь
+tx010	texture	rust	1				A rusty pipe	Ржавая труба
+tx011	texture	rust	2				Rust that looks like a map	Ржавчина, похожая на карту
+tx012	texture	rust	1				Rust and fresh paint side by side	Ржавчина и свежая краска рядом
+tx013	texture	rust	1				A rusty lock or a padlock	Ржавый замок или навесной замок
+tx014	texture	paint	1				Peeling paint	Облупленная краска
+tx015	texture	paint	1				Layers of paint showing under each other	Слои краски, проступающие друг из-под друга
+tx016	texture	paint	2				Peeling paint that looks like something	Облупившаяся краска, похожая на что-то
+tx017	texture	paint	1				A drip of paint	Потёк краски
+tx018	texture	paint	1				Fresh paint	Свежая краска
+tx019	texture	paint	1				A wet-paint sign	Табличка «окрашено»
+tx020	texture	paint	1				Something painted twice in different colours	Что-то, покрашенное дважды в разные цвета
+tx021	texture	paint	1				Two colours of paint meeting on one wall	Две краски на одной стене встречаются
+tx022	texture	asphalt	1				Asphalt, close	Асфальт крупно
+tx023	texture	asphalt	1				A crack in the asphalt	Трещина в асфальте
+tx024	texture	asphalt	2				A crack that looks like a river or a lightning bolt	Трещина, похожая на реку или молнию
+tx025	texture	asphalt	1				A spot where new asphalt meets old	Где новый асфальт встречается со старым
+tx026	texture	asphalt	1				A stain on the asphalt	Пятно на асфальте
+tx027	texture	asphalt	1				A footprint set in asphalt or concrete	След, застывший в асфальте или бетоне
+tx028	texture	asphalt	1				Something stuck in the asphalt	Что-то, вросшее в асфальт
+tx029	texture	asphalt	1		sun		A patch of asphalt in the sun	Кусок асфальта на солнце
+tx030	texture	asphalt	1		wet		Wet asphalt, close	Мокрый асфальт крупно
+tx031	texture	asphalt	1				A line painted on the asphalt, close	Нарисованная на асфальте линия крупно
+tx032	texture	tile	1				Paving stones	Тротуарная плитка
+tx033	texture	tile	2				Paving stones laid in a pattern	Плитка, уложенная узором
+tx034	texture	tile	1				One paving stone that is broken	Одна треснувшая плитка
+tx035	texture	tile	1				Paving with a different stone in it	Плитка, среди которой один другой камень
+tx036	texture	tile	1				Tactile paving with dots or stripes	Тактильная плитка с точками или полосками
+tx037	texture	tile	1				Tiles on a building	Плитка на стене дома
+tx038	texture	tile	1				Cobblestones	Брусчатка
+tx039	texture	tile	2				Where two kinds of paving meet	Где сходятся два вида мощения
+tx040	texture	wood	1				Old wood	Старое дерево
+tx041	texture	wood	1				Wood grain, close	Волокна дерева крупно
+tx042	texture	wood	1				A wooden board with a knot	Доска с сучком
+tx043	texture	wood	1				Painted wood with cracks	Крашеное дерево с трещинами
+tx044	texture	wood	1				A wooden pallet or crate	Деревянный поддон или ящик
+tx045	texture	wood	1				Logs or firewood	Брёвна или дрова
+tx046	texture	wood	1				Sawdust or a fresh cut	Опилки или свежий спил
+tx047	texture	metal	1				Metal, close	Металл крупно
+tx048	texture	metal	1				A bolt	Болт
+tx049	texture	metal	1				Rivets	Заклёпки
+tx050	texture	metal	1				A chain	Цепь
+tx051	texture	metal	1				A grille or a grating	Решётка
+tx052	texture	metal	2				A grille with a pattern	Решётка с узором
+tx053	texture	metal	1				Corrugated metal	Гофрированный металл
+tx054	texture	metal	1				Something shiny and metal	Что-то металлическое и блестящее
+tx055	texture	metal	1				A hinge	Петля
+tx056	texture	metal	1				A padlock	Навесной замок
+tx057	texture	metal	1				A lock on a bridge or a fence, left as a token	Замочек на мосту или заборе на память
+tx058	texture	metal	1				Barbed wire or a spike on a fence	Колючая проволока или пики на заборе
+tx059	texture	stone	1				A stone wall	Каменная стена
+tx060	texture	stone	1				A stone step	Каменная ступенька
+tx061	texture	stone	1				Concrete, close	Бетон крупно
+tx062	texture	stone	1				Concrete with pebbles in it	Бетон с камешками внутри
+tx063	texture	stone	1				A concrete block or a slab	Бетонный блок или плита
+tx064	texture	stone	1				Gravel	Гравий
+tx065	texture	stone	1				Granite or marble on a building	Гранит или мрамор на здании
+tx066	texture	stone	1				Plaster falling off a wall	Отваливающаяся штукатурка
+tx067	texture	stone	2				What's under plaster that has fallen off	Что под отвалившейся штукатуркой
+tx068	texture	stone	1				Sand	Песок
+tx069	texture	stone	1				Earth after digging	Земля после раскопок
+tx070	texture	fabric	1				Fabric hanging outside	Ткань, висящая на улице
+tx071	texture	fabric	1				A blanket or rug airing outside	Плед или ковёр, проветривающийся на улице
+tx072	texture	fabric	1				An awning	Тент или маркиза
+tx073	texture	fabric	1				A net or a mesh	Сетка
+tx074	texture	fabric	1				A rope	Верёвка
+tx075	texture	fabric	1				A knot somebody tied	Узел, который кто-то завязал
+tx076	texture	glass	1				Glass, close	Стекло крупно
+tx077	texture	glass	1				Frosted or textured glass	Матовое или рифлёное стекло
+tx078	texture	glass	1				Glass blocks in a wall	Стеклоблоки в стене
+tx079	texture	glass	1				A cracked glass	Треснувшее стекло
+tx080	texture	glass	1				Dirty glass that you can draw on	Грязное стекло, на котором можно рисовать
+tx081	texture	glass	1				Stained or coloured glass	Витраж или цветное стекло
+tx082	texture	glass	1				Glass through which you see something blurred	Стекло, сквозь которое всё размыто
+tx083	texture	wire	1				Wires overhead	Провода над головой
+tx084	texture	wire	1				A tangle of wires	Клубок проводов
+tx085	texture	wire	1				A pole with many wires	Столб с кучей проводов
+tx086	texture	wire	1				A cable tie holding something together	Стяжка, которая что-то держит
+tx087	texture	wire	2				Something fixed with tape	Что-то, починенное скотчем
+tx088	texture	wire	1				Something fixed in a clever way	Что-то, починенное хитрым способом
+tx089	texture	wire	1				Something held by a string	Что-то, привязанное верёвочкой
+tx090	texture	pattern	1				A pattern that repeats	Повторяющийся узор
+tx091	texture	pattern	1				Stripes	Полоски
+tx092	texture	pattern	1				Dots	Точки
+tx093	texture	pattern	1				A checkerboard	Шахматка
+tx094	texture	pattern	1				Grid squares	Клетка
+tx095	texture	pattern	1				Zigzags	Зигзаги
+tx096	texture	pattern	1				Waves	Волны
+tx097	texture	pattern	2				A pattern with one mistake in it	Узор с одной ошибкой
+tx098	texture	pattern	2				The same pattern in two different places	Один и тот же узор в двух разных местах
+tx099	texture	pattern	1				A pattern on a manhole cover or a grate	Узор на люке или решётке
+tx100	texture	pattern	1				A pattern on a gate or a railing	Узор на воротах или перилах
+tx101	texture	pattern	1				A pattern in tiles	Узор в плитке
+tx102	texture	pattern	1				A pattern in leaves or branches	Узор из листьев или веток
+tx103	texture	pattern	1	w	snow		A pattern in snow	Узор на снегу
+tx104	texture	texture	1				The roughest surface you can touch	Самая шершавая поверхность, какую потрогаешь
+tx105	texture	texture	1				The smoothest surface you can find	Самая гладкая поверхность, какую найдёшь
+tx106	texture	texture	1				Something soft	Что-то мягкое
+tx107	texture	texture	1				Something prickly	Что-то колючее
+tx108	texture	texture	1				Something old and something new together	Что-то старое и что-то новое вместе
+tx109	texture	texture	2				Something that has been worn smooth by hands	Что-то, отполированное руками
+tx110	texture	texture	1				Something wet	Что-то мокрое
+tx111	texture	texture	1				Something dusty	Что-то пыльное
+tx112	texture	texture	1				Something cracked	Что-то треснувшее
+tx113	texture	texture	1				Something that has been patched	Что-то залатанное
+fi001	finds	ground	1				A stone	Камень
+fi002	finds	ground	1				The roundest stone you can find	Самый круглый камень, какой найдёшь
+fi003	finds	ground	1				A stone of an unusual colour	Камень необычного цвета
+fi004	finds	ground	1				A pebble with a stripe	Камешек с полоской
+fi005	finds	ground	1				A stick	Палка
+fi006	finds	ground	2				A stick shaped like a letter	Палка в форме буквы
+fi007	finds	ground	1				A feather	Перо
+fi008	finds	ground	1				A bottle cap	Крышка от бутылки
+fi009	finds	ground	1				A button, a bead or a coin on the ground	Пуговица, бусина или монета на земле
+fi010	finds	ground	1				A piece of coloured glass	Кусочек цветного стекла
+fi011	finds	ground	1				Something blue on the ground	Что-то синее на земле
+fi012	finds	ground	1				Something red on the ground	Что-то красное на земле
+fi013	finds	ground	1				Something shiny on the ground	Что-то блестящее на земле
+fi014	finds	ground	1				A hairpin, a ribbon or an elastic band	Заколка, ленточка или резинка
+fi015	finds	ground	1				A piece of string	Кусок верёвки
+fi016	finds	ground	1				A lost glove or mitten	Потерянная перчатка или варежка
+fi017	finds	ground	2				A lost glove somebody put up somewhere to be found	Потерянная перчатка, которую кто-то пристроил на видное место
+fi018	finds	ground	1				A lost toy	Потерянная игрушка
+fi019	finds	ground	1				A ticket or a receipt on the ground	Билет или чек на земле
+fi020	finds	ground	1				A sweet wrapper	Фантик
+fi021	finds	ground	1				A cigarette pack or a match	Спичка или пачка
+fi022	finds	ground	1				A pine needle or a twig	Иголка или веточка
+fi023	finds	ground	1				Shells or seeds	Ракушки или семечки
+fi024	finds	ground	1				Chalk left on the ground	Мелок, оставленный на земле
+fi025	finds	ground	1				A puddle of something that isn't water	Лужица чего-то, что не вода
+fi026	finds	ground	1				A key on the ground or hung up for its owner	Ключ на земле или повешенный для хозяина
+fi027	finds	ground	2				Something that fell off something bigger	Что-то, что отвалилось от чего-то большего
+fi028	finds	ground	1				A piece of a tile or a brick	Обломок плитки или кирпича
+fi029	finds	ground	1				Sand or earth spilled on asphalt	Песок или земля, просыпанные на асфальт
+fi030	finds	left	1				Something somebody left on a bench	Что-то, оставленное на скамейке
+fi031	finds	left	1				Something somebody left on a fence	Что-то, оставленное на заборе
+fi032	finds	left	1				Something left on a windowsill outside	Что-то, оставленное на подоконнике снаружи
+fi033	finds	left	1				Things left by the bins for someone to take	Вещи у мусорки, которые кто-то может забрать
+fi034	finds	left	1				An old chair or a piece of furniture outside	Старый стул или мебель на улице
+fi035	finds	left	1				A box outside	Коробка на улице
+fi036	finds	left	1				A shopping bag on a hook or a handle	Пакет на крючке или ручке
+fi037	finds	left	1				A bucket	Ведро
+fi038	finds	left	1				A broom or a shovel	Метла или лопата
+fi039	finds	left	1				A ladder left somewhere	Оставленная где-то стремянка
+fi040	finds	left	1				A hose or a watering can	Шланг или лейка
+fi041	finds	left	1				A flowerpot with nothing in it	Пустой цветочный горшок
+fi042	finds	left	1				A bottle on a ledge	Бутылка на карнизе
+fi043	finds	left	1				A cup or a glass left outside	Чашка или стакан, оставленные на улице
+fi044	finds	left	1				A newspaper or a magazine	Газета или журнал
+fi045	finds	left	1				A book outside	Книга на улице
+fi046	finds	left	1				A street library or a book shelf	Уличная библиотека или полка с книгами
+fi047	finds	left	1				A ball	Мяч
+fi048	finds	left	1				A sled or skis	Санки или лыжи
+fi049	finds	left	1				A doormat	Коврик у двери
+fi050	finds	left	1				Shoes outside a door	Обувь за дверью
+fi051	finds	left	1				Laundry pegs	Прищепки
+fi052	finds	left	1				A coat hanger outside	Вешалка на улице
+fi053	finds	left	1				A tyre	Покрышка
+fi054	finds	left	2				Something that clearly has a story	Что-то, у чего явно есть история
+fi055	finds	left	1				Something that has been waiting for its owner a long time	Что-то, что давно ждёт хозяина
+fi056	finds	left	1				A parcel or a delivery at a door	Посылка или доставка у двери
+fi057	finds	left	1				A wreath or a decoration on a door	Венок или украшение на двери
+fi058	finds	left	1				A Christmas tree or decoration outside	Ёлка или украшение на улице
+fi059	finds	left	1	w			A Christmas tree thrown out after the holidays	Выброшенная после праздников ёлка
+fi060	finds	left	1				Balloons	Воздушные шарики
+fi061	finds	left	1				Bunting or a garland	Флажки или гирлянда
+fi062	finds	left	1				A carpet or rug outside	Ковёр на улице
+fi063	finds	left	1				An umbrella left somewhere	Забытый где-то зонт
+sh001	shapes	red	1				Something red	Что-то красное
+sh002	shapes	red	1				The reddest thing on your way	Самое красное, что есть по пути
+sh003	shapes	red	2				Something red in a grey place	Что-то красное в сером месте
+sh004	shapes	red	1				Red and green together	Красное и зелёное вместе
+sh005	shapes	orange	1				Something orange	Что-то оранжевое
+sh006	shapes	orange	1				Orange and blue together	Оранжевое и синее вместе
+sh007	shapes	yellow	1				Something yellow	Что-то жёлтое
+sh008	shapes	yellow	1				Something yellow above your head	Что-то жёлтое выше головы
+sh009	shapes	yellow	1				Yellow and black together	Жёлтое и чёрное вместе
+sh010	shapes	yellow	1				A yellow line	Жёлтая линия
+sh011	shapes	green	1				Something green that isn't a plant	Что-то зелёное, но не растение
+sh012	shapes	green	1				A green door, gate or fence	Зелёная дверь, ворота или забор
+sh013	shapes	blue	1				Something blue	Что-то синее
+sh014	shapes	blue	1				Something light blue	Что-то голубое
+sh015	shapes	blue	1				Something blue and old	Что-то синее и старое
+sh016	shapes	purple	1				Something purple	Что-то фиолетовое
+sh017	shapes	purple	2				Something pink in an unlikely place	Что-то розовое в неожиданном месте
+sh018	shapes	pink	1				Something pink	Что-то розовое
+sh019	shapes	brown	1				Something brown	Что-то коричневое
+sh020	shapes	white	1				Something white	Что-то белое
+sh021	shapes	white	1				Something very white on something dark	Что-то очень белое на тёмном
+sh022	shapes	black	1				Something black	Что-то чёрное
+sh023	shapes	black	1				Something black on something light	Что-то чёрное на светлом
+sh024	shapes	grey	1				Five shades of grey in one frame	Пять оттенков серого в одном кадре
+sh025	shapes	grey	1				The greyest place on your walk	Самое серое место на прогулке
+sh026	shapes	gold	1				Something golden	Что-то золотое
+sh027	shapes	silver	1				Something silver	Что-то серебристое
+sh028	shapes	colors	1				Something in all colours of the rainbow	Что-то во всех цветах радуги
+sh029	shapes	colors	1				Three colours in one frame	Три цвета в одном кадре
+sh030	shapes	colors	1				Only one colour in the whole frame	Один цвет на весь кадр
+sh031	shapes	colors	2				Two things of the same colour that have nothing in common	Две вещи одного цвета, ничем больше не похожие
+sh032	shapes	colors	1				A colour you don't see often in your area	Цвет, который в твоём районе редкость
+sh033	shapes	colors	1				The brightest thing on your way	Самое яркое по пути
+sh034	shapes	colors	1				The most faded thing on your way	Самое выцветшее по пути
+sh035	shapes	colors	1				Something the colour of your clothes today	Что-то цвета твоей сегодняшней одежды
+sh036	shapes	colors	1				Something the colour of the sky today	Что-то цвета сегодняшнего неба
+sh037	shapes	colors	2				Two colours that shouldn't go together, but do	Два цвета, которые не должны сочетаться, но сочетаются
+sh038	shapes	colors	1				A rainbow anywhere: painted, in oil, in glass	Радуга где угодно: нарисованная, в масле, в стекле
+sh039	shapes	colors	1	au			All the colours of autumn in one frame	Все цвета осени в одном кадре
+sh040	shapes	colors	1	sp			All the colours of spring in one frame	Все цвета весны в одном кадре
+sh041	shapes	colors	1	su			All the colours of summer in one frame	Все цвета лета в одном кадре
+sh042	shapes	colors	1	w			Colour in a winter street	Цвет на зимней улице
+sh043	shapes	circle	1				A circle	Круг
+sh044	shapes	circle	1				Three circles in one frame	Три круга в одном кадре
+sh045	shapes	circle	1				A circle inside a circle	Круг в круге
+sh046	shapes	circle	1				The biggest circle you can find	Самый большой круг, какой найдёшь
+sh047	shapes	circle	1				A ring or a hole	Кольцо или отверстие
+sh048	shapes	circle	2				A circle nobody drew on purpose	Круг, который никто не рисовал нарочно
+sh049	shapes	square	1				A square	Квадрат
+sh050	shapes	square	1				Squares in a grid	Квадраты сеткой
+sh051	shapes	square	2				A square inside a square	Квадрат в квадрате
+sh052	shapes	triangle	1				A triangle	Треугольник
+sh053	shapes	triangle	2				A triangle made by two things that don't touch	Треугольник из двух вещей, которые не соприкасаются
+sh054	shapes	triangle	1				Three triangles	Три треугольника
+sh055	shapes	arch	1				An arch	Арка
+sh056	shapes	arch	1				Something curved	Что-то изогнутое
+sh057	shapes	arch	1				A spiral	Спираль
+sh058	shapes	line	1				A straight line going off into the distance	Прямая линия, уходящая вдаль
+sh059	shapes	line	1				Lines that meet at one point	Линии, сходящиеся в одной точке
+sh060	shapes	line	1				Parallel lines	Параллельные линии
+sh061	shapes	line	1				A diagonal across the whole frame	Диагональ через весь кадр
+sh062	shapes	line	1				A vertical line splitting the frame in half	Вертикаль, делящая кадр пополам
+sh063	shapes	line	1				A horizon, or something that pretends to be one	Горизонт или то, что за него сойдёт
+sh064	shapes	line	2				A line that breaks halfway	Линия, которая обрывается на полпути
+sh065	shapes	line	1				A cross	Крест
+sh066	shapes	line	1				Lines that curve	Изогнутые линии
+sh067	shapes	count	1				One of something, all alone	Что-то одно, совсем одно
+sh068	shapes	count	1				Two of something	Два одинаковых
+sh069	shapes	count	1				Three of something	Три одинаковых
+sh070	shapes	count	1				Four of something	Четыре одинаковых
+sh071	shapes	count	1				Five of something	Пять одинаковых
+sh072	shapes	count	1				As many of one thing as you can fit in the frame	Сколько поместится одинакового в кадре
+sh073	shapes	count	2				One thing that is different in a row of the same	Одно отличается в ряду одинаковых
+sh074	shapes	count	1				A pair	Пара
+sh075	shapes	count	1				Something big and something small together	Большое и маленькое вместе
+sh076	shapes	count	1				Something tall and something short together	Высокое и низкое вместе
+sh077	shapes	count	2				Something old and something brand new together	Старое и совсем новое вместе
+sh078	shapes	count	1				Something hard next to something soft	Твёрдое рядом с мягким
+sh079	shapes	count	1				Something natural next to something man-made	Природное рядом с рукотворным
+sh080	shapes	count	2				Two things that look alike but aren't related	Две похожие вещи, никак не связанные
+sh081	shapes	frame	1				Something seen through a hole	Что-то сквозь дыру
+sh082	shapes	frame	1				Something seen through a gap	Что-то сквозь щель
+sh083	shapes	frame	1				Something framed by branches	Что-то в рамке из веток
+sh084	shapes	frame	1				Something framed by a window or a door	Что-то в рамке окна или двери
+sh085	shapes	frame	2				A frame inside a frame inside a frame	Рамка в рамке в рамке
+sh086	shapes	frame	1				Something half hidden	Что-то наполовину спрятанное
+sh087	shapes	frame	1				Something peeking out	Что-то выглядывающее
+sh088	shapes	frame	1				Something in the very middle of the frame	Что-то ровно в центре кадра
+sh089	shapes	frame	1				Something in the very corner of the frame	Что-то в самом углу кадра
+sh090	shapes	frame	1				Something tiny in a big empty space	Что-то крошечное в большой пустоте
+sh091	shapes	frame	2				A frame where the sky takes up almost everything	Кадр, где небо занимает почти всё
+sh092	shapes	frame	2				A frame where the ground takes up almost everything	Кадр, где земля занимает почти всё
+sh093	shapes	frame	1				Something perfectly symmetrical	Что-то идеально симметричное
+sh094	shapes	frame	2				Something nearly symmetrical, with one flaw	Почти симметричное, с одним изъяном
+sh095	shapes	angle	1				Anything, from knee height	Что угодно с высоты колена
+sh096	shapes	angle	1				Anything, from the ground	Что угодно с самой земли
+sh097	shapes	angle	1				Anything, looking straight up	Что угодно, глядя строго вверх
+sh098	shapes	angle	1				Anything, looking straight down	Что угодно, глядя строго вниз
+sh099	shapes	angle	1				Anything, as close as your camera can focus	Что угодно, так близко, как фокусирует камера
+sh100	shapes	angle	2				Something so close nobody will guess what it is	Что-то так близко, что никто не угадает
+sh101	shapes	angle	1				Something from as far away as possible	Что-то с самого большого расстояния
+sh102	shapes	angle	1				Something from behind	Что-то со спины
+sh103	shapes	angle	1				Something from above	Что-то сверху
+sh104	shapes	angle	1				Something tilted on purpose	Что-то, нарочно снятое под наклоном
+sh105	shapes	angle	1				Something from a cat's eye view	Что-то с высоты кошачьего роста
+sh106	shapes	angle	1				Something from a child's eye view	Что-то с высоты детского роста
+sh107	shapes	angle	2				Something that looks huge but is small	Что-то, что выглядит огромным, а на деле маленькое
+sh108	shapes	angle	2				Something that looks small but is huge	Что-то, что выглядит маленьким, а на деле огромное
+sh109	shapes	angle	1				The same thing twice: near and far	Одно и то же дважды: близко и далеко
+sh110	shapes	mood	1				Something calm	Что-то спокойное
+sh111	shapes	mood	1				Something cheerful	Что-то весёлое
+sh112	shapes	mood	1				Something lonely	Что-то одинокое
+sh113	shapes	mood	1				Something that looks tired	Что-то уставшее на вид
+sh114	shapes	mood	1				Something cosy	Что-то уютное
+sh115	shapes	mood	1				Something that looks like it's in a hurry	Что-то, что будто куда-то спешит
+sh116	shapes	mood	1				Something that looks like it's waiting	Что-то, что будто чего-то ждёт
+sh117	shapes	mood	2				Something that looks surprised	Что-то, что выглядит удивлённым
+sh118	shapes	mood	1				Something that looks like a face	Что-то, похожее на лицо
+sh119	shapes	mood	1				Something that looks like an animal	Что-то, похожее на зверя
+sh120	shapes	mood	2				Something that looks like a letter of the alphabet	Что-то, похожее на букву
+sh121	shapes	mood	1				Something that looks like a monster	Что-то, похожее на чудовище
+sh122	shapes	mood	1				Something beautiful nobody notices	Что-то красивое, чего никто не замечает
+sh123	shapes	mood	1				Something ugly that you like	Что-то некрасивое, но тебе нравится
+sh124	shapes	mood	1				Something that reminds you of childhood	Что-то, что напоминает детство
+sh125	shapes	mood	1				Something that smells good, or must	Что-то, что вкусно пахнет или должно пахнуть
+sh126	shapes	mood	1				Something that makes a sound	Что-то, что издаёт звук
+sh127	shapes	mood	1				Something warm	Что-то тёплое
+sh128	shapes	mood	1				Something cold	Что-то холодное
+sh129	shapes	mood	1				Something that moves	Что-то, что движется
+sh130	shapes	mood	1				Something that never moves	Что-то, что никогда не двигается
+sh131	shapes	mood	1				Something that is still being built	Что-то, что ещё строят
+sh132	shapes	mood	1				Something that is falling apart	Что-то, что разваливается
+sh133	shapes	mood	2				Something that has been here longer than you	Что-то, что здесь дольше, чем ты живёшь
+sh134	shapes	mood	1				Something somebody takes care of	Что-то, о чём кто-то заботится
+sh135	shapes	mood	1				Something nobody takes care of	Что-то, о чём никто не заботится
+sh136	shapes	mood	2				Something that looks like it belongs somewhere else	Что-то, что будто попало сюда из другого места

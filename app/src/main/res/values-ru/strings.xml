@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Внештатник</string>
+    <string name="back">Назад</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="share">Поделиться</string>
+    <string name="today">сегодня</string>
+    <string name="yesterday">вчера</string>
+    <plurals name="days_ago">
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+        <item quantity="other">%d дня назад</item>
+    </plurals>
+    <string name="no_camera">Не нашлось приложения камеры</string>
+    <string name="no_share">Не с чем поделиться</string>
+
+    <!-- The paper -->
+    <string name="paper_default">Районный вестник</string>
+    <string name="correspondent">Корреспондент</string>
+    <string name="desk">Стол корреспондента</string>
+    <string name="settings">Настройки</string>
+    <string name="newsroom">Редакция</string>
+
+    <!-- Rubrics -->
+    <string name="r_chronicle">Хроника</string>
+    <string name="r_fauna">Городская фауна</string>
+    <string name="r_weather">Погода и небо</string>
+    <string name="r_green">Зелень</string>
+    <string name="r_transport">Транспорт</string>
+    <string name="r_letters">Вывески и знаки</string>
+    <string name="r_self">Свой кадр</string>
+    <string name="r_texture">Фактуры</string>
+    <string name="r_finds">Находки</string>
+    <string name="r_shapes">Цвет и форма</string>
+    <string name="r_readers">Письма в редакцию</string>
+    <string name="r_ads">Объявления</string>
+
+    <!-- Weather -->
+    <string name="w_plain">Как обычно</string>
+    <string name="w_sun">Солнце</string>
+    <string name="w_rain">Дождь</string>
+    <string name="w_wet">После дождя</string>
+    <string name="w_snow">Снег</string>
+    <string name="w_frost">Мороз</string>
+    <string name="w_fog">Туман</string>
+    <string name="w_wind">Ветер</string>
+
+    <!-- Desk -->
+    <string name="going_out">Выходишь на улицу?</string>
+    <string name="going_out_sub">Попроси у редактора телеграмму. Одна обычная вещь по пути — дверь, голубь, лужа, — но с поворотом.</string>
+    <string name="weather_q">Что за окном?</string>
+    <string name="ask_telegram">Получить телеграмму</string>
+    <string name="first_hint">Никуда специально идти не нужно. Всё, что попросит редактор, есть на любой улице.</string>
+    <string name="in_hand">Телеграмма на руках</string>
+    <string name="flash_in_hand">Молния на руках</string>
+    <string name="in_hand_since">Пришла в %1$s</string>
+    <string name="flash">Молния</string>
+    <plurals name="flash_sunset">
+        <item quantity="one">Закат через %d минуту</item>
+        <item quantity="few">Закат через %d минуты</item>
+        <item quantity="many">Закат через %d минут</item>
+        <item quantity="other">Закат через %d минуты</item>
+    </plurals>
+    <string name="flash_after">Свет уходит</string>
+    <string name="flash_sub">Редакции нужен вечерний свет, пока он не ушёл. Один вечерний кадр, прямо сейчас.</string>
+    <string name="flash_take">Принять молнию</string>
+    <string name="this_issue">Эта неделя · Номер %1$d</string>
+    <string name="issue_empty">На этой неделе ещё ничего не сдано</string>
+    <string name="rubrics_of">%1$d из %2$d рубрик</string>
+    <plurals name="frames">
+        <item quantity="one">%d кадр</item>
+        <item quantity="few">%d кадра</item>
+        <item quantity="many">%d кадров</item>
+        <item quantity="other">%d кадра</item>
+    </plurals>
+    <plurals name="streak">
+        <item quantity="one">%d день подряд на улице</item>
+        <item quantity="few">%d дня подряд на улице</item>
+        <item quantity="many">%d дней подряд на улице</item>
+        <item quantity="other">%d дня подряд на улице</item>
+    </plurals>
+    <string name="letter">Письмо в редакцию</string>
+    <string name="letter_sub">Любой кадр, без телеграммы</string>
+    <string name="cases">Расследования</string>
+    <string name="cases_sub">Сдано кадров: %1$d · раскрыто: %2$d</string>
+    <string name="archive">Подшивка</string>
+    <plurals name="issues">
+        <item quantity="one">%d номер</item>
+        <item quantity="few">%d номера</item>
+        <item quantity="many">%d номеров</item>
+        <item quantity="other">%d номера</item>
+    </plurals>
+    <string name="press_card">Пресс-карта</string>
+
+    <!-- Telegram -->
+    <string name="telegram">Телеграмма</string>
+    <string name="stop">ТЧК</string>
+    <string name="tg_from">Откуда</string>
+    <string name="tg_from_v">Редакция, %1$s</string>
+    <string name="tg_to">Кому</string>
+    <string name="tg_to_v">Корр. %1$s</string>
+    <string name="tg_time">Подана</string>
+    <string name="tg_sign">Редактор</string>
+    <string name="or_fallback">Или %1$s</string>
+    <string name="or_any_frame">Или любой кадр по теме</string>
+    <string name="or_fallback_plain">Запасной вариант: %1$s.</string>
+    <string name="stamp_daily">Ежедневник</string>
+    <string name="shoot">Снять</string>
+    <string name="swap">Заменить</string>
+    <string name="put_away">Отложить</string>
+    <string name="tg_hint">Откроется камера телефона. Снимай сколько угодно попыток, в газету пойдёт одна. Если нужной вещи нет — засчитывается и «или».</string>
+    <string name="back_to_desk">К столу</string>
+
+    <!-- Proof -->
+    <string name="proof">Гранка</string>
+    <string name="as_printed">Как в газете</string>
+    <string name="as_shot">Как снято</string>
+    <string name="found_q">Нашлось?</string>
+    <string name="found_exact">Именно это</string>
+    <string name="found_or">Запасное «или»</string>
+    <string name="caption">Подпись</string>
+    <string name="caption_hint">Одна строка под снимком, как в газете. Без подписи в номер не берут.</string>
+    <string name="caption_task">Как в задании</string>
+    <string name="to_press">В номер</string>
+    <string name="retake">Переснять</string>
+    <string name="to_bin">В корзину</string>
+
+    <!-- Filed frame -->
+    <string name="stamp_set">В набор</string>
+    <string name="stamp_front">Первая полоса</string>
+    <string name="edit_caption">Изменить подпись</string>
+    <string name="task_line">Задание: %1$s</string>
+    <string name="task_or">Задание: %1$s (по «или»)</string>
+    <string name="open_issue">Открыть номер %1$d</string>
+    <string name="to_front">На первую полосу</string>
+    <string name="open_case">Открыть расследование</string>
+    <string name="bin_title">Выбросить кадр?</string>
+    <string name="bin_text">Он уйдёт из номера, а фотография будет удалена.</string>
+
+    <!-- Issue -->
+    <string name="issue_n">Номер %1$d</string>
+    <string name="issue_ear_n">№ %1$d</string>
+    <string name="issue_ear_price">Бесплатно · тираж 1</string>
+    <string name="issue_weekly">Еженедельник одной улицы и соседней</string>
+    <string name="issue_blank">Набор готов, снимков пока нет. Неделя ещё не кончилась.</string>
+    <string name="photo_by">Фото: %1$s</string>
+    <string name="weather_box">Погода недели</string>
+    <string name="issue_footer">Редактор и корреспондент: %1$s · %2$s · %3$s · Тираж 1 экз.</string>
+
+    <!-- Archive -->
+    <string name="archive_empty">Подшивка пуста. Первый номер выйдет с первым кадром.</string>
+    <string name="volume">%1$d · номеров: %2$d</string>
+
+    <!-- Investigations -->
+    <string name="cases_intro">Долгие задания на недели прогулок. Заполняй ячейки в любом порядке — когда попадётся.</string>
+    <string name="case_alphabet">Алфавит района</string>
+    <string name="case_alphabet_b">Все буквы — на вывесках, табличках и стенах.</string>
+    <string name="case_digits">Цифры 0–9</string>
+    <string name="case_digits_b">Номера домов, цены, автобусы: каждая цифра по разу.</string>
+    <string name="case_doors">Двенадцать дверей</string>
+    <string name="case_doors_b">Двенадцать разных дверей района.</string>
+    <string name="case_cats">Десять котов</string>
+    <string name="case_cats_b">Десять котов района, каждый — свой.</string>
+    <string name="case_progress">%1$d из %2$d</string>
+    <string name="case_hint">Попалось — нажми на пустую ячейку, откроется камера.</string>
+    <string name="case_done">Раскрыто! Спецвыпуск уходит в печать.</string>
+    <string name="solved">Раскрыто</string>
+
+    <!-- Press card -->
+    <string name="card_head">Пресса</string>
+    <string name="card_name">Имя</string>
+    <string name="card_rank">Звание</string>
+    <string name="card_since">В штате с</string>
+    <string name="card_no">Карта №</string>
+    <string name="card_stamp">Редакция</string>
+    <string name="card_progress">Послужной список</string>
+    <string name="card_stamps">По штампу за номер</string>
+    <string name="card_rubrics">По рубрикам</string>
+    <string name="stat_frames">кадров</string>
+    <string name="stat_issues">номеров</string>
+    <string name="stat_streak">дней подряд</string>
+    <string name="next_rank">До звания «%1$s» осталось кадров: %2$d</string>
+    <string name="rank_trainee">{Стажёр|Стажёрка}</string>
+    <string name="rank_stringer">{Внештатник|Внештатница}</string>
+    <string name="rank_reporter">Репортёр</string>
+    <string name="rank_photographer">Фотокор</string>
+    <string name="rank_columnist">{Обозреватель|Обозревательница}</string>
+    <string name="rank_chief">{Главный|Главная} по району</string>
+
+    <!-- Welcome and settings -->
+    <string name="welcome_tape">Районной газете нужен корреспондент. Обычные вещи, каждая прогулка</string>
+    <string name="welcome_title">Газета берёт тебя в штат</string>
+    <string name="welcome_1">Перед прогулкой попроси у редактора телеграмму: одна обычная вещь, но с поворотом.</string>
+    <string name="welcome_2">Сними её камерой телефона и подпиши одной строкой, как в газете.</string>
+    <string name="welcome_3">Кадры заполняют рубрики недели. По воскресеньям выходит новый номер.</string>
+    <string name="welcome_4">Расследования копятся неделями: алфавит района, его двери, его коты.</string>
+    <string name="welcome_go">Поступить в штат</string>
+    <string name="paper_name">Название газеты</string>
+    <string name="your_name">Подпись под снимками</string>
+    <string name="your_name_hint">Твоё имя (можно без него)</string>
+    <string name="address">Как к тебе обращается редактор</string>
+    <string name="address_m">Он</string>
+    <string name="address_f">Она</string>
+    <string name="paper_kind">Задания</string>
+    <string name="kind_weekly">Районная многотиражка</string>
+    <string name="kind_weekly_sub">Простые: дверь, лужа, голубь, тень.</string>
+    <string name="kind_daily">Столичный ежедневник</string>
+    <string name="kind_daily_sub">Те же обычные вещи, но иногда с хитрым поворотом.</string>
+    <string name="language">Язык</string>
+    <string name="lang_system">Системный</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Русский</string>
+    <string name="about">О приложении</string>
+    <string name="about_text">Каждый выход на улицу — задание. Редактор маленькой районной газеты присылает телеграмму: одна обычная вещь, но с поворотом. Сними, подпиши — и в воскресенье кадры недели выходят номером. 1271 задание: три года ежедневных прогулок без повторов.</string>
+    <string name="privacy">Всё остаётся на этом телефоне. Без аккаунта, без интернета, без рекламы.</string>
+
+    <!-- The editor's red pencil. -->
+    <string-array name="remark_first">
+        <item>Первый кадр. Добро пожаловать в штат.</item>
+        <item>В набор. С этого всё и начинается.</item>
+    </string-array>
+    <string-array name="remark_plain">
+        <item>Годится. В номер.</item>
+        <item>Хорошо. Ровно то, что просили.</item>
+        <item>Сойдёт. Следующий.</item>
+        <item>Чистый кадр. Утверждаю.</item>
+        <item>Читателям понравится.</item>
+        <item>Очень даже неплохо.</item>
+        <item>В номер, без правок.</item>
+        <item>Сам бы прошёл мимо. Хорошо.</item>
+    </string-array>
+    <string-array name="remark_fallback">
+        <item>«Или» засчитано. В номер.</item>
+        <item>Не совсем то, зато честно. В набор.</item>
+        <item>Ладно. В следующий раз — точь-в-точь.</item>
+    </string-array>
+    <string-array name="remark_quick">
+        <item>Быстро! Телеграмма едва ушла.</item>
+        <item>Оперативно. В набор.</item>
+        <item>Уже в следующий тираж.</item>
+    </string-array>
+    <string-array name="remark_late">
+        <item>Поздновато, но кадр хороший.</item>
+        <item>Не торопил{ся|ась}. И правильно.</item>
+    </string-array>
+    <string-array name="remark_night">
+        <item>Ночная смена? В набор.</item>
+        <item>Снимаешь по ночам? Утверждаю.</item>
+    </string-array>
+    <string-array name="remark_weather">
+        <item>В такую погоду? Уважаю. В набор.</item>
+        <item>Кадр сделала погода.</item>
+    </string-array>
+    <string-array name="remark_case">
+        <item>В папку. Дело движется.</item>
+        <item>Ещё одна улика в расследовании.</item>
+    </string-array>
+    <string-array name="remark_swap">
+        <item>Ладно, ладно. Держи другое.</item>
+        <item>Привередлив{ый|ая} сегодня. Ещё одно — и всё.</item>
+        <item>Хорошо. Но больше по этой телеграмме не меняю.</item>
+    </string-array>
+
+    <!-- Small ads for the gaps. -->
+    <string-array name="ads">
+        <item>ВАКСА «ЗЕРКАЛО». Блеск в любую погоду. Спрашивайте в киоске.</item>
+        <item>ПОТЕРЯН зонт, чёрный, с характером. Вознаграждение — доброе слово.</item>
+        <item>ПРОДАЮ велосипедный звонок, громкий. Хозяин переехал на тихую улицу.</item>
+        <item>МЕНЯЮ солнечное воскресенье на два серых вторника.</item>
+        <item>ПЕКАРНЯ на углу печёт в шесть. Идите на запах.</item>
+        <item>ГОЛУБИ района! Просьба не сидеть на памятнике.</item>
+        <item>РЕМОНТ ЧАСОВ. Время в стоимость не входит.</item>
+        <item>НАЙДЕНА на скамейке варежка, левая. Ждёт правую.</item>
+        <item>ИЗГОТОВЛЕНИЕ КЛЮЧЕЙ при вас. Двери не прилагаются.</item>
+        <item>БИБЛИОТЕКА открыта по четвергам. Верните книгу 2019 года.</item>
+        <item>ЯЩИКИ ДЛЯ ЦВЕТОВ. Герань, мнения, без гарантий.</item>
+        <item>ШАХМАТЫ в сквере по субботам в полдень. Ладью приносить свою.</item>
+    </string-array>
+</resources>

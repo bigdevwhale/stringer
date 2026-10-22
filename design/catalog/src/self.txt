@@ -1,0 +1,75 @@
+# Свой кадр — the correspondent: shoes, hands, shadow, pockets, the way
+shoes|1||||Your shoes|Твои ботинки
+shoes|1||||Your shoes and what they stand on|Твои ботинки и то, на чём они стоят
+shoes|1||||Your shoes on a line or a stripe|Твои ботинки на линии или полоске
+shoes|1||||Your shoes on grass|Твои ботинки на траве
+shoes|1||||Your shoes on a manhole cover|Твои ботинки на люке
+shoes|1||||Your shoes on a step|Твои ботинки на ступеньке
+shoes|2||||Your shoes in a patch of sunlight|Твои ботинки в солнечном пятне
+shoes|1|au|||Your shoes in fallen leaves|Твои ботинки в опавших листьях
+shoes|1|w|snow||Your shoes in snow|Твои ботинки в снегу
+shoes|1||wet||Your shoes next to a puddle|Твои ботинки рядом с лужей
+shoes|1||||Your shoes on something painted|Твои ботинки на чём-то нарисованном
+shoes|2||||Your shoes at the farthest point of the walk|Твои ботинки в самой дальней точке прогулки
+shoes|1||||Your shoes on a crossing|Твои ботинки на зебре
+shoes|1||||Your shoes on the threshold, back home|Твои ботинки на пороге, уже дома
+hand|1||||Your hand touching something rough|Твоя рука на чём-то шершавом
+hand|1||||Your hand touching something smooth|Твоя рука на чём-то гладком
+hand|1||||Your hand touching a tree|Твоя рука на дереве
+hand|1||||Your hand next to a leaf|Твоя рука рядом с листом
+hand|1||||Something small in your palm|Что-то маленькое на ладони
+hand|2||||Your hand pointing at something worth seeing|Твоя рука указывает на что-то интересное
+hand|1||||Your hand on a railing|Твоя рука на перилах
+hand|1|w|||Your glove or mitten|Твоя перчатка или варежка
+hand|1|w|snow||Snow in your palm|Снег на ладони
+hand|1||rain||Rain in your palm|Дождь на ладони
+hand|2||||Your hand framing something with your fingers|Твои пальцы как рамка вокруг чего-то
+hand|1||||Your hand holding a door|Твоя рука держит дверь
+myshadow|1||sun||Your shadow|Твоя тень
+myshadow|1||sun||Your shadow on a wall|Твоя тень на стене
+myshadow|1||sun||Your shadow on grass|Твоя тень на траве
+myshadow|2||sun||Your shadow touching another shadow|Твоя тень касается другой тени
+myshadow|2||sun||Your shadow doing something silly|Твоя тень делает что-то смешное
+myshadow|1||sun||Your shadow on stairs|Твоя тень на ступеньках
+myshadow|1||sun||Your shadow, long|Твоя длинная тень
+myshadow|1||sun||Your shadow, short|Твоя короткая тень
+myshadow|1|||dark|Your shadow under a lamp|Твоя тень под фонарём
+myshadow|2||sun||Your shadow wearing a tree as a hat|Твоя тень в кроне дерева, как в шляпе
+pocket|1||||What's in your pocket right now|Что сейчас у тебя в кармане
+pocket|1||||Your keys|Твои ключи
+pocket|1||||Your bag or backpack, open|Твоя сумка или рюкзак, раскрытые
+pocket|1||||The thing you are carrying home|То, что ты несёшь домой
+pocket|1||||Your sleeve and the weather on it|Твой рукав и погода на нём
+pocket|1||||A receipt from today|Чек за сегодня
+pocket|1||||Something you bought on the way|Что-то, купленное по дороге
+pocket|1||||Your cup of coffee or tea outside|Твой кофе или чай на улице
+pocket|1||||Your snack on the go|Твой перекус на ходу
+pocket|1||||Your scarf, hat or hood|Твой шарф, шапка или капюшон
+way|1||||The first thing you see when you step outside|Первое, что видно за порогом
+way|1||||The view from your doorstep|Вид с твоего порога
+way|1||||Where you are going, from where you are|Куда идёшь — оттуда, где стоишь
+way|1||||The way back home|Путь обратно домой
+way|1||||The farthest point of your walk|Самая дальняя точка прогулки
+way|1||||The place you stopped for a moment|Место, где ты на минуту {остановился|остановилась}
+way|2||||A turn you have never taken|Поворот, куда ты ни разу не {сворачивал|сворачивала}
+way|1||||A path you take every day|Дорожка, по которой ходишь каждый день
+way|2||||Your everyday route from a new side|Твой привычный путь с непривычной стороны
+way|1||||A shortcut|Короткая дорога
+way|1||||A place where you have to wait|Место, где приходится ждать
+way|1||||Your favourite place on this walk|Твоё любимое место на этой прогулке
+way|1||||The place where you usually meet someone|Место, где ты обычно с кем-то встречаешься
+way|2||||Something you have walked past a hundred times and never seen|То, мимо чего ходишь сто раз и ни разу не {заметил|заметила}
+way|1||||The view behind you|Вид за спиной
+way|1||||The view to your left right now|Вид слева прямо сейчас
+way|1||||The view to your right right now|Вид справа прямо сейчас
+way|1||||Straight up, wherever you are|Прямо вверх, где бы ты ни {был|была}
+way|1||||Straight down, wherever you are|Прямо вниз, где бы ты ни {был|была}
+way|1||||The last thing before your front door|Последнее перед дверью домой
+way|1||||A sound you heard, shown with a photo|Звук, который ты {услышал|услышала}, — фотографией
+way|1||||A smell you noticed, shown with a photo|Запах, который ты {почувствовал|почувствовала}, — фотографией
+way|2||||The most peaceful corner on your walk|Самый тихий уголок прогулки
+way|1||||Something that made you smile|Что-то, от чего ты {улыбнулся|улыбнулась}
+way|1||||Something you would show a friend|Что-то, что ты {показал|показала} бы другу
+way|2||||Something that wasn't here yesterday|Что-то, чего вчера здесь не было
+way|1||||Something that will be gone tomorrow|Что-то, чего завтра здесь уже не будет
+way|1||||A bench you would sit on|Скамейка, на которую ты бы {присел|присела}

@@ -1,0 +1,124 @@
+# Городская фауна — birds, cats, dogs, small creatures. Never people's faces.
+pigeon|1||||A pigeon|Голубь
+pigeon|1||||A pigeon from its own height|Голубь с высоты голубя
+pigeon|1||||Three pigeons together|Три голубя вместе
+pigeon|2||||A pigeon in flight|Голубь в полёте
+pigeon|1||||A pigeon on a roof or a ledge|Голубь на крыше или карнизе
+pigeon|1||||A pigeon on a wire|Голубь на проводе
+pigeon|2||||The feathers on a pigeon's neck, as close as it allows|Перья на шее голубя, насколько подпустит
+pigeon|1||||A pigeon walking|Идущий голубь
+pigeon|2||||A pigeon that is not grey|Голубь не серого цвета
+pigeon|1||||Pigeons eating|Голуби едят
+pigeon|1||rain||A pigeon in the rain|Голубь под дождём
+pigeon|1|w|||A puffed-up pigeon in the cold|Нахохлившийся от холода голубь
+pigeon|2||||A pigeon's footprints or a pigeon's shadow|Следы голубя или его тень
+sparrow|1||||A sparrow|Воробей
+sparrow|1||||Sparrows in a bush|Воробьи в кусте
+sparrow|2||||A sparrow bathing in dust or a puddle|Воробей купается в пыли или луже
+sparrow|1||||A sparrow on a fence|Воробей на заборе
+sparrow|2||||A sparrow with something in its beak|Воробей с чем-то в клюве
+sparrow|1|w|||A round winter sparrow|Круглый зимний воробей
+sparrow|1||||A flock of small birds|Стайка мелких птиц
+crow|1||||A crow|Ворона
+crow|1||||A crow on a branch|Ворона на ветке
+crow|1||||A crow on the ground|Ворона на земле
+crow|2||||A crow looking at you|Ворона смотрит на тебя
+crow|2||||A crow with something it found|Ворона с находкой
+crow|1||||A crow on a lamp post|Ворона на фонаре
+crow|1||||A black bird against the sky|Чёрная птица на фоне неба
+crow|1|w|snow||A crow on snow|Ворона на снегу
+crow|1||||A magpie or a jackdaw|Сорока или галка
+crow|2||||A big bird and a small bird in one frame|Большая и маленькая птица в одном кадре
+bird|1||||Any bird|Любая птица
+bird|1||||A bird on a wire|Птица на проводе
+bird|1||||Birds on wires, as many as you can|Птицы на проводах, сколько поместится
+bird|2||||A bird high in the sky|Птица высоко в небе
+bird|1||||A tit or any yellow bird|Синица или любая жёлтая птица
+bird|1||||A bird feeder|Кормушка
+bird|2||||A bird at a feeder|Птица у кормушки
+bird|1||||A birdhouse|Скворечник
+bird|1||||A nest|Гнездо
+bird|2||||A bird half-hidden in leaves|Птица, наполовину спрятанная в листве
+bird|1||||A bird drinking|Пьющая птица
+bird|1||||The tallest place a bird is sitting|Самое высокое место, где сидит птица
+bird|1||||A flock flying over|Пролетающая стая
+bird|1|sp au|||Birds flying south or coming back|Птицы, которые улетают или вернулись
+bird|1||||A duck|Утка
+bird|1||||A gull|Чайка
+bird|2||||A bird mid-landing|Птица, которая садится
+bird|1||||Breadcrumbs and whoever came for them|Крошки и те, кто за ними пришёл
+cat|1||||A cat|Кот
+cat|1||||A cat in a window|Кот в окне
+cat|1||||A sleeping cat|Спящий кот
+cat|1||||A cat on a car|Кот на машине
+cat|1||||A cat sitting in a doorway|Кот в дверном проёме
+cat|2||||A cat looking straight at you|Кот смотрит прямо на тебя
+cat|1||||A cat from behind|Кот со спины
+cat|1||||A cat's tail|Хвост кота
+cat|2||||Only a cat's eyes or ears|Только глаза или уши кота
+cat|1||||A ginger cat|Рыжий кот
+cat|1||||A black cat|Чёрный кот
+cat|1||||A striped cat|Полосатый кот
+cat|1||||A white or a spotted cat|Белый или пятнистый кот
+cat|1||||A cat in the sun|Кот на солнце
+cat|1||||A cat under a car|Кот под машиной
+cat|1||||A cat on a fence or a wall|Кот на заборе или стене
+cat|2||||Two cats in one frame|Два кота в одном кадре
+cat|1||||A cat bowl outside|Кошачья миска на улице
+cat|1||||A cat walking away|Уходящий кот
+cat|2||||A cat that pretends not to see you|Кот, который делает вид, что тебя нет
+cat|1||||Cat footprints|Кошачьи следы
+cat|1||||A cat on a balcony|Кот на балконе
+cat|1||||A cat washing itself|Кот умывается
+dog|1||||A dog|Собака
+dog|1||||A dog on a lead|Собака на поводке
+dog|1||||A dog's nose|Собачий нос
+dog|1||||A dog lying down|Лежащая собака
+dog|2||||A dog waiting for someone|Собака, которая кого-то ждёт
+dog|1||||A small dog|Маленькая собака
+dog|1||||A big dog|Большая собака
+dog|1||||A dog from behind, tail and all|Собака сзади, с хвостом
+dog|2||||A dog and its owner's shoes|Собака и ботинки хозяина
+dog|1||||A dog in clothes|Собака в одёжке
+dog|1||||A dog sniffing something|Собака что-то нюхает
+dog|1||||A dog running|Бегущая собака
+dog|1||||A dog behind a fence|Собака за забором
+dog|1||||A dog-walking sign or a dog bin|Табличка для собачников или собачья урна
+dog|1||||Paw prints|Следы лап
+dog|1|w|snow||A dog in the snow|Собака в снегу
+dog|2||||Two dogs meeting|Две собаки знакомятся
+dog|1||||A dog in a car window|Собака в окне машины
+dog|1||||A dog's ears|Собачьи уши
+dog|1||||A dog with a stick or a toy|Собака с палкой или игрушкой
+bug|1|sp su au|||Any insect|Любое насекомое
+bug|1|sp su|||A butterfly|Бабочка
+bug|1|sp su|||A bee or a bumblebee|Пчела или шмель
+bug|2|sp su|||An insect on a flower|Насекомое на цветке
+bug|1|sp su au|||An ant|Муравей
+bug|1|sp su|||Ants on a path|Муравьи на тропинке
+bug|1|sp su|||A ladybird|Божья коровка
+bug|1|sp su|||A beetle|Жук
+bug|1|sp su au|||A fly sitting somewhere sunny|Муха на солнце
+bug|1|sp su au|||A spider|Паук
+bug|1|su au|||A spider's web|Паутина
+bug|1|au|fog||A web with dew on it|Паутина в росе
+bug|1|sp su au|rain||A snail or a slug|Улитка или слизень
+bug|1|sp su au|rain||An earthworm on the path|Дождевой червь на дорожке
+bug|1|sp su|||A dragonfly or a mosquito|Стрекоза или комар
+bug|1|su|||Moths around a lamp|Мотыльки у фонаря
+bug|2|sp su|||A caterpillar|Гусеница
+bug|1|sp su au|||A leaf someone has been eating|Лист, который кто-то ел
+bug|2|sp su|||An anthill|Муравейник
+animal|1||||A squirrel|Белка
+animal|1||||Any animal that is not a cat, dog or bird|Любое животное, кроме кота, собаки и птицы
+animal|1||||An animal drawn or painted somewhere|Нарисованное где-то животное
+animal|1||||An animal figure: statue, toy or sign|Фигура животного: статуя, игрушка или вывеска
+animal|1||||An animal on a sign or an ad|Животное на вывеске или рекламе
+animal|1||||Somebody's footprints in mud or sand|Чьи-то следы в грязи или песке
+animal|2||||Proof that an animal lives here|Доказательство, что здесь кто-то живёт
+animal|1||||A bird's feather|Птичье перо
+animal|1||||Fish in a pond or ducks on water|Рыбы в пруду или утки на воде
+animal|2||||Any animal, and its shadow|Любое животное и его тень
+animal|1||||A cat or a dog toy left outside|Игрушка для кошки или собаки на улице
+animal|1||||A pet waiting outside a shop|Питомец ждёт у магазина
+animal|2||||An animal shaped like something else|Животное, похожее на что-то другое

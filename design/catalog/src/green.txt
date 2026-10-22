@@ -1,0 +1,161 @@
+# Зелень — trees, leaves, grass, flowers, moss, berries
+tree|1||||The nearest tree|Ближайшее дерево
+tree|1||||A tree from its roots up|Дерево от корней вверх
+tree|2||||A tree from right underneath, looking up the trunk|Дерево снизу, вдоль ствола
+tree|1||||The tallest tree on your way|Самое высокое дерево по пути
+tree|1||||The thickest trunk on your way|Самый толстый ствол по пути
+tree|1||||A young thin tree|Молодое тонкое деревце
+tree|1||||A tree with a bent trunk|Дерево с кривым стволом
+tree|1||||Two trees growing close together|Два дерева, растущих вплотную
+tree|1||||A tree standing alone|Дерево, стоящее в одиночку
+tree|1||||A row of trees|Ряд деревьев
+tree|2||||A tree that has grown around something|Дерево, обросшее что-то
+tree|1||||A birch|Берёза
+tree|1||||A fir or a pine|Ель или сосна
+tree|1||||A tree with a whitewashed trunk|Дерево с побелённым стволом
+tree|1||||A tree with something tied or nailed to it|Дерево, к которому что-то привязано или прибито
+tree|1||||Tree roots coming out of the ground|Корни, вылезшие из земли
+tree|2||||Roots that cracked the asphalt|Корни, которые проломили асфальт
+tree|1||||Tree bark, close|Кора крупно
+tree|2||||Bark of two different trees side by side|Кора двух разных деревьев рядом
+tree|1||||A hollow or a knot in a tree|Дупло или сучок
+tree|1||||A stump|Пень
+tree|2||||The rings on a stump|Кольца на пне
+tree|1||||A fallen or a cut branch|Упавшая или спиленная ветка
+tree|1||||A treetop against the sky|Верхушка дерева на фоне неба
+tree|1||||A tree reflected in something|Дерево в отражении
+tree|1||||A tree in front of a building|Дерево перед домом
+tree|2||||A tree hiding a window|Дерево, закрывающее окно
+tree|1||||A tree with a bench or a fence around it|Дерево со скамейкой или оградкой вокруг
+tree|1|w|||A bare tree|Голое дерево
+tree|2|w|||Bare branches like a drawing|Голые ветки, как рисунок
+tree|1|w|snow||A tree in snow|Дерево в снегу
+tree|1|sp|||A tree just starting to turn green|Дерево, которое только начинает зеленеть
+tree|1|sp|||A tree in blossom|Цветущее дерево
+tree|2|sp|||Blossom petals on the ground|Лепестки на земле
+tree|1|su|||The greenest tree|Самое зелёное дерево
+tree|1|su|||A tree giving the deepest shade|Дерево с самой густой тенью
+tree|1|au|||A tree that has turned yellow|Пожелтевшее дерево
+tree|1|au|||A tree that is half green, half yellow|Дерево наполовину зелёное, наполовину жёлтое
+tree|1|au|||A red-leafed tree|Дерево с красными листьями
+tree|1|au|||A tree that has almost lost its leaves|Дерево, почти сбросившее листья
+tree|1|||dark|A tree lit by a street lamp|Дерево в свете фонаря
+tree|1||wind||A tree in the wind|Дерево на ветру
+branch|1||||A branch|Ветка
+branch|1||||A branch against the sky|Ветка на фоне неба
+branch|2||||A branch that crosses another|Ветка, перекрещивающая другую
+branch|1||||A branch hanging over a path|Ветка, нависшая над дорожкой
+branch|1||||A branch with a bird on it|Ветка с птицей
+branch|1|sp|||Buds on a branch|Почки на ветке
+branch|2|sp|||A bud opening|Раскрывающаяся почка
+branch|1|w|||A branch with snow along it|Ветка с полоской снега
+branch|1|w|||An icy branch|Обледеневшая ветка
+branch|1||||A branch someone has broken|Кем-то сломанная ветка
+leaf|1||||A leaf|Лист
+leaf|1||||The biggest leaf you can find|Самый большой лист, какой найдёшь
+leaf|1||||The smallest leaf you can find|Самый маленький лист, какой найдёшь
+leaf|2||||A leaf with the light behind it|Лист на просвет
+leaf|1||||A leaf on your palm|Лист на ладони
+leaf|2||||The veins of a leaf, close|Прожилки листа крупно
+leaf|1||||A leaf with a hole in it|Лист с дыркой
+leaf|1||||Two leaves of different shapes|Два листа разной формы
+leaf|1||||A heart-shaped leaf|Лист в форме сердца
+leaf|1|sp|||A brand-new leaf|Совсем новый лист
+leaf|1|su|||The greenest leaf of the day|Самый зелёный лист за день
+leaf|1|au|||A yellow leaf|Жёлтый лист
+leaf|1|au|||A red leaf|Красный лист
+leaf|1|au|||A leaf with three colours on it|Лист трёх цветов сразу
+leaf|1|au|||A leaf on a car|Лист на машине
+leaf|1|au|||A leaf on a bench or a step|Лист на скамейке или ступеньке
+leaf|1|au|||Fallen leaves, a whole carpet|Опавшие листья, целый ковёр
+leaf|1|au|||A pile of raked leaves|Куча сгребённых листьев
+leaf|2|au|||A leaf falling|Падающий лист
+leaf|1|au|||The last leaf on a branch|Последний лист на ветке
+leaf|1|au|||A leaf stuck to the asphalt|Лист, прилипший к асфальту
+leaf|2|au|||A leaf on water|Лист на воде
+leaf|1|au w|||A brown dry leaf|Сухой коричневый лист
+leaf|1|w|snow||A leaf on snow|Лист на снегу
+leaf|1||||A maple leaf|Кленовый лист
+leaf|1||||A leaf in a crack or a corner|Лист в трещине или углу
+grass|1|sp su au|||Grass|Трава
+grass|1|sp su au|||Grass from ground level|Трава с уровня земли
+grass|1|sp su au|||Grass growing between paving stones|Трава между плитками
+grass|2|sp su au|||One blade of grass, alone|Одна травинка отдельно
+grass|1|sp su au|||Grass by a wall|Трава у стены
+grass|1|sp su|||Freshly mown grass|Только что скошенная трава
+grass|1|sp su au|||A lawn with a path across it|Газон с тропинкой поперёк
+grass|1|su|||Tall grass|Высокая трава
+grass|1|su au|||Dry yellow grass|Сухая жёлтая трава
+grass|1|sp|||The first green grass|Первая зелёная трава
+grass|1|sp su au|wet||Drops on grass|Капли на траве
+grass|2|sp su au|||Grass growing somewhere it shouldn't|Трава, растущая там, где не положено
+grass|1|sp su au|||Clover|Клевер
+grass|1|sp su au|||A plantain leaf|Подорожник
+grass|1|sp su|||A nettle|Крапива
+grass|1|sp su au|||A weed taller than the others|Сорняк выше остальных
+flower|1|sp su au|||A flower|Цветок
+flower|1|sp su|||A dandelion|Одуванчик
+flower|1|sp su|||A dandelion clock|Пушистый одуванчик
+flower|2|sp su|||A dandelion growing through asphalt|Одуванчик сквозь асфальт
+flower|1|sp su au|||A flower bed|Клумба
+flower|1|sp su au|||A flower growing in a crack|Цветок в трещине
+flower|1|sp su au|||A white flower|Белый цветок
+flower|1|sp su au|||A yellow flower|Жёлтый цветок
+flower|1|sp su au|||A purple or blue flower|Фиолетовый или синий цветок
+flower|1|sp su au|||A red flower|Красный цветок
+flower|2|sp su au|||A flower from below, against the sky|Цветок снизу, на фоне неба
+flower|2|sp su au|||The centre of a flower, close|Серединка цветка крупно
+flower|1|sp su au|||The smallest flower you can find|Самый маленький цветок, какой найдёшь
+flower|1|sp su au|||Flowers in a pot outside|Цветы в горшке на улице
+flower|1|sp su au|||Flowers in a window box|Цветы в балконном ящике
+flower|1|sp su|||A flowering bush|Цветущий куст
+flower|1|sp|||The first spring flower|Первый весенний цветок
+flower|1|sp|||Tulips|Тюльпаны
+flower|1|su|||A rose|Роза
+flower|1|su au|||Flowers in someone's front garden|Цветы в палисаднике
+flower|1|su|||Wildflowers|Полевые цветы
+flower|1|su|||Clover flowers|Цветущий клевер
+flower|1|au|||The last flower of the year|Последний цветок в году
+flower|1|sp su au|||A flower with an insect on it|Цветок с насекомым
+flower|1||||Flowers painted, printed or plastic|Нарисованные, напечатанные или пластиковые цветы
+flower|1||||A flower shop or flowers on sale|Цветочный магазин или цветы на продажу
+flower|2|sp su au|||A flower and its shadow|Цветок и его тень
+flower|1|sp su au|||A flower that is wilting|Увядающий цветок
+bush|1||||A bush|Куст
+bush|1||||A trimmed hedge|Подстриженная живая изгородь
+bush|1||||A bush with berries|Куст с ягодами
+bush|2||||Something hidden in a bush|Что-то, спрятанное в кусте
+bush|1|w|snow||A bush under snow|Куст под снегом
+bush|1|au|||A bush that turned red|Покрасневший куст
+bush|1|sp su|||A bush covered in blossom|Куст, весь в цветах
+moss|1||||Moss|Мох
+moss|1||||Moss on a wall or a step|Мох на стене или ступеньке
+moss|2||||Moss, as close as your camera allows|Мох так близко, как позволит камера
+moss|1||||Lichen on bark or stone|Лишайник на коре или камне
+moss|1||||Something green growing on something old|Что-то зелёное, растущее на чём-то старом
+moss|1||||A plant growing out of a wall|Растение, растущее из стены
+moss|1||||A plant growing on a roof or a ledge|Растение на крыше или карнизе
+berry|1|su au|||Berries on a branch|Ягоды на ветке
+berry|1|au w|||Rowan berries|Рябина
+berry|1|w|snow||Red berries on snow|Красные ягоды на снегу
+berry|1|au|||Apples on a tree or on the ground|Яблоки на дереве или на земле
+berry|1|au|||A chestnut or an acorn|Каштан или жёлудь
+berry|1|au w|||A cone|Шишка
+berry|1|su au|||Seeds blowing or lying around|Разлетевшиеся семена
+berry|1|su|||Poplar fluff|Тополиный пух
+berry|2|au|||Something a tree dropped today|Что-то, что дерево уронило сегодня
+berry|1|sp su au|||Rosehips or any wild fruit|Шиповник или любой дикий плод
+plant|1||||A potted plant left outside|Горшок с растением на улице
+plant|1||||A plant in a strange container|Растение в странной посудине
+plant|1||||A vegetable patch or a little garden|Огородик или маленький сад
+plant|1||||Ivy or a creeper climbing something|Плющ или вьюн, который куда-то лезет
+plant|1||||A plant in a shop window|Растение в витрине
+plant|1||||A plant on a windowsill, seen from outside|Растение на подоконнике, снаружи
+plant|2||||A plant taller than a person|Растение выше человека
+plant|1||||Leaves of three different greens|Листья трёх разных оттенков зелёного
+plant|2||||Green in a place that is all grey|Зелень посреди сплошного серого
+plant|1|sp su au|||A park lawn|Газон в парке
+plant|1|sp su au|||A tree trunk with grass at its foot|Ствол дерева и трава у подножия
+plant|1|w|||Anything green in winter|Что угодно зелёное зимой
+plant|1|sp su au|||A thistle or a burdock|Чертополох или репейник
+plant|1|au w|||Dry stems sticking out|Торчащие сухие стебли

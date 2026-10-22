@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The phone's camera writes a frame into photos/; a shared issue page is saved to the cache. -->
+<paths>
+    <files-path name="photos" path="photos/" />
+    <cache-path name="issues" path="issues/" />
+</paths>

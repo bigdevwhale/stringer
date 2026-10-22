@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stringer</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+    <plurals name="days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <string name="no_camera">No camera app found</string>
+    <string name="no_share">Nothing to share it with</string>
+
+    <!-- The paper -->
+    <string name="paper_default">The District Courier</string>
+    <string name="correspondent">Correspondent</string>
+    <string name="desk">Correspondent\'s desk</string>
+    <string name="settings">Settings</string>
+    <string name="newsroom">The newsroom</string>
+
+    <!-- Rubrics -->
+    <string name="r_chronicle">Chronicle</string>
+    <string name="r_fauna">City fauna</string>
+    <string name="r_weather">Weather &amp; sky</string>
+    <string name="r_green">Greenery</string>
+    <string name="r_transport">On the move</string>
+    <string name="r_letters">Signs &amp; letters</string>
+    <string name="r_self">Correspondent\'s own</string>
+    <string name="r_texture">Textures</string>
+    <string name="r_finds">Finds</string>
+    <string name="r_shapes">Colour &amp; shape</string>
+    <string name="r_readers">Letters to the editor</string>
+    <string name="r_ads">Small ads</string>
+
+    <!-- Weather -->
+    <string name="w_plain">As usual</string>
+    <string name="w_sun">Sunny</string>
+    <string name="w_rain">Raining</string>
+    <string name="w_wet">After rain</string>
+    <string name="w_snow">Snowing</string>
+    <string name="w_frost">Frost</string>
+    <string name="w_fog">Fog</string>
+    <string name="w_wind">Windy</string>
+
+    <!-- Desk -->
+    <string name="going_out">Going out?</string>
+    <string name="going_out_sub">Ask the editor for a telegram. One ordinary thing to shoot on the way: a door, a pigeon, a puddle, with a twist.</string>
+    <string name="weather_q">What\'s it like outside?</string>
+    <string name="ask_telegram">Ask for a telegram</string>
+    <string name="first_hint">No need to go anywhere special. Everything the editor asks for is on any street.</string>
+    <string name="in_hand">Telegram in hand</string>
+    <string name="flash_in_hand">Flash in hand</string>
+    <string name="in_hand_since">Came at %1$s</string>
+    <string name="flash">Flash</string>
+    <plurals name="flash_sunset">
+        <item quantity="one">Sunset in %d minute</item>
+        <item quantity="other">Sunset in %d minutes</item>
+    </plurals>
+    <string name="flash_after">The light is going</string>
+    <string name="flash_sub">The editor wants the evening light before it\'s gone. One evening frame, now.</string>
+    <string name="flash_take">Take the flash</string>
+    <string name="this_issue">This week · Issue № %1$d</string>
+    <string name="issue_empty">Nothing filed yet this week</string>
+    <string name="rubrics_of">%1$d of %2$d rubrics</string>
+    <plurals name="frames">
+        <item quantity="one">%d frame</item>
+        <item quantity="other">%d frames</item>
+    </plurals>
+    <plurals name="streak">
+        <item quantity="one">%d day in a row on the street</item>
+        <item quantity="other">%d days in a row on the street</item>
+    </plurals>
+    <string name="letter">Letter to the editor</string>
+    <string name="letter_sub">Any frame, no telegram needed</string>
+    <string name="cases">Investigations</string>
+    <string name="cases_sub">%1$d frames filed · %2$d solved</string>
+    <string name="archive">Bound volume</string>
+    <plurals name="issues">
+        <item quantity="one">%d issue</item>
+        <item quantity="other">%d issues</item>
+    </plurals>
+    <string name="press_card">Press card</string>
+
+    <!-- Telegram -->
+    <string name="telegram">Telegram</string>
+    <string name="stop">STOP</string>
+    <string name="tg_from">From</string>
+    <string name="tg_from_v">Editor, %1$s</string>
+    <string name="tg_to">To</string>
+    <string name="tg_to_v">Corr. %1$s</string>
+    <string name="tg_time">Sent</string>
+    <string name="tg_sign">Editor</string>
+    <string name="or_fallback">Or %1$s</string>
+    <string name="or_any_frame">Or any frame on the theme</string>
+    <string name="or_fallback_plain">The fallback: %1$s.</string>
+    <string name="stamp_daily">Daily</string>
+    <string name="shoot">Shoot it</string>
+    <string name="swap">Another one</string>
+    <string name="put_away">Put away</string>
+    <string name="tg_hint">The phone\'s own camera opens. Take as many tries as you like, then pick one for the paper. If the exact thing isn\'t there, the «or» counts too.</string>
+    <string name="back_to_desk">Back to the desk</string>
+
+    <!-- Proof -->
+    <string name="proof">Proof</string>
+    <string name="as_printed">As printed</string>
+    <string name="as_shot">As shot</string>
+    <string name="found_q">Found it?</string>
+    <string name="found_exact">Exactly that</string>
+    <string name="found_or">The «or»</string>
+    <string name="caption">Caption</string>
+    <string name="caption_hint">One line under the frame, as in a paper. No caption, no print.</string>
+    <string name="caption_task">As the task</string>
+    <string name="to_press">To press</string>
+    <string name="retake">Shoot again</string>
+    <string name="to_bin">Bin it</string>
+
+    <!-- Filed frame -->
+    <string name="stamp_set">Set</string>
+    <string name="stamp_front">Front page</string>
+    <string name="edit_caption">Edit caption</string>
+    <string name="task_line">Assignment: %1$s</string>
+    <string name="task_or">Assignment: %1$s (the «or»)</string>
+    <string name="open_issue">Open issue № %1$d</string>
+    <string name="to_front">Put on the front page</string>
+    <string name="open_case">Open the investigation</string>
+    <string name="bin_title">Bin this frame?</string>
+    <string name="bin_text">It leaves the issue and its photo is deleted.</string>
+
+    <!-- Issue -->
+    <string name="issue_n">Issue № %1$d</string>
+    <string name="issue_ear_n">No. %1$d</string>
+    <string name="issue_ear_price">Free · 1 copy</string>
+    <string name="issue_weekly">A weekly of one street and the next</string>
+    <string name="issue_blank">The type is set, the frames are missing. The week isn\'t over yet.</string>
+    <string name="photo_by">Photo: %1$s</string>
+    <string name="weather_box">Weather of the week</string>
+    <string name="issue_footer">Editor and correspondent: %1$s · %2$s · %3$s · Print run: 1 copy</string>
+
+    <!-- Archive -->
+    <string name="archive_empty">The bound volume is empty. The first issue comes out with the first frame.</string>
+    <string name="volume">%1$d · %2$d issues</string>
+
+    <!-- Investigations -->
+    <string name="cases_intro">Long assignments for weeks of walks. Fill the slots in any order, whenever you happen to see one.</string>
+    <string name="case_alphabet">The district alphabet</string>
+    <string name="case_alphabet_b">Every letter, on signs, plates and walls.</string>
+    <string name="case_digits">Digits 0–9</string>
+    <string name="case_digits_b">House numbers, prices, buses: every digit once.</string>
+    <string name="case_doors">Twelve doors</string>
+    <string name="case_doors_b">Twelve different doors of the district.</string>
+    <string name="case_cats">Ten cats</string>
+    <string name="case_cats_b">Ten cats of the district, each its own.</string>
+    <string name="case_progress">%1$d of %2$d</string>
+    <string name="case_hint">Tap an empty slot when you see one: the camera opens.</string>
+    <string name="case_done">Solved! Special edition goes to press.</string>
+    <string name="solved">Solved</string>
+
+    <!-- Press card -->
+    <string name="card_head">Press</string>
+    <string name="card_name">Name</string>
+    <string name="card_rank">Rank</string>
+    <string name="card_since">On staff</string>
+    <string name="card_no">Card №</string>
+    <string name="card_stamp">Editor</string>
+    <string name="card_progress">Service record</string>
+    <string name="card_stamps">One stamp per issue</string>
+    <string name="card_rubrics">By rubric</string>
+    <string name="stat_frames">frames</string>
+    <string name="stat_issues">issues</string>
+    <string name="stat_streak">days in a row</string>
+    <string name="next_rank">%1$s in %2$d frames</string>
+    <string name="rank_trainee">Trainee</string>
+    <string name="rank_stringer">Stringer</string>
+    <string name="rank_reporter">Reporter</string>
+    <string name="rank_photographer">Staff photographer</string>
+    <string name="rank_columnist">Columnist</string>
+    <string name="rank_chief">Chief of the district</string>
+
+    <!-- Welcome and settings -->
+    <string name="welcome_tape">The district paper needs a correspondent. Ordinary things, every walk</string>
+    <string name="welcome_title">The paper takes you on</string>
+    <string name="welcome_1">Before a walk, ask the editor for a telegram: one ordinary thing to shoot, with a twist.</string>
+    <string name="welcome_2">Shoot it with the phone\'s camera and write one line under it, as in a paper.</string>
+    <string name="welcome_3">The frames fill the week\'s rubrics. Every Sunday a new issue comes out.</string>
+    <string name="welcome_4">Longer investigations fill up over weeks: the district\'s alphabet, its doors, its cats.</string>
+    <string name="welcome_go">Join the staff</string>
+    <string name="paper_name">The paper\'s name</string>
+    <string name="your_name">Your byline</string>
+    <string name="your_name_hint">Your name (optional)</string>
+    <string name="address">How the editor writes to you</string>
+    <string name="address_m">He</string>
+    <string name="address_f">She</string>
+    <string name="paper_kind">Assignments</string>
+    <string name="kind_weekly">District weekly</string>
+    <string name="kind_weekly_sub">Plain ones: a door, a puddle, a pigeon, a shadow.</string>
+    <string name="kind_daily">Big-city daily</string>
+    <string name="kind_daily_sub">The same ordinary things, with trickier twists mixed in.</string>
+    <string name="language">Language</string>
+    <string name="lang_system">System</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Русский</string>
+    <string name="about">About</string>
+    <string name="about_text">Every walk is an assignment. The editor of a small district paper sends a telegram: one ordinary thing to shoot, with a twist. Shoot it, caption it, and on Sunday the week\'s frames come out as an issue. 1271 assignments: three years of daily walks without a repeat.</string>
+    <string name="privacy">Everything stays on this phone. No account, no internet, no ads.</string>
+
+    <!-- The editor's red pencil. -->
+    <string-array name="remark_first">
+        <item>First frame. Welcome to the staff.</item>
+        <item>Set. That\'s how it starts.</item>
+    </string-array>
+    <string-array name="remark_plain">
+        <item>Set. To press.</item>
+        <item>Good. Exactly what was asked.</item>
+        <item>That\'ll do. Next.</item>
+        <item>Clean frame. Approved.</item>
+        <item>Readers will like this one.</item>
+        <item>Not bad at all.</item>
+        <item>To the issue, no notes.</item>
+        <item>Would have walked past it myself. Good.</item>
+    </string-array>
+    <string-array name="remark_fallback">
+        <item>The «or» counts. Into the issue.</item>
+        <item>Not exactly that, but honest. Set.</item>
+        <item>Fine. The exact one next time.</item>
+    </string-array>
+    <string-array name="remark_quick">
+        <item>Fast! Barely sent the telegram.</item>
+        <item>That was quick. Set.</item>
+        <item>Into the next run already.</item>
+    </string-array>
+    <string-array name="remark_late">
+        <item>Late, but the frame is good.</item>
+        <item>Took your time. Worth it.</item>
+    </string-array>
+    <string-array name="remark_night">
+        <item>Shooting at night now? Set.</item>
+        <item>Night shift. Approved.</item>
+    </string-array>
+    <string-array name="remark_weather">
+        <item>In that weather? Respect. Set.</item>
+        <item>The weather made the frame.</item>
+    </string-array>
+    <string-array name="remark_case">
+        <item>Into the file. The case moves on.</item>
+        <item>One more piece of the investigation.</item>
+    </string-array>
+    <string-array name="remark_swap">
+        <item>Fine, fine. Here\'s another.</item>
+        <item>Picky today. One more, and that\'s it.</item>
+        <item>All right. But no more swaps on this one.</item>
+    </string-array>
+
+    <!-- Small ads for the gaps. -->
+    <string-array name="ads">
+        <item>BOOT POLISH «MIRROR». Shines in any weather. Ask at the kiosk.</item>
+        <item>LOST: an umbrella, black, opinionated. Reward: a kind word.</item>
+        <item>FOR SALE: a bicycle bell, loud. Owner moved to a quieter street.</item>
+        <item>WANTED: a sunny Sunday. Will trade for two grey Tuesdays.</item>
+        <item>THE BAKERY on the corner bakes at six. Follow your nose.</item>
+        <item>PIGEONS of the district: please stop sitting on the monument.</item>
+        <item>WATCH REPAIR. Time not included.</item>
+        <item>FOUND on a bench: one mitten, left. Waiting for the right one.</item>
+        <item>KEYS CUT while you wait. Doors not included.</item>
+        <item>THE LIBRARY is open Thursdays. Bring back the book from 2019.</item>
+        <item>WINDOW BOXES planted. Geraniums, opinions, no guarantees.</item>
+        <item>CHESS in the park, Saturdays at noon. Bring your own rook.</item>
+    </string-array>
+</resources>

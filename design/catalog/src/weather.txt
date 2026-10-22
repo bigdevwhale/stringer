@@ -1,0 +1,164 @@
+# Погода и небо — sky, clouds, light, shadow, puddles, rain, snow, ice
+sky|1||||The sky right now|Небо прямо сейчас
+sky|1||||The sky straight above you|Небо прямо над головой
+sky|1||||The sky between two buildings|Небо между двумя домами
+sky|1||||The sky through branches|Небо сквозь ветки
+sky|1||||The sky through wires|Небо сквозь провода
+sky|2||||Only sky, nothing else in the frame|Только небо, больше ничего в кадре
+sky|1||||The sky and one roof|Небо и одна крыша
+sky|1||||A blue patch of sky|Голубой кусочек неба
+sky|1||||The bluest sky of the day|Самое синее небо за день
+sky|1|||dusk|The sky at sunset|Небо на закате
+sky|1|||dusk|The sky after sunset, still bright|Небо после заката, ещё светлое
+sky|1|||dark|The night sky with something lit in it|Ночное небо и что-то светящееся в нём
+sky|1|||dark|The moon|Луна
+sky|2|||dark|The moon over a roof|Луна над крышей
+sky|2||||The moon in daylight|Луна днём
+sky|1||||A vapour trail|След от самолёта
+sky|2||||Two vapour trails crossing|Два пересекающихся следа самолётов
+sky|1||||A plane|Самолёт
+sky|1||||Something in the sky that is not a cloud|Что-то в небе, кроме облаков
+sky|2||||The sky reflected in something on the ground|Небо, отражённое в чём-то на земле
+sky|1||||The sky above your house|Небо над твоим домом
+sky|1||||Where the sky meets the farthest thing you can see|Где небо встречается с самым дальним, что видно
+sky|1||||A street lamp from below, against the sky|Фонарь снизу, на фоне неба
+sky|1|||dusk|The first lights against the evening sky|Первые огни на фоне вечернего неба
+sky|1|||dark|A star or a planet|Звезда или планета
+cloud|1||||A cloud|Облако
+cloud|1||||The biggest cloud|Самое большое облако
+cloud|1||||The smallest cloud|Самое маленькое облако
+cloud|2||||A cloud that looks like something|Облако, похожее на что-то
+cloud|1||||A cloud over a roof|Облако над крышей
+cloud|1||||Clouds in a row|Облака рядком
+cloud|1||||A grey sky with no shape at all|Серое небо без единой формы
+cloud|2||||The edge of a cloud with the sun behind it|Край облака, за которым солнце
+cloud|1||||Clouds reflected in a window|Облака в отражении окна
+cloud|1|||dusk|A pink or orange cloud|Розовое или оранжевое облако
+cloud|1||||Fluffy clouds|Кучевые облака
+cloud|1||||Thin feathery clouds|Перистые облака
+cloud|2||||A dark cloud coming|Надвигающаяся туча
+cloud|1||||Clouds through a gap in the trees|Облака в просвете деревьев
+cloud|2||||A cloud with a shadow on the ground|Облако и его тень на земле
+sun|1||sun||A patch of sunlight on a wall|Солнечное пятно на стене
+sun|1||sun||A patch of sunlight on the ground|Солнечное пятно на земле
+sun|2||sun||Sunlight through leaves|Солнце сквозь листья
+sun|1||sun||Something glowing because the sun is behind it|Что-то светится, потому что за ним солнце
+sun|1||sun||A sunbeam bouncing off a window|Солнечный зайчик от окна
+sun|2||sun||A sun flare or a star in your lens|Солнечный блик в объективе
+sun|1||sun||The warmest-looking thing on your way|Самое тёплое на вид, что есть по пути
+sun|1||sun||A sunlit corner|Освещённый солнцем угол
+sun|1||sun||Something shiny in the sun|Что-то блестящее на солнце
+sun|2||sun||A sunlit stripe across a shadowed street|Полоса солнца поперёк тенистой улицы
+sun|1|||dusk|Long evening light on a wall|Длинный вечерний свет на стене
+sun|1|||dusk|The last sunlit spot on a building|Последнее освещённое место на доме
+sun|1|w|sun||Winter sun, low over the roofs|Зимнее солнце, низко над крышами
+shadow|1||sun||A shadow|Тень
+shadow|1||sun||The shadow of a tree|Тень дерева
+shadow|1||sun||The shadow of a tree on asphalt|Тень дерева на асфальте
+shadow|1||sun||The shadow of a lamp post|Тень фонаря
+shadow|2||sun||A shadow longer than the thing that casts it|Тень длиннее своего хозяина
+shadow|1||sun||The shadow of a fence or railings, striped|Полосатая тень забора или перил
+shadow|1||sun||A shadow on a wall|Тень на стене
+shadow|2||sun||Two shadows crossing|Две пересекающиеся тени
+shadow|1||sun||The shadow of a bench|Тень скамейки
+shadow|2||sun||A shadow that looks like something else|Тень, похожая на что-то другое
+shadow|1||sun||The shadow of a bird or a cat|Тень птицы или кота
+shadow|1||sun||The shadow of leaves on a car|Тень листвы на машине
+shadow|2||sun||Only shadows, no objects|Только тени, без самих предметов
+shadow|1||sun||The shadow of a bicycle|Тень велосипеда
+shadow|1||sun||The shadow of a sign|Тень дорожного знака
+shadow|1|||dark|A shadow cast by a street lamp|Тень от уличного фонаря
+shadow|2|||dark|Your two shadows from two lamps|Две твои тени от двух фонарей
+shadow|1||sun||The shadow of a balcony or a canopy|Тень балкона или козырька
+shadow|1||sun||A shadow on stairs, bent at every step|Тень на ступеньках, сломанная на каждой
+puddle|1||wet||A puddle|Лужа
+puddle|1||wet||A puddle with the sky in it|Лужа с небом
+puddle|1||wet||A puddle with a tree in it|Лужа с деревом
+puddle|2||wet||A building upside down in a puddle|Дом вверх ногами в луже
+puddle|1||wet||The biggest puddle on your way|Самая большая лужа по пути
+puddle|1||wet||A tiny puddle|Крошечная лужица
+puddle|1|au|wet||A leaf in a puddle|Лист в луже
+puddle|2||wet||Ripples in a puddle|Круги на луже
+puddle|1||wet||Your shoes at the edge of a puddle|Твои ботинки у края лужи
+puddle|1|||dark|A puddle with a lamp in it|Лужа с фонарём
+puddle|2||wet||A puddle with a car in it|Машина в отражении лужи
+puddle|1||wet||A puddle you had to walk around|Лужа, которую пришлось обходить
+puddle|1|w sp|||A puddle with ice at the edges|Лужа со льдом по краям
+rain|1||rain||Rain itself|Сам дождь
+rain|1||rain||Raindrops on a leaf|Капли на листе
+rain|1||rain||Raindrops on a car|Капли на машине
+rain|1||rain||Drops hanging from a railing|Капли, висящие на перилах
+rain|1||rain||An umbrella|Зонт
+rain|2||rain||The street through your umbrella's edge|Улица из-под края зонта
+rain|1||rain||A wet bench or a wet seat|Мокрая скамейка или сиденье
+rain|1||rain||Water running along the curb|Вода, бегущая вдоль бордюра
+rain|1||rain||Wet asphalt shining|Блестящий мокрый асфальт
+rain|1||rain||A drop hanging off something|Капля, которая вот-вот упадёт
+rain|2||rain||Rain in the light of a lamp|Дождь в свете фонаря
+rain|1||rain||Someone's dripping umbrella left by a door|Чей-то мокрый зонт у двери
+rain|1||wet||Drops on a spider's web or a wire|Капли на паутине или проводе
+rain|1||wet||A dry patch under a car or a tree|Сухое пятно под машиной или деревом
+rain|1||rain||Rain on a window|Дождь на окне
+snow|1|w|snow||Falling snow|Падающий снег
+snow|1|w|snow||Snow on a branch|Снег на ветке
+snow|1|w|snow||Snow on a car|Снег на машине
+snow|2|w|snow||A snowflake on your sleeve|Снежинка на рукаве
+snow|1|w|snow||Snow on a lamp post|Снег на фонаре
+snow|1|w|snow||The first footprints in fresh snow|Первые следы на свежем снегу
+snow|1|w|snow||Your own footprints behind you|Твои собственные следы позади
+snow|1|w|snow||A cleared path through snow|Расчищенная дорожка в снегу
+snow|1|w|snow||A snowdrift|Сугроб
+snow|1|w|snow||Snow in the light of a lamp|Снег в свете фонаря
+snow|2|w|snow||Something small sticking out of the snow|Что-то маленькое, торчащее из снега
+snow|1|w|snow||A snow shovel|Лопата для снега
+snow|1|w|snow||Sled tracks|Следы санок
+snow|1|w|snow||Snow on a fence, like icing|Снег на заборе, как глазурь
+snow|1|w|snow||Bird tracks in snow|Птичьи следы на снегу
+snow|2|w|snow||A heart, a name or a smiley drawn in snow|Сердечко, имя или смайлик, нарисованные на снегу
+snow|1|w sp|||Melting snow|Тающий снег
+snow|1|sp|||The last patch of snow|Последний сугроб
+snow|1|w|||Snow piled up by a snowplough|Снег, сгребённый в кучу
+snow|1|w|||Grey slush|Серая каша из снега
+ice|1|w|||Ice on a puddle|Лёд на луже
+ice|1|w|||Icicles|Сосульки
+ice|2|w|||One icicle, as close as you can|Одна сосулька, как можно ближе
+ice|1|w|||Bubbles frozen in ice|Пузырьки, вмёрзшие в лёд
+ice|1|w|frost||Frost on a car|Иней на машине
+ice|1|w au|frost||Frost on grass or a leaf|Иней на траве или листе
+ice|2|w|frost||Frost patterns, close|Узоры инея крупно
+ice|1|w|||A slippery path somebody sanded|Скользкая дорожка, посыпанная песком
+ice|1|w|||Ice on a branch|Лёд на ветке
+ice|1|w|||Frozen water anywhere|Замёрзшая вода где угодно
+fog|1||fog||A street disappearing in fog|Улица, тающая в тумане
+fog|1||fog||A tree in fog|Дерево в тумане
+fog|1||fog||A lamp in fog|Фонарь в тумане
+fog|2||fog||Three things, each fainter than the last|Три предмета, каждый бледнее предыдущего
+fog|1||fog||Droplets of mist on something|Капельки тумана на чём-нибудь
+wind|1||wind||Something moving in the wind|Что-то, что качает ветер
+wind|1||wind||A flag or a ribbon in the wind|Флаг или лента на ветру
+wind|1||wind||Trees bending in the wind|Деревья гнутся на ветру
+wind|1||wind||Laundry in the wind|Бельё на ветру
+wind|2||wind||Leaves or rubbish flying|Летящие листья или мусор
+wind|1||||Anything that shows which way the wind blows|Что-нибудь, что показывает направление ветра
+light|1|||dusk|A street lamp just switched on|Только что зажёгшийся фонарь
+light|1|||dark|A row of street lamps|Ряд фонарей
+light|1|||dark|The brightest light on your way|Самый яркий свет по пути
+light|1|||dark|A coloured light|Цветной свет
+light|2|||dark|A light reflected on a wet road|Огни, отражённые в мокрой дороге
+light|1|||dark|Car lights going by|Фары проезжающей машины
+light|2|||dark|A lit sign reflected in something|Светящаяся вывеска в отражении
+light|1|||dark|A dark corner between two lights|Тёмный угол между двумя фонарями
+light|1|||dark|Light falling out of a doorway|Свет, падающий из двери
+light|1|||dark|A lit bus stop|Освещённая остановка
+light|1|||dark|A garland or festive lights|Гирлянда или праздничные огни
+light|1|w||dark|A window with a garland|Окно с гирляндой
+light|1||||Your street at the hour you went out|Твоя улица в час, когда {вышел|вышла} из дома
+light|2||||Something lit from the side|Что-то, освещённое сбоку
+reflection|1||||Your reflection in a window|Твоё отражение в окне
+reflection|1||||A reflection in a car|Отражение в машине
+reflection|2||||A reflection in a car mirror|Отражение в автомобильном зеркале
+reflection|1||||A reflection in something round|Отражение в чём-то круглом
+reflection|2||||A reflection that looks like a second street|Отражение, похожее на вторую улицу
+reflection|1||||A road mirror at a corner|Дорожное зеркало на повороте
+reflection|1||||A reflection in a shop window|Отражение в витрине
+reflection|2||||A reflection in water|Отражение в воде

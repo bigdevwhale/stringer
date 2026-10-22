@@ -1,0 +1,64 @@
+# Находки — small things on the ground and things people left
+ground|1||||A stone|Камень
+ground|1||||The roundest stone you can find|Самый круглый камень, какой найдёшь
+ground|1||||A stone of an unusual colour|Камень необычного цвета
+ground|1||||A pebble with a stripe|Камешек с полоской
+ground|1||||A stick|Палка
+ground|2||||A stick shaped like a letter|Палка в форме буквы
+ground|1||||A feather|Перо
+ground|1||||A bottle cap|Крышка от бутылки
+ground|1||||A button, a bead or a coin on the ground|Пуговица, бусина или монета на земле
+ground|1||||A piece of coloured glass|Кусочек цветного стекла
+ground|1||||Something blue on the ground|Что-то синее на земле
+ground|1||||Something red on the ground|Что-то красное на земле
+ground|1||||Something shiny on the ground|Что-то блестящее на земле
+ground|1||||A hairpin, a ribbon or an elastic band|Заколка, ленточка или резинка
+ground|1||||A piece of string|Кусок верёвки
+ground|1||||A lost glove or mitten|Потерянная перчатка или варежка
+ground|2||||A lost glove somebody put up somewhere to be found|Потерянная перчатка, которую кто-то пристроил на видное место
+ground|1||||A lost toy|Потерянная игрушка
+ground|1||||A ticket or a receipt on the ground|Билет или чек на земле
+ground|1||||A sweet wrapper|Фантик
+ground|1||||A cigarette pack or a match|Спичка или пачка
+ground|1||||A pine needle or a twig|Иголка или веточка
+ground|1||||Shells or seeds|Ракушки или семечки
+ground|1||||Chalk left on the ground|Мелок, оставленный на земле
+ground|1||||A puddle of something that isn't water|Лужица чего-то, что не вода
+ground|1||||A key on the ground or hung up for its owner|Ключ на земле или повешенный для хозяина
+ground|2||||Something that fell off something bigger|Что-то, что отвалилось от чего-то большего
+ground|1||||A piece of a tile or a brick|Обломок плитки или кирпича
+ground|1||||Sand or earth spilled on asphalt|Песок или земля, просыпанные на асфальт
+left|1||||Something somebody left on a bench|Что-то, оставленное на скамейке
+left|1||||Something somebody left on a fence|Что-то, оставленное на заборе
+left|1||||Something left on a windowsill outside|Что-то, оставленное на подоконнике снаружи
+left|1||||Things left by the bins for someone to take|Вещи у мусорки, которые кто-то может забрать
+left|1||||An old chair or a piece of furniture outside|Старый стул или мебель на улице
+left|1||||A box outside|Коробка на улице
+left|1||||A shopping bag on a hook or a handle|Пакет на крючке или ручке
+left|1||||A bucket|Ведро
+left|1||||A broom or a shovel|Метла или лопата
+left|1||||A ladder left somewhere|Оставленная где-то стремянка
+left|1||||A hose or a watering can|Шланг или лейка
+left|1||||A flowerpot with nothing in it|Пустой цветочный горшок
+left|1||||A bottle on a ledge|Бутылка на карнизе
+left|1||||A cup or a glass left outside|Чашка или стакан, оставленные на улице
+left|1||||A newspaper or a magazine|Газета или журнал
+left|1||||A book outside|Книга на улице
+left|1||||A street library or a book shelf|Уличная библиотека или полка с книгами
+left|1||||A ball|Мяч
+left|1||||A sled or skis|Санки или лыжи
+left|1||||A doormat|Коврик у двери
+left|1||||Shoes outside a door|Обувь за дверью
+left|1||||Laundry pegs|Прищепки
+left|1||||A coat hanger outside|Вешалка на улице
+left|1||||A tyre|Покрышка
+left|2||||Something that clearly has a story|Что-то, у чего явно есть история
+left|1||||Something that has been waiting for its owner a long time|Что-то, что давно ждёт хозяина
+left|1||||A parcel or a delivery at a door|Посылка или доставка у двери
+left|1||||A wreath or a decoration on a door|Венок или украшение на двери
+left|1||||A Christmas tree or decoration outside|Ёлка или украшение на улице
+left|1|w|||A Christmas tree thrown out after the holidays|Выброшенная после праздников ёлка
+left|1||||Balloons|Воздушные шарики
+left|1||||Bunting or a garland|Флажки или гирлянда
+left|1||||A carpet or rug outside|Ковёр на улице
+left|1||||An umbrella left somewhere|Забытый где-то зонт

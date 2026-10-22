@@ -1,0 +1,137 @@
+# Цвет и форма — colour hunts, shapes, counts, compositions with ordinary things
+red|1||||Something red|Что-то красное
+red|1||||The reddest thing on your way|Самое красное, что есть по пути
+red|2||||Something red in a grey place|Что-то красное в сером месте
+red|1||||Red and green together|Красное и зелёное вместе
+orange|1||||Something orange|Что-то оранжевое
+orange|1||||Orange and blue together|Оранжевое и синее вместе
+yellow|1||||Something yellow|Что-то жёлтое
+yellow|1||||Something yellow above your head|Что-то жёлтое выше головы
+yellow|1||||Yellow and black together|Жёлтое и чёрное вместе
+yellow|1||||A yellow line|Жёлтая линия
+green|1||||Something green that isn't a plant|Что-то зелёное, но не растение
+green|1||||A green door, gate or fence|Зелёная дверь, ворота или забор
+blue|1||||Something blue|Что-то синее
+blue|1||||Something light blue|Что-то голубое
+blue|1||||Something blue and old|Что-то синее и старое
+purple|1||||Something purple|Что-то фиолетовое
+purple|2||||Something pink in an unlikely place|Что-то розовое в неожиданном месте
+pink|1||||Something pink|Что-то розовое
+brown|1||||Something brown|Что-то коричневое
+white|1||||Something white|Что-то белое
+white|1||||Something very white on something dark|Что-то очень белое на тёмном
+black|1||||Something black|Что-то чёрное
+black|1||||Something black on something light|Что-то чёрное на светлом
+grey|1||||Five shades of grey in one frame|Пять оттенков серого в одном кадре
+grey|1||||The greyest place on your walk|Самое серое место на прогулке
+gold|1||||Something golden|Что-то золотое
+silver|1||||Something silver|Что-то серебристое
+colors|1||||Something in all colours of the rainbow|Что-то во всех цветах радуги
+colors|1||||Three colours in one frame|Три цвета в одном кадре
+colors|1||||Only one colour in the whole frame|Один цвет на весь кадр
+colors|2||||Two things of the same colour that have nothing in common|Две вещи одного цвета, ничем больше не похожие
+colors|1||||A colour you don't see often in your area|Цвет, который в твоём районе редкость
+colors|1||||The brightest thing on your way|Самое яркое по пути
+colors|1||||The most faded thing on your way|Самое выцветшее по пути
+colors|1||||Something the colour of your clothes today|Что-то цвета твоей сегодняшней одежды
+colors|1||||Something the colour of the sky today|Что-то цвета сегодняшнего неба
+colors|2||||Two colours that shouldn't go together, but do|Два цвета, которые не должны сочетаться, но сочетаются
+colors|1||||A rainbow anywhere: painted, in oil, in glass|Радуга где угодно: нарисованная, в масле, в стекле
+colors|1|au|||All the colours of autumn in one frame|Все цвета осени в одном кадре
+colors|1|sp|||All the colours of spring in one frame|Все цвета весны в одном кадре
+colors|1|su|||All the colours of summer in one frame|Все цвета лета в одном кадре
+colors|1|w|||Colour in a winter street|Цвет на зимней улице
+circle|1||||A circle|Круг
+circle|1||||Three circles in one frame|Три круга в одном кадре
+circle|1||||A circle inside a circle|Круг в круге
+circle|1||||The biggest circle you can find|Самый большой круг, какой найдёшь
+circle|1||||A ring or a hole|Кольцо или отверстие
+circle|2||||A circle nobody drew on purpose|Круг, который никто не рисовал нарочно
+square|1||||A square|Квадрат
+square|1||||Squares in a grid|Квадраты сеткой
+square|2||||A square inside a square|Квадрат в квадрате
+triangle|1||||A triangle|Треугольник
+triangle|2||||A triangle made by two things that don't touch|Треугольник из двух вещей, которые не соприкасаются
+triangle|1||||Three triangles|Три треугольника
+arch|1||||An arch|Арка
+arch|1||||Something curved|Что-то изогнутое
+arch|1||||A spiral|Спираль
+line|1||||A straight line going off into the distance|Прямая линия, уходящая вдаль
+line|1||||Lines that meet at one point|Линии, сходящиеся в одной точке
+line|1||||Parallel lines|Параллельные линии
+line|1||||A diagonal across the whole frame|Диагональ через весь кадр
+line|1||||A vertical line splitting the frame in half|Вертикаль, делящая кадр пополам
+line|1||||A horizon, or something that pretends to be one|Горизонт или то, что за него сойдёт
+line|2||||A line that breaks halfway|Линия, которая обрывается на полпути
+line|1||||A cross|Крест
+line|1||||Lines that curve|Изогнутые линии
+count|1||||One of something, all alone|Что-то одно, совсем одно
+count|1||||Two of something|Два одинаковых
+count|1||||Three of something|Три одинаковых
+count|1||||Four of something|Четыре одинаковых
+count|1||||Five of something|Пять одинаковых
+count|1||||As many of one thing as you can fit in the frame|Сколько поместится одинакового в кадре
+count|2||||One thing that is different in a row of the same|Одно отличается в ряду одинаковых
+count|1||||A pair|Пара
+count|1||||Something big and something small together|Большое и маленькое вместе
+count|1||||Something tall and something short together|Высокое и низкое вместе
+count|2||||Something old and something brand new together|Старое и совсем новое вместе
+count|1||||Something hard next to something soft|Твёрдое рядом с мягким
+count|1||||Something natural next to something man-made|Природное рядом с рукотворным
+count|2||||Two things that look alike but aren't related|Две похожие вещи, никак не связанные
+frame|1||||Something seen through a hole|Что-то сквозь дыру
+frame|1||||Something seen through a gap|Что-то сквозь щель
+frame|1||||Something framed by branches|Что-то в рамке из веток
+frame|1||||Something framed by a window or a door|Что-то в рамке окна или двери
+frame|2||||A frame inside a frame inside a frame|Рамка в рамке в рамке
+frame|1||||Something half hidden|Что-то наполовину спрятанное
+frame|1||||Something peeking out|Что-то выглядывающее
+frame|1||||Something in the very middle of the frame|Что-то ровно в центре кадра
+frame|1||||Something in the very corner of the frame|Что-то в самом углу кадра
+frame|1||||Something tiny in a big empty space|Что-то крошечное в большой пустоте
+frame|2||||A frame where the sky takes up almost everything|Кадр, где небо занимает почти всё
+frame|2||||A frame where the ground takes up almost everything|Кадр, где земля занимает почти всё
+frame|1||||Something perfectly symmetrical|Что-то идеально симметричное
+frame|2||||Something nearly symmetrical, with one flaw|Почти симметричное, с одним изъяном
+angle|1||||Anything, from knee height|Что угодно с высоты колена
+angle|1||||Anything, from the ground|Что угодно с самой земли
+angle|1||||Anything, looking straight up|Что угодно, глядя строго вверх
+angle|1||||Anything, looking straight down|Что угодно, глядя строго вниз
+angle|1||||Anything, as close as your camera can focus|Что угодно, так близко, как фокусирует камера
+angle|2||||Something so close nobody will guess what it is|Что-то так близко, что никто не угадает
+angle|1||||Something from as far away as possible|Что-то с самого большого расстояния
+angle|1||||Something from behind|Что-то со спины
+angle|1||||Something from above|Что-то сверху
+angle|1||||Something tilted on purpose|Что-то, нарочно снятое под наклоном
+angle|1||||Something from a cat's eye view|Что-то с высоты кошачьего роста
+angle|1||||Something from a child's eye view|Что-то с высоты детского роста
+angle|2||||Something that looks huge but is small|Что-то, что выглядит огромным, а на деле маленькое
+angle|2||||Something that looks small but is huge|Что-то, что выглядит маленьким, а на деле огромное
+angle|1||||The same thing twice: near and far|Одно и то же дважды: близко и далеко
+mood|1||||Something calm|Что-то спокойное
+mood|1||||Something cheerful|Что-то весёлое
+mood|1||||Something lonely|Что-то одинокое
+mood|1||||Something that looks tired|Что-то уставшее на вид
+mood|1||||Something cosy|Что-то уютное
+mood|1||||Something that looks like it's in a hurry|Что-то, что будто куда-то спешит
+mood|1||||Something that looks like it's waiting|Что-то, что будто чего-то ждёт
+mood|2||||Something that looks surprised|Что-то, что выглядит удивлённым
+mood|1||||Something that looks like a face|Что-то, похожее на лицо
+mood|1||||Something that looks like an animal|Что-то, похожее на зверя
+mood|2||||Something that looks like a letter of the alphabet|Что-то, похожее на букву
+mood|1||||Something that looks like a monster|Что-то, похожее на чудовище
+mood|1||||Something beautiful nobody notices|Что-то красивое, чего никто не замечает
+mood|1||||Something ugly that you like|Что-то некрасивое, но тебе нравится
+mood|1||||Something that reminds you of childhood|Что-то, что напоминает детство
+mood|1||||Something that smells good, or must|Что-то, что вкусно пахнет или должно пахнуть
+mood|1||||Something that makes a sound|Что-то, что издаёт звук
+mood|1||||Something warm|Что-то тёплое
+mood|1||||Something cold|Что-то холодное
+mood|1||||Something that moves|Что-то, что движется
+mood|1||||Something that never moves|Что-то, что никогда не двигается
+mood|1||||Something that is still being built|Что-то, что ещё строят
+mood|1||||Something that is falling apart|Что-то, что разваливается
+mood|2||||Something that has been here longer than you|Что-то, что здесь дольше, чем ты живёшь
+mood|1||||Something somebody takes care of|Что-то, о чём кто-то заботится
+mood|1||||Something nobody takes care of|Что-то, о чём никто не заботится
+mood|2||||Something that looks like it belongs somewhere else|Что-то, что будто попало сюда из другого места

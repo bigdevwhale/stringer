@@ -1,0 +1,114 @@
+# Вывески и знаки — letters, numbers, signs, posters, words in the street
+number|1||||The number of your house|Номер твоего дома
+number|1||||The nearest house number, close|Номер ближайшего дома крупно
+number|1||||The digit 1 anywhere|Цифра 1 где угодно
+number|1||||The digit 2 anywhere|Цифра 2 где угодно
+number|1||||The digit 3 anywhere|Цифра 3 где угодно
+number|1||||The digit 4 anywhere|Цифра 4 где угодно
+number|1||||The digit 5 anywhere|Цифра 5 где угодно
+number|1||||The digit 6 anywhere|Цифра 6 где угодно
+number|1||||The digit 7 anywhere|Цифра 7 где угодно
+number|1||||The digit 8 anywhere|Цифра 8 где угодно
+number|1||||The digit 9 anywhere|Цифра 9 где угодно
+number|1||||The digit 0 anywhere|Цифра 0 где угодно
+number|1||||Today's date somewhere in the street|Сегодняшнее число где-нибудь на улице
+number|2||||The current hour as a number somewhere|Номер текущего часа где-нибудь на улице
+number|1||||The biggest number you can find|Самое большое число, какое найдёшь
+number|1||||A price|Цена
+number|1||||A phone number on a sign|Телефон на вывеске
+number|1||||A number painted by hand|Номер, написанный от руки
+number|1||||An apartment number|Номер квартиры
+number|1||||A number on a pole or a box|Номер на столбе или ящике
+number|2||||Two numbers next to each other that add up to ten|Два числа рядом, в сумме десять
+number|1||||A clock in the street|Часы на улице
+number|1||||A thermometer or a temperature display|Термометр или табло с температурой
+number|1||||An old house number plate|Старая табличка с номером
+letter|1||||The first letter of your name|Первая буква твоего имени
+letter|1||||The letter A|Буква А
+letter|1||||The letter O|Буква О
+letter|1||||The letter M|Буква М
+letter|1||||The letter T|Буква Т
+letter|1||||The letter K|Буква К
+letter|1||||The letter P|Буква П
+letter|1||||The letter S|Буква С
+letter|1||||The letter E|Буква Е
+letter|2||||A letter made by something that is not a letter|Буква, которую образует не буква
+letter|1||||A huge letter|Огромная буква
+letter|1||||A tiny letter|Крошечная буква
+letter|1||||A letter missing from a sign|Выпавшая из вывески буква
+letter|1||||A handwritten word|Слово, написанное от руки
+letter|1||||A word in another language|Слово на другом языке
+letter|2||||A word that describes your mood|Слово, которое описывает твоё настроение
+letter|1||||A word that is also a name|Слово, которое заодно чьё-то имя
+letter|1||||The longest word you can find|Самое длинное слово по пути
+letter|1||||A three-letter word|Слово из трёх букв, приличное
+letter|1||||A sign with only one word|Вывеска из одного слова
+letter|2||||A word cut in half by something|Слово, перерезанное чем-то пополам
+letter|1||||Letters in gold or silver|Золотые или серебряные буквы
+letter|1||||Letters made of metal|Металлические буквы
+letter|1|||dark|Letters that glow|Светящиеся буквы
+signboard|1||||A shop sign|Вывеска магазина
+signboard|1||||The oldest-looking sign on your way|Самая старая на вид вывеска
+signboard|1||||A sign with a picture of food|Вывеска с едой
+signboard|1||||A café sign|Вывеска кафе
+signboard|1||||A hairdresser's sign|Вывеска парикмахерской
+signboard|1||||A sign telling you opening hours|Табличка с часами работы
+signboard|1||||A sign that says closed|Табличка «закрыто»
+signboard|1||||A sign that says open|Табличка «открыто»
+signboard|2||||A sign with a typo or a funny phrase|Вывеска с опечаткой или смешной фразой
+signboard|1||||A sign with an arrow pointing to a shop|Вывеска со стрелкой к магазину
+signboard|1||||A painted sign, not printed|Нарисованная вручную вывеска
+signboard|1||||A chalkboard sign|Меловая доска у входа
+signboard|1||||A sign on a door telling you to push or pull|Табличка «от себя» или «на себя»
+signboard|1||||A sign telling you not to do something|Табличка, которая что-то запрещает
+signboard|1||||A sign with a dog on it|Табличка с собакой
+signboard|1||||A memorial plaque|Мемориальная доска
+signboard|1||||A plaque with a year on it|Табличка с годом
+signboard|1||||A map of the area|Карта района на улице
+signboard|1||||An exit or entrance sign|Табличка «вход» или «выход»
+signboard|1||||A sign on a fence|Табличка на заборе
+notice|1||||A notice on a board|Объявление на доске
+notice|1||||A handwritten notice|Объявление от руки
+notice|1||||A notice with tear-off strips|Объявление с отрывными телефонами
+notice|1||||A notice with some strips already taken|Объявление, где уже оторвали телефоны
+notice|1||||A lost-pet notice|Объявление о пропавшем питомце
+notice|2||||A notice that someone wrote with feeling|Объявление, написанное с чувством
+notice|1||||A notice board with many layers|Доска объявлений во много слоёв
+notice|1||||A poster for an event|Афиша
+notice|1||||A torn poster|Порванная афиша
+notice|1||||An advertising pillar or a billboard|Тумба или рекламный щит
+notice|2||||An ad and something that ruins it|Реклама и что-то, что её портит
+notice|1||||Stickers on a pole|Наклейки на столбе
+notice|1||||A sticker on a sign|Наклейка на знаке
+graffiti|1||||Graffiti|Граффити
+graffiti|1||||A small drawing on a wall|Маленький рисунок на стене
+graffiti|1||||A mural|Роспись на стене
+graffiti|1||||A word sprayed on a wall|Слово баллончиком на стене
+graffiti|2||||Graffiti somebody tried to paint over|Граффити, которое пытались закрасить
+graffiti|1||||A chalk drawing on the asphalt|Рисунок мелом на асфальте
+graffiti|1||||Hopscotch|Классики на асфальте
+graffiti|1||||A heart drawn or carved somewhere|Нарисованное или вырезанное сердечко
+graffiti|1||||Initials carved somewhere|Вырезанные где-то инициалы
+graffiti|1||||A painted face|Нарисованное лицо
+graffiti|1||||A stencil|Трафарет на стене
+graffiti|2||||A drawing made by a child|Рисунок, сделанный ребёнком
+arrow|1||||An arrow|Стрелка
+arrow|1||||An arrow pointing up|Стрелка вверх
+arrow|1||||An arrow pointing left|Стрелка влево
+arrow|1||||An arrow pointing right|Стрелка вправо
+arrow|1||||An arrow pointing down|Стрелка вниз
+arrow|2||||Something that points the way without being an arrow|Что-то, что указывает путь, но не стрелка
+arrow|1||||A painted arrow on the ground|Нарисованная стрелка на земле
+arrow|2||||Two arrows pointing at each other|Две стрелки навстречу друг другу
+symbol|1||||A heart symbol|Сердечко
+symbol|1||||A star symbol|Звёздочка
+symbol|1||||A cross or an X|Крестик
+symbol|1||||A circle with a line through it|Перечёркнутый круг
+symbol|1||||A logo you recognise|Знакомый логотип
+symbol|1||||A smiley|Смайлик
+symbol|1||||A pictogram of a person|Пиктограмма человечка
+symbol|1||||A coat of arms or an emblem|Герб или эмблема
+symbol|1||||A flag|Флаг
+symbol|1||||A QR code in the street|QR-код на улице
+symbol|1||||An exclamation mark|Восклицательный знак
+symbol|1||||A question mark|Вопросительный знак

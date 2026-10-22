@@ -1,0 +1,114 @@
+# Фактуры — surfaces close up: brick, rust, paint, asphalt, wood, tile, stone
+brick|1||||A brick wall|Кирпичная стена
+brick|1||||One brick, close|Один кирпич крупно
+brick|2||||One brick that is not like the others|Один кирпич, не похожий на соседей
+brick|1||||A brick with a stamp or letters on it|Кирпич с клеймом или буквами
+brick|1||||Bricks of two colours|Кирпичи двух цветов
+brick|1||||A broken brick on the ground|Битый кирпич на земле
+brick|1||||Bricks laid in a pattern|Кирпичи, уложенные узором
+rust|1||||Rust|Ржавчина
+rust|1||||A rusty bolt or nail|Ржавый болт или гвоздь
+rust|1||||A rusty pipe|Ржавая труба
+rust|2||||Rust that looks like a map|Ржавчина, похожая на карту
+rust|1||||Rust and fresh paint side by side|Ржавчина и свежая краска рядом
+rust|1||||A rusty lock or a padlock|Ржавый замок или навесной замок
+paint|1||||Peeling paint|Облупленная краска
+paint|1||||Layers of paint showing under each other|Слои краски, проступающие друг из-под друга
+paint|2||||Peeling paint that looks like something|Облупившаяся краска, похожая на что-то
+paint|1||||A drip of paint|Потёк краски
+paint|1||||Fresh paint|Свежая краска
+paint|1||||A wet-paint sign|Табличка «окрашено»
+paint|1||||Something painted twice in different colours|Что-то, покрашенное дважды в разные цвета
+paint|1||||Two colours of paint meeting on one wall|Две краски на одной стене встречаются
+asphalt|1||||Asphalt, close|Асфальт крупно
+asphalt|1||||A crack in the asphalt|Трещина в асфальте
+asphalt|2||||A crack that looks like a river or a lightning bolt|Трещина, похожая на реку или молнию
+asphalt|1||||A spot where new asphalt meets old|Где новый асфальт встречается со старым
+asphalt|1||||A stain on the asphalt|Пятно на асфальте
+asphalt|1||||A footprint set in asphalt or concrete|След, застывший в асфальте или бетоне
+asphalt|1||||Something stuck in the asphalt|Что-то, вросшее в асфальт
+asphalt|1||sun||A patch of asphalt in the sun|Кусок асфальта на солнце
+asphalt|1||wet||Wet asphalt, close|Мокрый асфальт крупно
+asphalt|1||||A line painted on the asphalt, close|Нарисованная на асфальте линия крупно
+tile|1||||Paving stones|Тротуарная плитка
+tile|2||||Paving stones laid in a pattern|Плитка, уложенная узором
+tile|1||||One paving stone that is broken|Одна треснувшая плитка
+tile|1||||Paving with a different stone in it|Плитка, среди которой один другой камень
+tile|1||||Tactile paving with dots or stripes|Тактильная плитка с точками или полосками
+tile|1||||Tiles on a building|Плитка на стене дома
+tile|1||||Cobblestones|Брусчатка
+tile|2||||Where two kinds of paving meet|Где сходятся два вида мощения
+wood|1||||Old wood|Старое дерево
+wood|1||||Wood grain, close|Волокна дерева крупно
+wood|1||||A wooden board with a knot|Доска с сучком
+wood|1||||Painted wood with cracks|Крашеное дерево с трещинами
+wood|1||||A wooden pallet or crate|Деревянный поддон или ящик
+wood|1||||Logs or firewood|Брёвна или дрова
+wood|1||||Sawdust or a fresh cut|Опилки или свежий спил
+metal|1||||Metal, close|Металл крупно
+metal|1||||A bolt|Болт
+metal|1||||Rivets|Заклёпки
+metal|1||||A chain|Цепь
+metal|1||||A grille or a grating|Решётка
+metal|2||||A grille with a pattern|Решётка с узором
+metal|1||||Corrugated metal|Гофрированный металл
+metal|1||||Something shiny and metal|Что-то металлическое и блестящее
+metal|1||||A hinge|Петля
+metal|1||||A padlock|Навесной замок
+metal|1||||A lock on a bridge or a fence, left as a token|Замочек на мосту или заборе на память
+metal|1||||Barbed wire or a spike on a fence|Колючая проволока или пики на заборе
+stone|1||||A stone wall|Каменная стена
+stone|1||||A stone step|Каменная ступенька
+stone|1||||Concrete, close|Бетон крупно
+stone|1||||Concrete with pebbles in it|Бетон с камешками внутри
+stone|1||||A concrete block or a slab|Бетонный блок или плита
+stone|1||||Gravel|Гравий
+stone|1||||Granite or marble on a building|Гранит или мрамор на здании
+stone|1||||Plaster falling off a wall|Отваливающаяся штукатурка
+stone|2||||What's under plaster that has fallen off|Что под отвалившейся штукатуркой
+stone|1||||Sand|Песок
+stone|1||||Earth after digging|Земля после раскопок
+fabric|1||||Fabric hanging outside|Ткань, висящая на улице
+fabric|1||||A blanket or rug airing outside|Плед или ковёр, проветривающийся на улице
+fabric|1||||An awning|Тент или маркиза
+fabric|1||||A net or a mesh|Сетка
+fabric|1||||A rope|Верёвка
+fabric|1||||A knot somebody tied|Узел, который кто-то завязал
+glass|1||||Glass, close|Стекло крупно
+glass|1||||Frosted or textured glass|Матовое или рифлёное стекло
+glass|1||||Glass blocks in a wall|Стеклоблоки в стене
+glass|1||||A cracked glass|Треснувшее стекло
+glass|1||||Dirty glass that you can draw on|Грязное стекло, на котором можно рисовать
+glass|1||||Stained or coloured glass|Витраж или цветное стекло
+glass|1||||Glass through which you see something blurred|Стекло, сквозь которое всё размыто
+wire|1||||Wires overhead|Провода над головой
+wire|1||||A tangle of wires|Клубок проводов
+wire|1||||A pole with many wires|Столб с кучей проводов
+wire|1||||A cable tie holding something together|Стяжка, которая что-то держит
+wire|2||||Something fixed with tape|Что-то, починенное скотчем
+wire|1||||Something fixed in a clever way|Что-то, починенное хитрым способом
+wire|1||||Something held by a string|Что-то, привязанное верёвочкой
+pattern|1||||A pattern that repeats|Повторяющийся узор
+pattern|1||||Stripes|Полоски
+pattern|1||||Dots|Точки
+pattern|1||||A checkerboard|Шахматка
+pattern|1||||Grid squares|Клетка
+pattern|1||||Zigzags|Зигзаги
+pattern|1||||Waves|Волны
+pattern|2||||A pattern with one mistake in it|Узор с одной ошибкой
+pattern|2||||The same pattern in two different places|Один и тот же узор в двух разных местах
+pattern|1||||A pattern on a manhole cover or a grate|Узор на люке или решётке
+pattern|1||||A pattern on a gate or a railing|Узор на воротах или перилах
+pattern|1||||A pattern in tiles|Узор в плитке
+pattern|1||||A pattern in leaves or branches|Узор из листьев или веток
+pattern|1|w|snow||A pattern in snow|Узор на снегу
+texture|1||||The roughest surface you can touch|Самая шершавая поверхность, какую потрогаешь
+texture|1||||The smoothest surface you can find|Самая гладкая поверхность, какую найдёшь
+texture|1||||Something soft|Что-то мягкое
+texture|1||||Something prickly|Что-то колючее
+texture|1||||Something old and something new together|Что-то старое и что-то новое вместе
+texture|2||||Something that has been worn smooth by hands|Что-то, отполированное руками
+texture|1||||Something wet|Что-то мокрое
+texture|1||||Something dusty|Что-то пыльное
+texture|1||||Something cracked|Что-то треснувшее
+texture|1||||Something that has been patched|Что-то залатанное
