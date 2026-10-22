@@ -53,7 +53,9 @@ fun tapeLines(text: String, max: Int = 24): List<String> {
 
 /** The task as the tape prints it: capitals, no punctuation but the "stop". */
 fun tape(text: String, stop: String): String =
-    text.uppercase().replace(Regex("[.,:;!?«»\"—–]"), " ").replace(Regex("\\s+"), " ").trim() + " " + stop
+    text.uppercase().trim().trimEnd('.', '!', '?')
+        .replace(Regex("[.!?]\\s+"), " $stop ")
+        .replace(Regex("[,:;«»\"—–]"), " ").replace(Regex("\\s+"), " ").trim() + " " + stop
 
 /**
  * A telegraph form with strips of tape pasted on it. [head] is the printed form's title,

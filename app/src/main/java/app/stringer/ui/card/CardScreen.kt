@@ -30,6 +30,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
@@ -109,7 +110,7 @@ fun CardScreen(home: Home, go: Go) {
                 Rubric.entries.forEach { r ->
                     val n = counts[r] ?: 0
                     Row(Modifier.padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Text(T.rubric(c, r), style = SType.Muted, modifier = Modifier.width(132.dp), maxLines = 1)
+                        Text(T.rubric(c, r), style = SType.Muted, modifier = Modifier.width(150.dp), maxLines = 1, overflow = TextOverflow.Ellipsis)
                         Box(Modifier.weight(1f).height(10.dp)) {
                             Box(Modifier.fillMaxWidth(n / max.toFloat()).height(10.dp).background(S.c.print))
                         }

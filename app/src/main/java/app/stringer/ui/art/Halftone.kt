@@ -25,6 +25,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 import kotlin.math.cos
+import kotlin.math.pow
 import kotlin.math.sin
 import kotlin.math.sqrt
 
@@ -88,7 +89,7 @@ object Halftone {
                     val sy = (y / height * small.height).toInt().coerceIn(0, small.height - 1)
                     val c = px[sy * small.width + sx]
                     val lum = (0.299f * ((c shr 16) and 255) + 0.587f * ((c shr 8) and 255) + 0.114f * (c and 255)) / 255f
-                    val dark = ((1f - lum) * 1.12f - 0.08f).coerceIn(0f, 1f)
+                    val dark = ((1f - lum).pow(1.4f) * 1.08f).coerceIn(0f, 1f)
                     val r = step * 0.74f * sqrt(dark)
                     if (r > 0.35f) canvas.drawCircle(x, y, r, p)
                 }
