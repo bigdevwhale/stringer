@@ -24,6 +24,7 @@ import app.stringer.container
 import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.Language
+import app.stringer.ui.components.CommunityLinks
 import app.stringer.ui.components.Field
 import app.stringer.ui.components.SectionTitle
 import app.stringer.ui.components.Segmented
@@ -57,6 +58,8 @@ fun SettingsScreen(home: Home, go: Go) {
                 { stringResource(when (it) { Language.EN -> R.string.lang_en; Language.RU -> R.string.lang_ru; else -> R.string.lang_system }) },
                 { lang = it; Language.set(it) },
             )
+            SectionTitle(stringResource(R.string.community))
+            CommunityLinks()
             SectionTitle(stringResource(R.string.about))
             Text(stringResource(R.string.about_text), style = SType.Body)
             Spacer(Modifier.height(10.dp))
