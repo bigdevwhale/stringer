@@ -30,14 +30,19 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.graphics.layer.drawLayer
 import androidx.compose.ui.graphics.rememberGraphicsLayer
 import androidx.compose.ui.layout.Layout
+import androidx.compose.ui.layout.LayoutCoordinates
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -66,6 +71,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
+import kotlin.math.roundToInt
 
 /** A week's issue, laid out as a newspaper page: the front, the rubrics, small ads in the gaps. */
 @Composable
@@ -74,6 +80,8 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
     val activity = LocalActivity.current
     val scope = rememberCoroutineScope()
     val layer = rememberGraphicsLayer()
+    val breaks = remember { Breaks() }
+    val density = LocalDensity.current
     val number = home.issueNumber(week)
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
@@ -89,7 +97,7 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
                 val a = activity ?: return@IconButton
                 scope.launch {
                     val bitmap = layer.toImageBitmap().asAndroidBitmap()
-                    Printer.print(a, bitmap, c.getString(R.string.issue_n, number))
+                    Printer.print(a, bitmap, c.getString(R.string.issue_n, number), breaks.ys(), with(density) { 1.dp.roundToPx() })
                 }
             }) { Icon(Icons.Rounded.Print, stringResource(R.string.print), tint = S.c.ink) }
         }
@@ -99,15 +107,35 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
                     layer.record { this@drawWithContent.drawContent() }
                     drawLayer(layer)
                 },
-            ) { Page(week, home, go) }
+            ) { Page(week, home, go, breaks) }
             Spacer(Modifier.height(24.dp))
         }
     }
 }
 
-/** The page itself, also what gets shared. */
+/**
+ * Where the page may be cut into printed sheets: the top of every block (a rubric with its first
+ * row, each further row, an article, the ads, the footer), in pixels from the top of the page.
+ */
+class Breaks {
+    internal var page: LayoutCoordinates? = null
+    internal val at = mutableMapOf<String, LayoutCoordinates>()
+
+    fun ys(): List<Int> {
+        val p = page?.takeIf { it.isAttached } ?: return emptyList()
+        return at.values.filter { it.isAttached }.map { p.localPositionOf(it, Offset.Zero).y.roundToInt() }.distinct().sorted()
+    }
+}
+
+/** A place the printer may cut, just above what follows it. */
 @Composable
-fun Page(week: Long, home: Home, go: Go?) {
+private fun Cut(breaks: Breaks?, key: String) {
+    if (breaks != null) Spacer(Modifier.fillMaxWidth().onGloballyPositioned { breaks.at[key] = it })
+}
+
+/** The page itself, also what gets shared and printed. */
+@Composable
+fun Page(week: Long, home: Home, go: Go?, breaks: Breaks? = null) {
     val c = ctx()
     val frames = home.inWeek(week)
     val lead = home.lead(frames)
@@ -115,7 +143,8 @@ fun Page(week: Long, home: Home, go: Go?) {
     val articles = frames.filter { it.id != lead?.id && it.article }
     val sunday = Editor.monday(week).plusDays(6)
 
-    Column(Modifier.fillMaxWidth().background(S.c.newsprint).border(1.dp, S.c.line).padding(horizontal = 14.dp, vertical = 12.dp)) {
+    val root = if (breaks != null) Modifier.onGloballyPositioned { breaks.page = it } else Modifier
+    Column(root.fillMaxWidth().background(S.c.newsprint).border(1.dp, S.c.line).padding(horizontal = 14.dp, vertical = 12.dp)) {
         // The ears above the masthead.
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(stringResource(R.string.issue_ear_n, home.issueNumber(week)), style = Ear, modifier = Modifier.weight(1f))
@@ -142,14 +171,17 @@ fun Page(week: Long, home: Home, go: Go?) {
             }
             Byline(home, lead)
             if (lead.article) Body(lead.body, Modifier.padding(top = 8.dp).then(open(go, lead)))
+            Cut(breaks, "weather")
             WeatherBox(home, frames)
         }
 
         // The correspondent's own articles, each across the page.
         if (articles.isNotEmpty()) {
+            Cut(breaks, "articles")
             RubricHead(stringResource(R.string.r_articles))
             articles.forEachIndexed { i, a ->
                 if (i > 0) {
+                    Cut(breaks, "article-${a.id}")
                     Spacer(Modifier.height(4.dp))
                     Thin()
                     Spacer(Modifier.height(10.dp))
@@ -162,8 +194,11 @@ fun Page(week: Long, home: Home, go: Go?) {
         Rubric.entries.forEach { r ->
             val inR = rest.filter { it.rubricOf == r }
             if (inR.isEmpty()) return@forEach
+            // A rubric's head never ends a sheet: the cut goes above it, so it keeps its first row.
+            Cut(breaks, "rubric-${r.name}")
             RubricHead(T.rubric(c, r))
-            inR.chunked(2).forEach { row ->
+            inR.chunked(2).forEachIndexed { i, row ->
+                if (i > 0) Cut(breaks, "row-${row[0].id}")
                 Row(Modifier.fillMaxWidth().padding(bottom = 10.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     row.forEach { s -> Item(home, s, go, Modifier.weight(1f)) }
                     if (row.size == 1) Ad(T.ads(c), (week + row[0].id).toInt(), Modifier.weight(1f))
@@ -174,6 +209,7 @@ fun Page(week: Long, home: Home, go: Go?) {
         // Rubrics still empty this week get small ads, as a district paper would.
         val missing = Editor.missing(home.shots, week)
         if (lead != null && missing.size >= 3) {
+            Cut(breaks, "ads")
             RubricHead(stringResource(R.string.r_ads))
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 Ad(T.ads(c), week.toInt(), Modifier.weight(1f))
@@ -181,6 +217,7 @@ fun Page(week: Long, home: Home, go: Go?) {
             }
         }
 
+        Cut(breaks, "footer")
         Spacer(Modifier.height(12.dp))
         Thin()
         Spacer(Modifier.height(4.dp))
