@@ -6,6 +6,20 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.1.1] - 2026-10-27
+
+### Added
+- One frame without dots: on a filed frame, "In the issue: screened / no dots" prints that photo as shot, whatever the press setting does with the rest.
+
+### Fixed
+- The date under the masthead no longer wraps raggedly against the paper's motto: side by side when they fit, two centred lines when not.
+- An article's screen is titled "Article", and an issue of text only gets its own thumbnail in the bound volume.
+
+<!-- tg
+Чёрные точки можно убрать с отдельного снимка: откройте его и выберите «В номере: Без точек».
+Строка с датой под названием газеты теперь не разъезжается.
+-->
+
 ## [1.1.0] - 2026-10-27
 
 ### Added
