@@ -6,6 +6,15 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.1.2] - 2026-10-27
+
+### Fixed
+- Printing: sheets are cut only between blocks, so a photo is never split and a rubric's head never ends a sheet. Every sheet is a whole page with margins and a thin rule, and the page prints a little narrower when that saves a sheet.
+
+<!-- tg
+Печать номера стала ровнее: снимки и заголовки больше не разрезаются между листами, каждый лист — целая страница с полями.
+-->
+
 ## [1.1.1] - 2026-10-27
 
 ### Added
