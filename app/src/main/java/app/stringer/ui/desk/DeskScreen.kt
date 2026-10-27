@@ -26,7 +26,9 @@ import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowRight
 import androidx.compose.material.icons.rounded.Badge
 import androidx.compose.material.icons.rounded.Bolt
 import androidx.compose.material.icons.rounded.CollectionsBookmark
+import androidx.compose.material.icons.rounded.EditNote
 import androidx.compose.material.icons.rounded.Mail
+import androidx.compose.material.icons.rounded.Print
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.Icon
@@ -71,6 +73,7 @@ import app.stringer.ui.theme.SType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.time.DayOfWeek
 
 /** The correspondent's desk: today's telegram, this week's issue, the investigations and the rest. */
 @Composable
@@ -112,6 +115,7 @@ fun DeskScreen(home: Home, go: Go) {
                 val solved = Case.entries.count { it.done(home.shots, home.ru) }
                 val filed = Case.entries.sumOf { home.case(it).size }
                 DeskRow(Icons.Rounded.Mail, stringResource(R.string.letter), stringResource(R.string.letter_sub), letter)
+                DeskRow(Icons.Rounded.EditNote, stringResource(R.string.write), stringResource(R.string.write_sub), { go.write() })
                 DeskRow(Icons.Rounded.Search, stringResource(R.string.cases), stringResource(R.string.cases_sub, filed, solved), go::cases)
                 DeskRow(Icons.Rounded.CollectionsBookmark, stringResource(R.string.archive), T.plural(c, R.plurals.issues, home.issues.size), go::archive)
                 DeskRow(Icons.Rounded.Badge, stringResource(R.string.press_card), T.rank(c, home.rank, home.feminine), go::card)
@@ -243,10 +247,11 @@ private fun ThisIssue(home: Home, go: Go) {
         if (frames.isNotEmpty()) {
             Spacer(Modifier.height(12.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                frames.takeLast(5).reversed().forEachIndexed { i, s ->
+                val photos = frames.filter { it.hasPhoto }
+                photos.takeLast(5).reversed().forEachIndexed { i, s ->
                     Printed(s.photo, Modifier.weight(1f).aspectRatio(0.8f).rotate(((i * 7) % 5 - 2) * 0.6f).clip(S.RSm), width = 240, cells = 46)
                 }
-                repeat((5 - frames.size).coerceAtLeast(0)) { Spacer(Modifier.weight(1f)) }
+                repeat((5 - photos.size).coerceAtLeast(0)) { Spacer(Modifier.weight(1f)) }
             }
         }
         Spacer(Modifier.height(12.dp))
@@ -258,6 +263,15 @@ private fun ThisIssue(home: Home, go: Go) {
                     style = SType.Small.copy(fontSize = 11.5.sp, color = if (on) S.c.onRed else S.c.faint),
                     modifier = Modifier.clip(S.RSm).background(if (on) S.c.print else S.c.surface2).padding(horizontal = 7.dp, vertical = 3.dp),
                 )
+            }
+        }
+        // Sunday: the issue is out, and can go to a real printer.
+        if (frames.isNotEmpty() && home.today.dayOfWeek == DayOfWeek.SUNDAY) {
+            Spacer(Modifier.height(10.dp))
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Rounded.Print, null, tint = S.c.red, modifier = Modifier.size(18.dp))
+                Spacer(Modifier.width(6.dp))
+                Text(stringResource(R.string.sunday_print), style = SType.Small.copy(color = S.c.red))
             }
         }
         if (home.streak > 1) {

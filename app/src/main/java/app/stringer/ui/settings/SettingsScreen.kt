@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import app.stringer.BuildConfig
 import app.stringer.R
 import app.stringer.container
+import app.stringer.data.Press
 import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.Language
@@ -52,6 +53,14 @@ fun SettingsScreen(home: Home, go: Go) {
             }
             SectionTitle(stringResource(R.string.paper_kind))
             PaperChoice(home.settings.daily) { d -> c.container.write { settings.update { it.copy(daily = d) } } }
+            SectionTitle(stringResource(R.string.press))
+            Segmented(
+                Press.entries.toList(), home.settings.press,
+                { stringResource(when (it) { Press.MONO -> R.string.press_mono; Press.COLOUR -> R.string.press_colour; Press.PHOTO -> R.string.press_photo }) },
+                { p -> c.container.write { settings.update { it.copy(press = p) } } },
+            )
+            Spacer(Modifier.height(6.dp))
+            Text(stringResource(R.string.press_hint), style = SType.Small)
             SectionTitle(stringResource(R.string.language))
             Segmented(
                 listOf(Language.SYSTEM, Language.EN, Language.RU), lang,

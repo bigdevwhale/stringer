@@ -61,6 +61,18 @@ class Newsroom(private val context: Context, private val db: StringerDatabase, p
     /** A letter to the editor: any frame, no telegram needed. */
     suspend fun letter(photo: String, caption: String): Long = dao.insert(Shot(rubric = Rubric.READERS.name, photo = photo, caption = caption.trim()))
 
+    /**
+     * The correspondent's own article: a headline, the text, and a photo if there is one. With [id]
+     * the article is rewritten in place; a photo it no longer uses goes to the bin.
+     */
+    suspend fun article(id: Long?, headline: String, body: String, photo: String): Long {
+        val old = id?.let { dao.get(it) }
+        if (old == null) return dao.insert(Shot(rubric = Rubric.READERS.name, photo = photo, caption = headline.trim(), body = body.trim()))
+        dao.update(old.copy(photo = photo, caption = headline.trim(), body = body.trim()))
+        if (old.photo != photo) Photos.delete(context, old.photo)
+        return old.id
+    }
+
     /** A frame for an investigation's slot; a frame already there is replaced. */
     suspend fun fileCase(case: String, slot: String, photo: String, caption: String): Long {
         dao.all().filter { it.case == case && it.slot == slot }.forEach { bin(it.id) }

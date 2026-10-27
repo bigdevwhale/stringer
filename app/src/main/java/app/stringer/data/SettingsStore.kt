@@ -26,6 +26,15 @@ data class Telegram(
     val open: Boolean get() = id.isNotEmpty()
 }
 
+/** The press: black dots on newsprint, a four-colour screen, or the photo printed as it was shot. */
+enum class Press {
+    MONO, COLOUR, PHOTO;
+
+    companion object {
+        fun of(s: String?) = entries.firstOrNull { it.name == s } ?: MONO
+    }
+}
+
 data class Settings(
     val onboarded: Boolean = false,
     /** The paper's masthead. Blank: the default name in the app's language. */
@@ -36,6 +45,8 @@ data class Settings(
     val feminine: Boolean = false,
     /** The big-city daily: trickier twists mixed in. Off: the district weekly, the plain ones. */
     val daily: Boolean = false,
+    /** How the photos go into print: the black screen, four colour plates, or as shot. */
+    val press: Press = Press.MONO,
     val telegram: Telegram = Telegram(),
     /** Assignments swapped away lately, kept out of the next few telegrams. */
     val skipped: List<String> = emptyList(),
@@ -54,6 +65,7 @@ class SettingsStore(context: Context) {
         name = this[NAME] ?: "",
         feminine = this[FEMININE] ?: false,
         daily = this[DAILY] ?: false,
+        press = Press.of(this[PRESS]),
         telegram = Telegram(
             id = this[TG_ID] ?: "",
             at = this[TG_AT] ?: 0,
@@ -75,6 +87,7 @@ class SettingsStore(context: Context) {
             it[NAME] = s.name
             it[FEMININE] = s.feminine
             it[DAILY] = s.daily
+            it[PRESS] = s.press.name
             it[TG_ID] = s.telegram.id
             it[TG_AT] = s.telegram.at
             it[TG_WEATHER] = s.telegram.weather
@@ -91,6 +104,7 @@ class SettingsStore(context: Context) {
         val NAME = stringPreferencesKey("name")
         val FEMININE = booleanPreferencesKey("feminine")
         val DAILY = booleanPreferencesKey("daily")
+        val PRESS = stringPreferencesKey("press")
         val TG_ID = stringPreferencesKey("tg_id")
         val TG_AT = longPreferencesKey("tg_at")
         val TG_WEATHER = stringPreferencesKey("tg_weather")

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.widget.Toast
+import androidx.activity.compose.LocalActivity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -23,6 +24,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Print
 import androidx.compose.material.icons.rounded.Share
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -67,6 +69,7 @@ import java.io.File
 @Composable
 fun IssueScreen(week: Long, home: Home, go: Go) {
     val c = ctx()
+    val activity = LocalActivity.current
     val scope = rememberCoroutineScope()
     val layer = rememberGraphicsLayer()
     val number = home.issueNumber(week)
@@ -80,6 +83,13 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
                     share(c, f)
                 }
             }) { Icon(Icons.Rounded.Share, stringResource(R.string.share), tint = S.c.ink) }
+            IconButton(onClick = {
+                val a = activity ?: return@IconButton
+                scope.launch {
+                    val bitmap = layer.toImageBitmap().asAndroidBitmap()
+                    Printer.print(a, bitmap, c.getString(R.string.issue_n, number))
+                }
+            }) { Icon(Icons.Rounded.Print, stringResource(R.string.print), tint = S.c.ink) }
         }
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).navigationBarsPadding().padding(horizontal = 10.dp)) {
             Box(
@@ -98,8 +108,9 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
 fun Page(week: Long, home: Home, go: Go?) {
     val c = ctx()
     val frames = home.inWeek(week)
-    val lead = frames.firstOrNull { it.front } ?: frames.firstOrNull { it.rubricOf != Rubric.READERS } ?: frames.firstOrNull()
-    val rest = frames.filter { it.id != lead?.id }
+    val lead = home.lead(frames)
+    val rest = frames.filter { it.id != lead?.id && !it.article }
+    val articles = frames.filter { it.id != lead?.id && it.article }
     val sunday = Editor.monday(week).plusDays(6)
 
     Column(Modifier.fillMaxWidth().background(S.c.newsprint).border(1.dp, S.c.line).padding(horizontal = 14.dp, vertical = 12.dp)) {
@@ -126,10 +137,26 @@ fun Page(week: Long, home: Home, go: Go?) {
             Spacer(Modifier.height(10.dp))
             Text(lead.caption, style = Headline, modifier = Modifier.fillMaxWidth().then(open(go, lead)))
             Spacer(Modifier.height(8.dp))
-            Printed(lead.photo, Modifier.fillMaxWidth().aspectRatio(1.25f).then(open(go, lead)), width = 1000, cells = 120)
-            Spacer(Modifier.height(4.dp))
+            if (lead.hasPhoto) {
+                Printed(lead.photo, Modifier.fillMaxWidth().aspectRatio(1.25f).then(open(go, lead)), width = 1000, cells = 120)
+                Spacer(Modifier.height(4.dp))
+            }
             Byline(home, lead)
+            if (lead.article) Body(lead.body, Modifier.padding(top = 8.dp).then(open(go, lead)))
             WeatherBox(home, frames)
+        }
+
+        // The correspondent's own articles, each across the page.
+        if (articles.isNotEmpty()) {
+            RubricHead(stringResource(R.string.r_articles))
+            articles.forEachIndexed { i, a ->
+                if (i > 0) {
+                    Spacer(Modifier.height(4.dp))
+                    Thin()
+                    Spacer(Modifier.height(10.dp))
+                }
+                Article(home, a, go)
+            }
         }
 
         // The rubrics, in the paper's order, two frames to a row.
@@ -179,13 +206,37 @@ private fun Item(home: Home, s: Shot, go: Go?, modifier: Modifier) {
     }
 }
 
+/** An article as set in the paper: headline, photo if any, byline, the text. */
+@Composable
+private fun Article(home: Home, s: Shot, go: Go?) {
+    Column(Modifier.fillMaxWidth().padding(bottom = 10.dp).then(open(go, s))) {
+        Text(s.caption, style = Headline.copy(fontSize = 19.sp, lineHeight = 23.sp))
+        Spacer(Modifier.height(6.dp))
+        if (s.hasPhoto) {
+            Printed(s.photo, Modifier.fillMaxWidth().aspectRatio(1.5f), width = 1000, cells = 110)
+            Spacer(Modifier.height(4.dp))
+        }
+        Byline(home, s)
+        Body(s.body, Modifier.padding(top = 6.dp))
+    }
+}
+
+@Composable
+private fun Body(text: String, modifier: Modifier = Modifier) {
+    Text(
+        text, modifier = modifier,
+        style = androidx.compose.ui.text.TextStyle(fontFamily = Serif, fontSize = 13.sp, lineHeight = 18.sp, color = S.c.print, textAlign = TextAlign.Justify),
+    )
+}
+
 @Composable
 private fun Byline(home: Home, s: Shot) {
     val c = ctx()
     val who = home.settings.name.ifBlank { stringResource(R.string.correspondent) }
     val task = home.task(s)
+    val by = stringResource(if (s.article) R.string.text_by else R.string.photo_by, who)
     Text(
-        listOfNotNull(stringResource(R.string.photo_by, who), task.takeIf { it.isNotEmpty() }, T.rubric(c, s.rubricOf)).joinToString(" · "),
+        listOfNotNull(by, task.takeIf { it.isNotEmpty() }, T.rubric(c, s.rubricOf).takeIf { !s.article }).joinToString(" · "),
         style = SType.Column.copy(fontSize = 10.5.sp, lineHeight = 14.sp, color = S.c.muted),
     )
 }

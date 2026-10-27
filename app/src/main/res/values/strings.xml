@@ -280,4 +280,21 @@
     <string name="community_follow_sub">the bot writes when a version is out</string>
     <string name="community_chat">StillCraft chat</string>
     <string name="community_chat_sub">all the apps and people</string>
+
+    <string name="print">Print</string>
+    <string name="r_articles">Articles</string>
+    <string name="text_by">Text: %1$s</string>
+    <string name="write">Write an article</string>
+    <string name="write_sub">Your own text, with a photo or without</string>
+    <string name="headline">Headline</string>
+    <string name="article_text">Text</string>
+    <string name="article_hint">Goes into this week’s issue under its own headline.</string>
+    <string name="photo_add">Add a photo</string>
+    <string name="photo_remove">No photo</string>
+    <string name="sunday_print">Sunday: the issue is out. Open it to print.</string>
+    <string name="press">Photos in the paper</string>
+    <string name="press_mono">Newsprint</string>
+    <string name="press_colour">Colour</string>
+    <string name="press_photo">As shot</string>
+    <string name="press_hint">Newsprint: black dots. Colour: four-colour dots. As shot: the photo without a screen.</string>
 </resources>

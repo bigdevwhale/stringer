@@ -48,7 +48,7 @@ fun ArchiveScreen(home: Home, go: Go) {
                 item(key = "y$year") { SectionTitle(stringResource(R.string.volume, year.toInt(), weeks.size)) }
                 items(weeks, key = { it }) { w ->
                     val frames = home.inWeek(w)
-                    val lead = frames.firstOrNull { it.front } ?: frames.first()
+                    val lead = home.lead(frames) ?: frames.first()
                     SCard(Modifier.padding(bottom = 10.dp), onClick = { go.issue(w) }) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Printed(lead.photo, Modifier.size(64.dp).clip(S.RSm), width = 200, cells = 40)

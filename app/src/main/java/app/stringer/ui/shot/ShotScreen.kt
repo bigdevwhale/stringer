@@ -77,21 +77,23 @@ fun ShotScreen(id: Long, home: Home, go: Go) {
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         TopBar(if (k != null) T.case(c, k) else T.rubric(c, s.rubricOf), go::back) {
-            IconButton(onClick = { editing = !editing }) { Icon(Icons.Rounded.Edit, stringResource(R.string.edit_caption), tint = S.c.ink) }
+            IconButton(onClick = { if (s.article) go.write(id) else editing = !editing }) { Icon(Icons.Rounded.Edit, stringResource(R.string.edit_caption), tint = S.c.ink) }
         }
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).navigationBarsPadding().padding(horizontal = 20.dp)) {
             // Tap the frame, or the switch under it, to see the photo as it was shot.
-            Box(Modifier.fillMaxWidth().aspectRatio(0.8f).clip(S.RSm).clickable { printed = !printed }) {
-                if (printed) {
-                    Printed(s.photo, Modifier.fillMaxSize(), width = 1000, cells = 120)
-                    BoxStamp(stringResource(if (s.front) R.string.stamp_front else R.string.stamp_set), Modifier.align(Alignment.BottomEnd).offset(x = (-10).dp, y = (-12).dp).rotate(-6f), color = S.c.red)
-                } else {
-                    Original(s.photo, Modifier.fillMaxSize().background(S.c.print), crop = false)
+            if (s.hasPhoto) {
+                Box(Modifier.fillMaxWidth().aspectRatio(0.8f).clip(S.RSm).clickable { printed = !printed }) {
+                    if (printed) {
+                        Printed(s.photo, Modifier.fillMaxSize(), width = 1000, cells = 120)
+                        BoxStamp(stringResource(if (s.front) R.string.stamp_front else R.string.stamp_set), Modifier.align(Alignment.BottomEnd).offset(x = (-10).dp, y = (-12).dp).rotate(-6f), color = S.c.red)
+                    } else {
+                        Original(s.photo, Modifier.fillMaxSize().background(S.c.print), crop = false)
+                    }
                 }
+                Spacer(Modifier.height(10.dp))
+                Segmented(listOf(true, false), printed, { stringResource(if (it) R.string.as_printed else R.string.as_shot) }, { printed = it })
+                Spacer(Modifier.height(12.dp))
             }
-            Spacer(Modifier.height(10.dp))
-            Segmented(listOf(true, false), printed, { stringResource(if (it) R.string.as_printed else R.string.as_shot) }, { printed = it })
-            Spacer(Modifier.height(12.dp))
             if (editing) {
                 Field(caption, { caption = it.take(140) }, stringResource(R.string.caption), singleLine = false, minLines = 2, style = SType.Caption)
                 Spacer(Modifier.height(8.dp))
@@ -102,6 +104,10 @@ fun ShotScreen(id: Long, home: Home, go: Go) {
                 }, Modifier.fillMaxWidth(), enabled = caption.isNotBlank())
             } else {
                 Text(s.caption, style = SType.Caption.copy(fontSize = 19.sp, lineHeight = 25.sp))
+                if (s.article) {
+                    Spacer(Modifier.height(8.dp))
+                    Text(s.body, style = SType.Body)
+                }
             }
             Spacer(Modifier.height(8.dp))
             val task = home.task(s)

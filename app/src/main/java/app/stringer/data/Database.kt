@@ -1,6 +1,8 @@
 package app.stringer.data
 
 import android.content.Context
+import androidx.room.AutoMigration
+import androidx.room.ColumnInfo
 import androidx.room.Dao
 import androidx.room.Database
 import androidx.room.Entity
@@ -16,7 +18,8 @@ import kotlinx.coroutines.flow.Flow
  * One frame sent in to the paper. [assignment] is the catalogue id it answers ("" for a free frame
  * or an investigation). [fallback] means the exact thing wasn't there and the "or…" was shot.
  * [case] and [slot] file it into an investigation instead of the weekly issue ("alphabet", "Ж").
- * [front] puts it on the front page of its week.
+ * [front] puts it on the front page of its week. An article carries a [body] under its [caption],
+ * which serves as its headline, and may have no [photo] at all ("").
  */
 @Entity(tableName = "shots")
 data class Shot(
@@ -33,9 +36,13 @@ data class Shot(
     val front: Boolean = false,
     /** The weather reported when the telegram came, for the issue's weather box. */
     val weather: String = "",
+    /** The text of an article written by the correspondent; empty for a plain frame. */
+    @ColumnInfo(defaultValue = "") val body: String = "",
 ) {
     val rubricOf: Rubric get() = Rubric.of(rubric)
     val inCase: Boolean get() = case.isNotEmpty()
+    val article: Boolean get() = body.isNotEmpty()
+    val hasPhoto: Boolean get() = photo.isNotEmpty()
 }
 
 @Dao
@@ -62,7 +69,7 @@ interface ShotDao {
     suspend fun clearFront(from: Long, to: Long)
 }
 
-@Database(entities = [Shot::class], version = 1, exportSchema = true)
+@Database(entities = [Shot::class], version = 2, exportSchema = true, autoMigrations = [AutoMigration(from = 1, to = 2)])
 abstract class StringerDatabase : RoomDatabase() {
     abstract fun shots(): ShotDao
 

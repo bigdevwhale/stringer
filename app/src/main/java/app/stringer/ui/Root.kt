@@ -8,6 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -24,12 +25,14 @@ import androidx.navigation.navArgument
 import app.stringer.container
 import app.stringer.data.Assignment
 import app.stringer.data.Catalogue
+import app.stringer.data.Rubric
 import app.stringer.data.Settings
 import app.stringer.data.Shot
 import app.stringer.domain.Case
 import app.stringer.domain.Editor
 import app.stringer.ru
 import app.stringer.ui.archive.ArchiveScreen
+import app.stringer.ui.art.LocalPress
 import app.stringer.ui.card.CardScreen
 import app.stringer.ui.cases.CaseScreen
 import app.stringer.ui.cases.CasesScreen
@@ -42,6 +45,7 @@ import app.stringer.ui.settings.SettingsScreen
 import app.stringer.ui.shot.ShotScreen
 import app.stringer.ui.telegram.TelegramScreen
 import app.stringer.ui.theme.S
+import app.stringer.ui.write.WriteScreen
 import java.time.Instant
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -79,6 +83,12 @@ class Home(
 
     fun inWeek(w: Long): List<Shot> = published.filter { Editor.week(it.at) == w }
 
+    /** A week's front page: the frame put there, else the first assigned frame with a photo, else anything. */
+    fun lead(frames: List<Shot>): Shot? = frames.firstOrNull { it.front }
+        ?: frames.firstOrNull { it.rubricOf != Rubric.READERS && it.hasPhoto }
+        ?: frames.firstOrNull { it.hasPhoto }
+        ?: frames.firstOrNull()
+
     /** Weeks with something in them, the newest first: the bound volume. */
     val issues: List<Long> = published.map { Editor.week(it.at) }.distinct().sortedDescending()
 
@@ -105,6 +115,10 @@ class Go(private val nav: NavHostController) {
     fun card() = nav.navigate("card") { launchSingleTop = true }
     fun settings() = nav.navigate("settings") { launchSingleTop = true }
     fun shot(id: Long) = nav.navigate("shot/$id") { launchSingleTop = true }
+
+    /** The correspondent's own article: a new one, or [id] to rewrite. */
+    fun write(id: Long = 0) = nav.navigate("write?id=$id") { launchSingleTop = true }
+
     fun back() { nav.popBackStack() }
 
     /** A frame just taken, to be captioned: for the telegram, a letter, or an investigation slot. */
@@ -137,39 +151,42 @@ fun StringerRoot(settings: Settings) {
     }
 
     Box(Modifier.fillMaxSize().background(S.c.bg)) {
-        NavHost(
-            navController = nav,
-            startDestination = start,
-            modifier = Modifier.background(S.c.bg),
-            enterTransition = { fadeIn(tween(260)) },
-            exitTransition = { fadeOut(tween(180)) },
-            popEnterTransition = { fadeIn(tween(260)) },
-            popExitTransition = { fadeOut(tween(180)) },
-        ) {
-            composable("welcome") { WelcomeScreen { nav.navigate("desk") { popUpTo("welcome") { inclusive = true } } } }
-            composable("desk") { DeskScreen(home, go) }
-            composable("telegram") { TelegramScreen(home, go) }
-            composable(
-                "develop/{photo}?mode={mode}&case={case}&slot={slot}",
-                arguments = listOf(
-                    navArgument("photo") { type = NavType.StringType },
-                    navArgument("mode") { type = NavType.StringType; defaultValue = "tg" },
-                    navArgument("case") { type = NavType.StringType; defaultValue = "" },
-                    navArgument("slot") { type = NavType.StringType; defaultValue = "" },
-                ),
-            ) { e ->
-                val a = e.arguments
-                DevelopScreen(a?.getString("photo").orEmpty(), a?.getString("mode") ?: "tg", a?.getString("case").orEmpty(), a?.getString("slot").orEmpty(), home, go)
+        CompositionLocalProvider(LocalPress provides settings.press) {
+            NavHost(
+                navController = nav,
+                startDestination = start,
+                modifier = Modifier.background(S.c.bg),
+                enterTransition = { fadeIn(tween(260)) },
+                exitTransition = { fadeOut(tween(180)) },
+                popEnterTransition = { fadeIn(tween(260)) },
+                popExitTransition = { fadeOut(tween(180)) },
+            ) {
+                composable("welcome") { WelcomeScreen { nav.navigate("desk") { popUpTo("welcome") { inclusive = true } } } }
+                composable("desk") { DeskScreen(home, go) }
+                composable("telegram") { TelegramScreen(home, go) }
+                composable(
+                    "develop/{photo}?mode={mode}&case={case}&slot={slot}",
+                    arguments = listOf(
+                        navArgument("photo") { type = NavType.StringType },
+                        navArgument("mode") { type = NavType.StringType; defaultValue = "tg" },
+                        navArgument("case") { type = NavType.StringType; defaultValue = "" },
+                        navArgument("slot") { type = NavType.StringType; defaultValue = "" },
+                    ),
+                ) { e ->
+                    val a = e.arguments
+                    DevelopScreen(a?.getString("photo").orEmpty(), a?.getString("mode") ?: "tg", a?.getString("case").orEmpty(), a?.getString("slot").orEmpty(), home, go)
+                }
+                composable("shot/{id}", arguments = listOf(navArgument("id") { type = NavType.LongType })) { e -> ShotScreen(e.arguments?.getLong("id") ?: 0L, home, go) }
+                composable("issue/{week}", arguments = listOf(navArgument("week") { type = NavType.LongType })) { e -> IssueScreen(e.arguments?.getLong("week") ?: home.week, home, go) }
+                composable("archive") { ArchiveScreen(home, go) }
+                composable("cases") { CasesScreen(home, go) }
+                composable("case/{key}", arguments = listOf(navArgument("key") { type = NavType.StringType })) { e ->
+                    Case.of(e.arguments?.getString("key").orEmpty())?.let { CaseScreen(it, home, go) }
+                }
+                composable("card") { CardScreen(home, go) }
+                composable("settings") { SettingsScreen(home, go) }
+                composable("write?id={id}", arguments = listOf(navArgument("id") { type = NavType.LongType; defaultValue = 0L })) { e -> WriteScreen(e.arguments?.getLong("id") ?: 0L, home, go) }
             }
-            composable("shot/{id}", arguments = listOf(navArgument("id") { type = NavType.LongType })) { e -> ShotScreen(e.arguments?.getLong("id") ?: 0L, home, go) }
-            composable("issue/{week}", arguments = listOf(navArgument("week") { type = NavType.LongType })) { e -> IssueScreen(e.arguments?.getLong("week") ?: home.week, home, go) }
-            composable("archive") { ArchiveScreen(home, go) }
-            composable("cases") { CasesScreen(home, go) }
-            composable("case/{key}", arguments = listOf(navArgument("key") { type = NavType.StringType })) { e ->
-                Case.of(e.arguments?.getString("key").orEmpty())?.let { CaseScreen(it, home, go) }
-            }
-            composable("card") { CardScreen(home, go) }
-            composable("settings") { SettingsScreen(home, go) }
         }
     }
 }

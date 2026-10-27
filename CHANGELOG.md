@@ -6,6 +6,19 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.1.0] - 2026-10-27
+
+### Added
+- Print the issue: a printer button on the issue page sends it to the phone's print service (or "Save as PDF"), cut into A4 sheets between frames, never across one. On Sunday the desk reminds you the issue is out.
+- Photos in the paper, in settings: newsprint (black dots, as before), colour (a four-colour screen) or as shot, with no screen at all.
+- Write an article: your own headline and text, with a photo or without. Articles run across the page in their own section, and one can go on the front page.
+
+<!-- tg
+Номер можно распечатать на принтере или сохранить в PDF: кнопка с принтером на странице номера.
+Снимки в газете теперь могут быть цветными или без фильтра: Настройки → Снимки в газете.
+Можно писать свои статьи: на главном экране «Написать статью».
+-->
+
 ## [1.0.1] - 2026-10-25
 
 ### Added
