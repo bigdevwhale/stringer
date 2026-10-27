@@ -5,15 +5,18 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.navigation.compose.rememberNavController
 import androidx.test.core.app.ApplicationProvider
 import app.stringer.data.DemoSeed
+import app.stringer.data.Press
 import app.stringer.domain.Case
 import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.archive.ArchiveScreen
+import app.stringer.ui.art.LocalPress
 import app.stringer.ui.card.CardScreen
 import app.stringer.ui.cases.CaseScreen
 import app.stringer.ui.cases.CasesScreen
@@ -54,7 +57,10 @@ abstract class ScreensBase {
         rule.mainClock.autoAdvance = false
         rule.setContent {
             val nav = rememberNavController()
-            StringerTheme { Box(Modifier.fillMaxSize().background(S.c.bg)) { content(h, Go(nav)) } }
+            // The README shows the paper in colour.
+            CompositionLocalProvider(LocalPress provides Press.COLOUR) {
+                StringerTheme { Box(Modifier.fillMaxSize().background(S.c.bg)) { content(h, Go(nav)) } }
+            }
         }
         // Halftones are screened off the main thread: let them land.
         repeat(6) {

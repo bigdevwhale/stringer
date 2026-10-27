@@ -32,13 +32,14 @@ We walk the same streets every day and stop seeing them. A stringer, the freelan
 2. **1271 assignments** in ten rubrics: Chronicle, City fauna, Weather & sky, Greenery, On the move, Signs & letters, the Correspondent's own, Textures, Finds, Colour & shape. That's three years of daily walks without a single repeat; a unit test walks all three years to make sure. The season, the weather you report and the evening light decide what can come: «a leaf on a car» in autumn, «drops on a window» in the rain, «a lit window» after dusk.
 3. **The «or».** Every telegram carries a fallback. No cat in the window? Any cat. A walk never fails.
 4. **One swap.** Not feeling it? Ask for another; the editor grumbles in red pencil and sends one more.
-5. **The proof.** The phone's own camera opens. The frame comes back screened like newsprint, black dots on a 45° grid; «as shot» shows the original. Write a caption, one line as in a paper (no caption, no print), mark whether it was exactly that or the «or», and send it to press.
+5. **The proof.** The phone's own camera opens. The frame comes back screened like newsprint, black dots on a 45° grid, or four-colour dots if you choose colour print; «as shot» shows the original. A frame can also go in with no screen at all, one by one or all of them. Write a caption, one line as in a paper (no caption, no print), mark whether it was exactly that or the «or», and send it to press.
 6. **The editor's mark.** Every filed frame gets a stamp and a line in the margin: «Set. To press.», «The «or» counts.», «Night shift. Approved.»
-7. **The Sunday issue.** The week's frames are laid out as a newspaper page under your paper's masthead: the front-page photo with its caption as the headline, the rubrics two frames to a row, the week's weather in a box, small ads where a rubric is still empty. Share it as an image.
-8. **Flash.** At dusk, with nothing in hand, a red «flash» comes in: the editor wants the evening light before it goes.
-9. **Investigations** that take weeks: every letter of the alphabet on the district's signs, the digits 0–9, twelve doors, ten cats. Fill the slots in any order, whenever one turns up.
-10. **The press card and the bound volume.** Ranks from trainee to chief of the district, a stamp for every issue, frames by rubric, and every issue so far, bound by year.
-11. **Two papers.** The district weekly sends the plain twists; the big-city daily mixes in the trickier ones.
+7. **The Sunday issue.** The week's frames are laid out as a newspaper page under your paper's masthead: the front-page photo with its caption as the headline, the rubrics two frames to a row, the week's weather in a box, small ads where a rubric is still empty. Share it as an image, or print it: the page lays itself out on A4 sheets without cutting a frame in two.
+8. **Your own articles.** Besides frames, write an article: a headline, the text, and a photo if there is one. Articles run in the issue as a rubric of their own.
+9. **Flash.** At dusk, with nothing in hand, a red «flash» comes in: the editor wants the evening light before it goes.
+10. **Investigations** that take weeks: every letter of the alphabet on the district's signs, the digits 0–9, twelve doors, ten cats. Fill the slots in any order, whenever one turns up.
+11. **The press card and the bound volume.** Ranks from trainee to chief of the district, a stamp for every issue, frames by rubric, and every issue so far, bound by year.
+12. **Two papers.** The district weekly sends the plain twists; the big-city daily mixes in the trickier ones.
 
 ## Privacy
 
