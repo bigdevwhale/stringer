@@ -37,6 +37,7 @@ import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.graphics.layer.drawLayer
 import androidx.compose.ui.graphics.rememberGraphicsLayer
+import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -124,10 +125,7 @@ fun Page(week: Long, home: Home, go: Go?) {
         Text(T.paper(c, home.settings.paper), style = SType.Mast.copy(fontSize = 36.sp, lineHeight = 40.sp, textAlign = TextAlign.Center), modifier = Modifier.fillMaxWidth())
         Spacer(Modifier.height(4.dp))
         Thick()
-        Row(Modifier.padding(vertical = 3.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text(T.dateline(c, sunday), style = Ear, modifier = Modifier.weight(1f))
-            Text(stringResource(R.string.issue_weekly), style = Ear, textAlign = TextAlign.End)
-        }
+        Ears(T.dateline(c, sunday), stringResource(R.string.issue_weekly), Modifier.padding(vertical = 3.dp))
         Thin()
 
         if (lead == null) {
@@ -276,6 +274,40 @@ private fun Ad(ads: List<String>, seed: Int, modifier: Modifier) {
     val text = ads[Math.floorMod(seed * 7 + 3, ads.size)]
     Box(modifier.border(1.dp, S.c.print).padding(8.dp), contentAlignment = Alignment.Center) {
         Text(text, style = SType.Column.copy(fontSize = 11.5.sp, lineHeight = 15.sp, textAlign = TextAlign.Center))
+    }
+}
+
+/**
+ * Two lines of small print across the page: one at each edge when they fit side by side, else one
+ * above the other, both centred, so neither breaks raggedly against the other.
+ */
+@Composable
+private fun Ears(left: String, right: String, modifier: Modifier = Modifier) {
+    Layout(
+        {
+            Text(left, style = Ear.copy(textAlign = TextAlign.Center))
+            Text(right, style = Ear.copy(textAlign = TextAlign.Center))
+        },
+        modifier.fillMaxWidth(),
+    ) { (a, b), c ->
+        val gap = 12.dp.roundToPx()
+        val loose = c.copy(minWidth = 0)
+        if (a.maxIntrinsicWidth(c.maxHeight) + gap + b.maxIntrinsicWidth(c.maxHeight) <= c.maxWidth) {
+            val pa = a.measure(loose)
+            val pb = b.measure(loose)
+            val h = maxOf(pa.height, pb.height)
+            layout(c.maxWidth, h) {
+                pa.place(0, (h - pa.height) / 2)
+                pb.place(c.maxWidth - pb.width, (h - pb.height) / 2)
+            }
+        } else {
+            val pa = a.measure(loose)
+            val pb = b.measure(loose)
+            layout(c.maxWidth, pa.height + pb.height) {
+                pa.place((c.maxWidth - pa.width) / 2, 0)
+                pb.place((c.maxWidth - pb.width) / 2, pa.height)
+            }
+        }
     }
 }
 
