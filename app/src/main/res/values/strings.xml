@@ -282,6 +282,7 @@
     <string name="community_chat_sub">all the apps and people</string>
 
     <string name="print">Print</string>
+    <string name="article">Article</string>
     <string name="r_articles">Articles</string>
     <string name="text_by">Text: %1$s</string>
     <string name="write">Write an article</string>
@@ -297,4 +298,7 @@
     <string name="press_colour">Colour</string>
     <string name="press_photo">As shot</string>
     <string name="press_hint">Newsprint: black dots. Colour: four-colour dots. As shot: the photo without a screen.</string>
+    <string name="in_issue">In the issue</string>
+    <string name="plain_off">Screened</string>
+    <string name="plain_on">No dots</string>
 </resources>

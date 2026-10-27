@@ -1,5 +1,7 @@
 package app.stringer.ui.archive
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -12,6 +14,9 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.EditNote
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,6 +31,7 @@ import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.T
 import app.stringer.ui.art.Printed
+import app.stringer.ui.art.press
 import app.stringer.ui.components.SCard
 import app.stringer.ui.components.SectionTitle
 import app.stringer.ui.components.TopBar
@@ -51,7 +57,14 @@ fun ArchiveScreen(home: Home, go: Go) {
                     val lead = home.lead(frames) ?: frames.first()
                     SCard(Modifier.padding(bottom = 10.dp), onClick = { go.issue(w) }) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
-                            Printed(lead.photo, Modifier.size(64.dp).clip(S.RSm), width = 200, cells = 40)
+                            if (lead.hasPhoto) {
+                                Printed(lead.photo, Modifier.size(64.dp).clip(S.RSm), width = 200, cells = 40, press = lead.press)
+                            } else {
+                                // An issue of words only: a page of text where the photo would be.
+                                Box(Modifier.size(64.dp).clip(S.RSm).background(S.c.surface2), contentAlignment = Alignment.Center) {
+                                    Icon(Icons.Rounded.EditNote, null, tint = S.c.print, modifier = Modifier.size(28.dp))
+                                }
+                            }
                             Spacer(Modifier.width(14.dp))
                             Column(Modifier.weight(1f)) {
                                 Text(stringResource(R.string.issue_n, home.issueNumber(w)) + " · " + T.span(c, w), style = SType.Strong)

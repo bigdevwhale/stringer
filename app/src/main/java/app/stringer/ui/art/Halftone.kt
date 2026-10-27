@@ -21,6 +21,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.exifinterface.media.ExifInterface
 import app.stringer.data.Photos
 import app.stringer.data.Press
+import app.stringer.data.Shot
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.S
 import kotlinx.coroutines.Dispatchers
@@ -177,6 +178,9 @@ object Halftone {
 
 /** How the press prints, from the settings; read by every [Printed]. */
 val LocalPress = staticCompositionLocalOf { Press.MONO }
+
+/** How this frame prints: as shot if it was set to go in plain, otherwise as the press does. */
+val Shot.press: Press @Composable get() = if (plain) Press.PHOTO else LocalPress.current
 
 /**
  * A filed frame as it will look in print. [cells] is the screen's coarseness: fewer is coarser.

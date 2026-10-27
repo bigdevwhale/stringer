@@ -53,6 +53,7 @@ import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.T
 import app.stringer.ui.art.Printed
+import app.stringer.ui.art.press
 import app.stringer.ui.components.TopBar
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.Mono
@@ -138,7 +139,7 @@ fun Page(week: Long, home: Home, go: Go?) {
             Text(lead.caption, style = Headline, modifier = Modifier.fillMaxWidth().then(open(go, lead)))
             Spacer(Modifier.height(8.dp))
             if (lead.hasPhoto) {
-                Printed(lead.photo, Modifier.fillMaxWidth().aspectRatio(1.25f).then(open(go, lead)), width = 1000, cells = 120)
+                Printed(lead.photo, Modifier.fillMaxWidth().aspectRatio(1.25f).then(open(go, lead)), width = 1000, cells = 120, press = lead.press)
                 Spacer(Modifier.height(4.dp))
             }
             Byline(home, lead)
@@ -198,7 +199,7 @@ private fun open(go: Go?, s: Shot): Modifier = if (go != null) Modifier.clickabl
 @Composable
 private fun Item(home: Home, s: Shot, go: Go?, modifier: Modifier) {
     Column(modifier.then(open(go, s))) {
-        Printed(s.photo, Modifier.fillMaxWidth().aspectRatio(0.85f), width = 520, cells = 70)
+        Printed(s.photo, Modifier.fillMaxWidth().aspectRatio(0.85f), width = 520, cells = 70, press = s.press)
         Spacer(Modifier.height(4.dp))
         Text(s.caption, style = SType.Caption.copy(fontSize = 12.5.sp, lineHeight = 16.sp), maxLines = 4)
         val task = home.task(s)
@@ -213,7 +214,7 @@ private fun Article(home: Home, s: Shot, go: Go?) {
         Text(s.caption, style = Headline.copy(fontSize = 19.sp, lineHeight = 23.sp))
         Spacer(Modifier.height(6.dp))
         if (s.hasPhoto) {
-            Printed(s.photo, Modifier.fillMaxWidth().aspectRatio(1.5f), width = 1000, cells = 110)
+            Printed(s.photo, Modifier.fillMaxWidth().aspectRatio(1.5f), width = 1000, cells = 110, press = s.press)
             Spacer(Modifier.height(4.dp))
         }
         Byline(home, s)

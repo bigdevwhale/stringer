@@ -84,6 +84,12 @@ class Newsroom(private val context: Context, private val db: StringerDatabase, p
         dao.update(s.copy(caption = caption.trim()))
     }
 
+    /** This one frame goes in without the screen, or back under it. */
+    suspend fun plain(id: Long, on: Boolean) {
+        val s = dao.get(id) ?: return
+        dao.update(s.copy(plain = on))
+    }
+
     /** Onto the front page of its week, taking the place of whatever was there. */
     suspend fun front(id: Long) {
         val s = dao.get(id) ?: return

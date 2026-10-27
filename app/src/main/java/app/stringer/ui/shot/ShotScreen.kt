@@ -48,6 +48,7 @@ import app.stringer.ui.T
 import app.stringer.ui.art.BoxStamp
 import app.stringer.ui.art.Original
 import app.stringer.ui.art.Printed
+import app.stringer.ui.art.press
 import app.stringer.ui.components.Field
 import app.stringer.ui.components.PrimaryButton
 import app.stringer.ui.components.Segmented
@@ -76,7 +77,7 @@ fun ShotScreen(id: Long, home: Home, go: Go) {
     val remark = remember(s.id) { T.remark(c, s, 0, count, home.feminine) }
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
-        TopBar(if (k != null) T.case(c, k) else T.rubric(c, s.rubricOf), go::back) {
+        TopBar(if (k != null) T.case(c, k) else if (s.article) stringResource(R.string.article) else T.rubric(c, s.rubricOf), go::back) {
             IconButton(onClick = { if (s.article) go.write(id) else editing = !editing }) { Icon(Icons.Rounded.Edit, stringResource(R.string.edit_caption), tint = S.c.ink) }
         }
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).navigationBarsPadding().padding(horizontal = 20.dp)) {
@@ -84,7 +85,7 @@ fun ShotScreen(id: Long, home: Home, go: Go) {
             if (s.hasPhoto) {
                 Box(Modifier.fillMaxWidth().aspectRatio(0.8f).clip(S.RSm).clickable { printed = !printed }) {
                     if (printed) {
-                        Printed(s.photo, Modifier.fillMaxSize(), width = 1000, cells = 120)
+                        Printed(s.photo, Modifier.fillMaxSize(), width = 1000, cells = 120, press = s.press)
                         BoxStamp(stringResource(if (s.front) R.string.stamp_front else R.string.stamp_set), Modifier.align(Alignment.BottomEnd).offset(x = (-10).dp, y = (-12).dp).rotate(-6f), color = S.c.red)
                     } else {
                         Original(s.photo, Modifier.fillMaxSize().background(S.c.print), crop = false)
@@ -92,6 +93,16 @@ fun ShotScreen(id: Long, home: Home, go: Go) {
                 }
                 Spacer(Modifier.height(10.dp))
                 Segmented(listOf(true, false), printed, { stringResource(if (it) R.string.as_printed else R.string.as_shot) }, { printed = it })
+                // The screen is the paper's look, but some frames are better without it: their colour, their detail.
+                if (!s.inCase) {
+                    Spacer(Modifier.height(10.dp))
+                    Text(stringResource(R.string.in_issue), style = SType.Small)
+                    Spacer(Modifier.height(4.dp))
+                    Segmented(listOf(false, true), s.plain, { stringResource(if (it) R.string.plain_on else R.string.plain_off) }, { on ->
+                        printed = true
+                        c.container.write { newsroom.plain(id, on) }
+                    })
+                }
                 Spacer(Modifier.height(12.dp))
             }
             if (editing) {

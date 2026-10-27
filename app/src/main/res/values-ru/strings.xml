@@ -292,6 +292,7 @@
     <string name="community_chat_sub">все приложения и люди</string>
 
     <string name="print">Печать</string>
+    <string name="article">Статья</string>
     <string name="r_articles">Статьи</string>
     <string name="text_by">Текст: %1$s</string>
     <string name="write">Написать статью</string>
@@ -307,4 +308,7 @@
     <string name="press_colour">Цветная</string>
     <string name="press_photo">Без фильтра</string>
     <string name="press_hint">Газетная — чёрные точки. Цветная — точки в четыре краски. Без фильтра — снимок как есть.</string>
+    <string name="in_issue">В номере</string>
+    <string name="plain_off">С растром</string>
+    <string name="plain_on">Без точек</string>
 </resources>

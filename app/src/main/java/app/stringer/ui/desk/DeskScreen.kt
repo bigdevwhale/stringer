@@ -59,6 +59,7 @@ import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.T
 import app.stringer.ui.art.Printed
+import app.stringer.ui.art.press
 import app.stringer.ui.art.Strip
 import app.stringer.ui.art.tape
 import app.stringer.ui.art.tapeLines
@@ -249,7 +250,7 @@ private fun ThisIssue(home: Home, go: Go) {
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 val photos = frames.filter { it.hasPhoto }
                 photos.takeLast(5).reversed().forEachIndexed { i, s ->
-                    Printed(s.photo, Modifier.weight(1f).aspectRatio(0.8f).rotate(((i * 7) % 5 - 2) * 0.6f).clip(S.RSm), width = 240, cells = 46)
+                    Printed(s.photo, Modifier.weight(1f).aspectRatio(0.8f).rotate(((i * 7) % 5 - 2) * 0.6f).clip(S.RSm), width = 240, cells = 46, press = s.press)
                 }
                 repeat((5 - photos.size).coerceAtLeast(0)) { Spacer(Modifier.weight(1f)) }
             }

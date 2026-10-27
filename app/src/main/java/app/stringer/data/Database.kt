@@ -38,6 +38,8 @@ data class Shot(
     val weather: String = "",
     /** The text of an article written by the correspondent; empty for a plain frame. */
     @ColumnInfo(defaultValue = "") val body: String = "",
+    /** Printed as shot, without the screen, whatever the press does with the rest. */
+    @ColumnInfo(defaultValue = "0") val plain: Boolean = false,
 ) {
     val rubricOf: Rubric get() = Rubric.of(rubric)
     val inCase: Boolean get() = case.isNotEmpty()
@@ -69,7 +71,7 @@ interface ShotDao {
     suspend fun clearFront(from: Long, to: Long)
 }
 
-@Database(entities = [Shot::class], version = 2, exportSchema = true, autoMigrations = [AutoMigration(from = 1, to = 2)])
+@Database(entities = [Shot::class], version = 3, exportSchema = true, autoMigrations = [AutoMigration(from = 1, to = 2), AutoMigration(from = 2, to = 3)])
 abstract class StringerDatabase : RoomDatabase() {
     abstract fun shots(): ShotDao
 

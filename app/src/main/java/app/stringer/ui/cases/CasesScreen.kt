@@ -39,6 +39,7 @@ import app.stringer.ui.Go
 import app.stringer.ui.Home
 import app.stringer.ui.T
 import app.stringer.ui.art.Printed
+import app.stringer.ui.art.press
 import app.stringer.ui.art.Stamp
 import app.stringer.ui.components.SCard
 import app.stringer.ui.components.TopBar
@@ -122,7 +123,7 @@ fun CaseScreen(k: Case, home: Home, go: Go) {
                             contentAlignment = Alignment.Center,
                         ) {
                             if (shot != null) {
-                                Printed(shot.photo, Modifier.fillMaxSize(), width = 260, cells = 44)
+                                Printed(shot.photo, Modifier.fillMaxSize(), width = 260, cells = 44, press = shot.press)
                                 Text(
                                     s, style = SType.Strong.copy(fontFamily = Serif, fontSize = 15.sp, color = S.c.onRed),
                                     modifier = Modifier.align(Alignment.BottomStart).offset(4.dp, (-3).dp).background(S.c.print.copy(alpha = 0.78f)).padding(horizontal = 5.dp),
