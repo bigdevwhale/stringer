@@ -72,7 +72,7 @@ python tools/play.py   # telegram, proof, issue, desk, filed, cases, archive, ca
 | Поле | Значение |
 |---|---|
 | App category | Application → **Photography** |
-| Tags (до 5) | Photography, Camera, Walking, Newspaper, Creativity (берите ближайшие из списка Play) |
+| Tags (до 5) | Photography, Camera, Art & design, Lifestyle, Self-help |
 | Email address | *ваш публичный email* — обязательно, его увидят все |
 | Website | `https://bigdevwhale.github.io/stillcraft/apps/stringer/` |
 | Phone | пусто |
