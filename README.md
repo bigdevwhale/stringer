@@ -9,6 +9,7 @@
 *Before you go out, the editor of a small district paper sends a telegram: one ordinary thing to shoot. A door, a pigeon, a puddle, a shadow, with a twist: from knee height, the shabbiest one on your way, with the sky in it. You shoot it with the phone's own camera, write one line under it, and it's printed as a newspaper halftone. On Sunday the week's frames come out as an issue. Free, no ads, no account, no internet.*
 
 [![Android CI](https://github.com/bigdevwhale/stringer/actions/workflows/android.yml/badge.svg)](https://github.com/bigdevwhale/stringer/actions/workflows/android.yml)
+[![Google Play](https://img.shields.io/badge/Google_Play-get_it-34A853?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=app.stringer)
 [![Release](https://img.shields.io/github/v/release/bigdevwhale/stringer?color=AE2F27&label=download&logo=android)](https://github.com/bigdevwhale/stringer/releases/latest)
 ![Android 9+](https://img.shields.io/badge/Android-9%2B-3C9D50?logo=android&logoColor=white)
 ![Languages](https://img.shields.io/badge/lang-EN%20%7C%20RU-6C77B6)
@@ -40,6 +41,12 @@ We walk the same streets every day and stop seeing them. A stringer, the freelan
 10. **Investigations** that take weeks: every letter of the alphabet on the district's signs, the digits 0–9, twelve doors, ten cats. Fill the slots in any order, whenever one turns up.
 11. **The press card and the bound volume.** Ranks from trainee to chief of the district, a stamp for every issue, frames by rubric, and every issue so far, bound by year.
 12. **Two papers.** The district weekly sends the plain twists; the big-city daily mixes in the trickier ones.
+
+## Download
+
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.stringer)**.
+
+Or get **Stringer.apk** from the [latest release](https://github.com/bigdevwhale/stringer/releases/latest) and open it on your phone (allow installing from your browser or file manager when asked).
 
 ## Privacy
 

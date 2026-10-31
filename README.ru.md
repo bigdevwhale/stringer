@@ -9,6 +9,7 @@
 *Перед прогулкой редактор маленькой районной газеты присылает телеграмму: одна обычная вещь, которую надо снять. Дверь, голубь, лужа, тень — но с изюминкой: с высоты колена, самая облупленная по пути, с небом в отражении. Снимаешь камерой телефона, подписываешь одной строкой, и кадр печатается газетным растром. По воскресеньям кадры недели выходят номером. Бесплатно, без рекламы, без аккаунта, без интернета.*
 
 [![Android CI](https://github.com/bigdevwhale/stringer/actions/workflows/android.yml/badge.svg)](https://github.com/bigdevwhale/stringer/actions/workflows/android.yml)
+[![Google Play](https://img.shields.io/badge/Google_Play-скачать-34A853?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=app.stringer)
 [![Release](https://img.shields.io/github/v/release/bigdevwhale/stringer?color=AE2F27&label=скачать&logo=android)](https://github.com/bigdevwhale/stringer/releases/latest)
 ![Android 9+](https://img.shields.io/badge/Android-9%2B-3C9D50?logo=android&logoColor=white)
 ![Languages](https://img.shields.io/badge/lang-EN%20%7C%20RU-6C77B6)
@@ -40,6 +41,12 @@
 10. **Расследования** на недели: все буквы алфавита на вывесках района, цифры 0–9, двенадцать дверей, десять котов. Ячейки заполняются в любом порядке — когда попадётся.
 11. **Пресс-карта и подшивка.** Звания от стажёра до главного по району, штамп за каждый номер, кадры по рубрикам и все номера, переплетённые по годам.
 12. **Две газеты.** Районная многотиражка присылает простые задания, столичный ежедневник подмешивает задания с подвохом.
+
+## Скачать
+
+**[Скачать в Google Play](https://play.google.com/store/apps/details?id=app.stringer)**.
+
+Или возьми **Stringer.apk** в [последнем релизе](https://github.com/bigdevwhale/stringer/releases/latest) и открой на телефоне (разреши установку из браузера или файлового менеджера, когда Android спросит).
 
 ## Приватность
 
