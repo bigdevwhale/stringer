@@ -6,6 +6,17 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.2.0] - 2026-11-07
+
+### Added
+- Overcast weather: "Overcast" sits next to "Sunny" when you go out, and a grey sky brings tasks of its own: low clouds, the lightest spot where the sun hides, a window lit in the middle of the day. (#3)
+- Photos from the gallery: the telegram, a letter to the editor, an investigation's slot and an article can take a photo already on the phone, through the system photo picker, with no storage permission. The copy is saved without the original's metadata. (#5)
+
+<!-- tg
+В погоде появилось «Пасмурно» — и задания для серого неба.
+Снимок можно взять из галереи — для телеграммы, письма в редакцию, расследования и статьи.
+-->
+
 ## [1.1.2] - 2026-10-27
 
 ### Fixed
