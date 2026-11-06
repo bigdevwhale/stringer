@@ -51,7 +51,7 @@ import app.stringer.ui.components.PrimaryButton
 import app.stringer.ui.components.Segmented
 import app.stringer.ui.components.SoftButton
 import app.stringer.ui.components.TopBar
-import app.stringer.ui.components.rememberCamera
+import app.stringer.ui.components.rememberPhoto
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.S
 import app.stringer.ui.theme.SType
@@ -73,7 +73,7 @@ fun DevelopScreen(photo: String, mode: String, case: String, slot: String, home:
     var fallback by rememberSaveable { mutableStateOf(false) }
     var printed by rememberSaveable { mutableStateOf(true) }
     var busy by rememberSaveable { mutableStateOf(false) }
-    val retake = rememberCamera { name -> Photos.delete(c, current); current = name }
+    val retake = rememberPhoto { name -> Photos.delete(c, current); current = name }
     val a = home.telegram.takeIf { mode == "tg" }
     val k = Case.of(case).takeIf { mode == "case" }
     val task = when {
@@ -139,7 +139,7 @@ fun DevelopScreen(photo: String, mode: String, case: String, slot: String, home:
             )
             Spacer(Modifier.height(10.dp))
             Row {
-                SoftButton(stringResource(R.string.retake), retake, Modifier.weight(1f), icon = Icons.Rounded.PhotoCamera)
+                SoftButton(stringResource(R.string.retake), retake.ask, Modifier.weight(1f), icon = Icons.Rounded.PhotoCamera)
                 Spacer(Modifier.width(10.dp))
                 SoftButton(stringResource(R.string.to_bin), leave, Modifier.weight(1f), icon = Icons.Rounded.Delete)
             }

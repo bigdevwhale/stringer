@@ -1,6 +1,6 @@
 # Stringer — Privacy Policy
 
-*Last updated: 30 October 2026*
+*Last updated: 7 November 2026*
 
 Stringer is a photo-walk app for Android: a small paper's editor wires you one ordinary thing to shoot,
 and on Sunday the week's frames come out as an issue. It is published as open source at
@@ -26,6 +26,11 @@ Frames are taken by the phone's own camera app, which Stringer opens for you; St
 camera permission. The camera app hands the photo back, and Stringer keeps a copy in its private
 storage. Your camera app may write the place a photo was taken into the photo's file; Stringer never
 reads it and never shows it, and the issue you share is a newly drawn picture without it.
+
+You can also file a photo already on your phone. Stringer opens Android's own photo picker, which needs
+no storage permission and lets the app see only the one photo you choose. Stringer saves a copy of
+that photo afresh in its private storage, without the original file's metadata (the place it was taken
+among it).
 
 ## Sharing and printing
 

@@ -43,7 +43,7 @@ import app.stringer.ui.art.press
 import app.stringer.ui.art.Stamp
 import app.stringer.ui.components.SCard
 import app.stringer.ui.components.TopBar
-import app.stringer.ui.components.rememberCamera
+import app.stringer.ui.components.rememberPhoto
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.Masthead
 import app.stringer.ui.theme.S
@@ -90,7 +90,7 @@ fun CasesScreen(home: Home, go: Go) {
 fun CaseScreen(k: Case, home: Home, go: Go) {
     val c = ctx()
     var slot by rememberSaveable { mutableStateOf("") }
-    val camera = rememberCamera { go.develop(it, "case", k.key, slot) }
+    val photo = rememberPhoto { go.develop(it, "case", k.key, slot) }
     val slots = k.slots(home.ru)
     val filed = home.case(k)
     val done = slots.all { it in filed }
@@ -118,7 +118,7 @@ fun CaseScreen(k: Case, home: Home, go: Go) {
                                 .background(if (shot == null) S.c.surface else S.c.surface2)
                                 .border(1.dp, S.c.line, S.RSm)
                                 .clickable {
-                                    if (shot != null) go.shot(shot.id) else { slot = s; camera() }
+                                    if (shot != null) go.shot(shot.id) else { slot = s; photo.ask() }
                                 },
                             contentAlignment = Alignment.Center,
                         ) {

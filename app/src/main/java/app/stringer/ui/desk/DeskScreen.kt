@@ -67,7 +67,7 @@ import app.stringer.ui.components.Chip
 import app.stringer.ui.components.PrimaryButton
 import app.stringer.ui.components.SCard
 import app.stringer.ui.components.SectionTitle
-import app.stringer.ui.components.rememberCamera
+import app.stringer.ui.components.rememberPhoto
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.S
 import app.stringer.ui.theme.SType
@@ -81,7 +81,7 @@ import java.time.DayOfWeek
 fun DeskScreen(home: Home, go: Go) {
     val c = ctx()
     val scope = rememberCoroutineScope()
-    val letter = rememberCamera { go.develop(it, "letter") }
+    val letter = rememberPhoto { go.develop(it, "letter") }
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 6.dp, top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -115,7 +115,7 @@ fun DeskScreen(home: Home, go: Go) {
             SCard(padding = androidx.compose.foundation.layout.PaddingValues(vertical = 4.dp, horizontal = 12.dp)) {
                 val solved = Case.entries.count { it.done(home.shots, home.ru) }
                 val filed = Case.entries.sumOf { home.case(it).size }
-                DeskRow(Icons.Rounded.Mail, stringResource(R.string.letter), stringResource(R.string.letter_sub), letter)
+                DeskRow(Icons.Rounded.Mail, stringResource(R.string.letter), stringResource(R.string.letter_sub), letter.ask)
                 DeskRow(Icons.Rounded.EditNote, stringResource(R.string.write), stringResource(R.string.write_sub), { go.write() })
                 DeskRow(Icons.Rounded.Search, stringResource(R.string.cases), stringResource(R.string.cases_sub, filed, solved), go::cases)
                 DeskRow(Icons.Rounded.CollectionsBookmark, stringResource(R.string.archive), T.plural(c, R.plurals.issues, home.issues.size), go::archive)

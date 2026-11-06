@@ -1,6 +1,11 @@
 package app.stringer.data
 
 import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.Matrix
+import android.net.Uri
+import androidx.exifinterface.media.ExifInterface
 import app.stringer.domain.Editor
 import java.io.File
 import java.time.LocalDate
@@ -114,6 +119,41 @@ object Photos {
     fun dir(context: Context) = File(context.filesDir, "photos").apply { mkdirs() }
     fun file(context: Context, name: String) = File(dir(context), name)
     fun fresh(context: Context): File = file(context, "s-${System.currentTimeMillis()}.jpg")
+
+    /**
+     * A photo picked from the phone's gallery, copied into the photos folder: upright, no more than
+     * [MAX] on its long side, saved afresh as a JPEG. The original's metadata (the place it was taken
+     * among it) stays behind. Null if it can't be read.
+     */
+    fun import(context: Context, uri: Uri): String? = runCatching {
+        val r = context.contentResolver
+        val o = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        // Bounds only: decodeStream returns null here by design, the size lands in [o].
+        (r.openInputStream(uri) ?: return null).use { BitmapFactory.decodeStream(it, null, o) }
+        if (o.outWidth <= 0 || o.outHeight <= 0) return null
+        var s = 1
+        while (maxOf(o.outWidth, o.outHeight) / (s * 2) >= MAX) s *= 2
+        val b = r.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, BitmapFactory.Options().apply { inSampleSize = s }) } ?: return null
+        val turn = runCatching {
+            r.openInputStream(uri)?.use {
+                when (ExifInterface(it).getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL)) {
+                    ExifInterface.ORIENTATION_ROTATE_90 -> 90f
+                    ExifInterface.ORIENTATION_ROTATE_180 -> 180f
+                    ExifInterface.ORIENTATION_ROTATE_270 -> 270f
+                    else -> 0f
+                }
+            }
+        }.getOrNull() ?: 0f
+        val long = maxOf(b.width, b.height)
+        val k = if (long > MAX) MAX.toFloat() / long else 1f
+        val m = Matrix().apply { postScale(k, k); postRotate(turn) }
+        val upright = if (turn == 0f && k == 1f) b else Bitmap.createBitmap(b, 0, 0, b.width, b.height, m, true)
+        val f = fresh(context)
+        f.outputStream().use { upright.compress(Bitmap.CompressFormat.JPEG, 92, it) }
+        f.name
+    }.getOrNull()
+
+    private const val MAX = 2000
 
     fun delete(context: Context, name: String?) {
         if (name.isNullOrBlank()) return

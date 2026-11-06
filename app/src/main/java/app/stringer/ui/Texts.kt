@@ -77,6 +77,7 @@ object T {
         when (w) {
             null -> R.string.w_plain
             Weather.SUN -> R.string.w_sun
+            Weather.OVERCAST -> R.string.w_overcast
             Weather.RAIN -> R.string.w_rain
             Weather.WET -> R.string.w_wet
             Weather.SNOW -> R.string.w_snow

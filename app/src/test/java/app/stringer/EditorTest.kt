@@ -104,13 +104,24 @@ class EditorTest {
         assertTrue(Case.DIGITS.done(shots, false))
     }
 
+    /** A grey sky's tasks come under a grey sky, rain and after it; never in the sun or as usual. */
+    @Test fun overcastTasksComeUnderGreySkies() {
+        val grey = catalogue.assignments.filter { it.weather == Weather.OVERCAST }
+        assertTrue(grey.isNotEmpty())
+        grey.forEach { a ->
+            assertTrue(a.id, a.fits(Weather.OVERCAST) && a.fits(Weather.RAIN) && a.fits(Weather.WET))
+            assertTrue(a.id, !a.fits(Weather.SUN) && !a.fits(null) && !a.fits(Weather.SNOW))
+        }
+        assertTrue(catalogue.assignments.filter { it.weather == Weather.SUN }.none { it.fits(Weather.OVERCAST) })
+    }
+
     private fun weatherFor(s: Season, r: Random): Weather? {
         val x = r.nextInt(100)
         return when (s) {
-            Season.WINTER -> when { x < 40 -> null; x < 58 -> Weather.SNOW; x < 72 -> Weather.FROST; x < 82 -> Weather.SUN; x < 90 -> Weather.FOG; else -> Weather.WIND }
-            Season.SPRING -> when { x < 40 -> null; x < 60 -> Weather.SUN; x < 75 -> Weather.RAIN; x < 88 -> Weather.WET; else -> Weather.WIND }
+            Season.WINTER -> when { x < 30 -> null; x < 42 -> Weather.OVERCAST; x < 58 -> Weather.SNOW; x < 72 -> Weather.FROST; x < 82 -> Weather.SUN; x < 90 -> Weather.FOG; else -> Weather.WIND }
+            Season.SPRING -> when { x < 32 -> null; x < 40 -> Weather.OVERCAST; x < 60 -> Weather.SUN; x < 75 -> Weather.RAIN; x < 88 -> Weather.WET; else -> Weather.WIND }
             Season.SUMMER -> when { x < 35 -> null; x < 70 -> Weather.SUN; x < 82 -> Weather.RAIN; x < 92 -> Weather.WET; else -> Weather.WIND }
-            Season.AUTUMN -> when { x < 35 -> null; x < 52 -> Weather.RAIN; x < 66 -> Weather.WET; x < 78 -> Weather.SUN; x < 88 -> Weather.FOG; else -> Weather.WIND }
+            Season.AUTUMN -> when { x < 25 -> null; x < 35 -> Weather.OVERCAST; x < 52 -> Weather.RAIN; x < 66 -> Weather.WET; x < 78 -> Weather.SUN; x < 88 -> Weather.FOG; else -> Weather.WIND }
         }
     }
 }

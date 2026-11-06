@@ -41,7 +41,7 @@ import app.stringer.ui.components.Field
 import app.stringer.ui.components.PrimaryButton
 import app.stringer.ui.components.SoftButton
 import app.stringer.ui.components.TopBar
-import app.stringer.ui.components.rememberCamera
+import app.stringer.ui.components.rememberPhoto
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.S
 import app.stringer.ui.theme.SType
@@ -65,7 +65,7 @@ fun WriteScreen(id: Long, home: Home, go: Go) {
     val original = old?.photo.orEmpty()
     // A fresh photo replaces the last one taken here; the article's own photo stays until it's saved.
     val drop = { name: String -> if (name != original) Photos.delete(c, name) }
-    val camera = rememberCamera { name -> drop(photo); photo = name }
+    val camera = rememberPhoto { name -> drop(photo); photo = name }
     val leave = {
         drop(photo)
         go.back()
@@ -85,12 +85,12 @@ fun WriteScreen(id: Long, home: Home, go: Go) {
                 Box(Modifier.fillMaxWidth().aspectRatio(1.5f).clip(S.RSm)) { Printed(photo, Modifier.fillMaxSize(), width = 1000, cells = 110) }
                 Spacer(Modifier.height(10.dp))
                 Row {
-                    SoftButton(stringResource(R.string.retake), camera, Modifier.weight(1f), icon = Icons.Rounded.PhotoCamera)
+                    SoftButton(stringResource(R.string.retake), camera.ask, Modifier.weight(1f), icon = Icons.Rounded.PhotoCamera)
                     Spacer(Modifier.width(10.dp))
                     SoftButton(stringResource(R.string.photo_remove), { drop(photo); photo = "" }, Modifier.weight(1f), icon = Icons.Rounded.Delete)
                 }
             } else {
-                SoftButton(stringResource(R.string.photo_add), camera, Modifier.fillMaxWidth(), icon = Icons.Rounded.PhotoCamera)
+                SoftButton(stringResource(R.string.photo_add), camera.ask, Modifier.fillMaxWidth(), icon = Icons.Rounded.PhotoCamera)
             }
             Spacer(Modifier.height(18.dp))
             PrimaryButton(

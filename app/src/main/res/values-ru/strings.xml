@@ -14,6 +14,11 @@
         <item quantity="other">%d дня назад</item>
     </plurals>
     <string name="no_camera">Не нашлось приложения камеры</string>
+    <string name="no_photo">Не получилось открыть это фото</string>
+    <string name="no_gallery">Не нашлось галереи</string>
+    <string name="photo_from">Откуда кадр?</string>
+    <string name="photo_from_camera">Камера</string>
+    <string name="photo_from_gallery">Из галереи</string>
     <string name="no_share">Не с чем поделиться</string>
 
     <!-- The paper -->
@@ -40,6 +45,7 @@
     <!-- Weather -->
     <string name="w_plain">Как обычно</string>
     <string name="w_sun">Солнце</string>
+    <string name="w_overcast">Пасмурно</string>
     <string name="w_rain">Дождь</string>
     <string name="w_wet">После дождя</string>
     <string name="w_snow">Снег</string>
@@ -124,7 +130,7 @@
     <string name="caption_hint">Одна строка под снимком, как в газете. Без подписи в номер не берут.</string>
     <string name="caption_task">Как в задании</string>
     <string name="to_press">В номер</string>
-    <string name="retake">Переснять</string>
+    <string name="retake">Другой кадр</string>
     <string name="to_bin">В корзину</string>
 
     <!-- Filed frame -->
@@ -164,7 +170,7 @@
     <string name="case_cats">Десять котов</string>
     <string name="case_cats_b">Десять котов района, каждый — свой.</string>
     <string name="case_progress">%1$d из %2$d</string>
-    <string name="case_hint">Попалось — нажми на пустую ячейку, откроется камера.</string>
+    <string name="case_hint">Попалось — нажми на пустую ячейку: камера или снимок из галереи.</string>
     <string name="case_done">Раскрыто! Спецвыпуск уходит в печать.</string>
     <string name="solved">Раскрыто</string>
 
@@ -213,7 +219,7 @@
     <string name="lang_en">English</string>
     <string name="lang_ru">Русский</string>
     <string name="about">О приложении</string>
-    <string name="about_text">Каждый выход на улицу — задание. Редактор маленькой районной газеты присылает телеграмму: одна обычная вещь, но с изюминкой. Сними, подпиши — и в воскресенье кадры недели выходят номером. 1271 задание: три года ежедневных прогулок без повторов.</string>
+    <string name="about_text">Каждый выход на улицу — задание. Редактор маленькой районной газеты присылает телеграмму: одна обычная вещь, но с изюминкой. Сними, подпиши — и в воскресенье кадры недели выходят номером. 1278 заданий: три года ежедневных прогулок без повторов.</string>
     <string name="privacy">Всё остаётся на этом телефоне. Без аккаунта, без интернета, без рекламы.</string>
 
     <!-- The editor's red pencil. -->

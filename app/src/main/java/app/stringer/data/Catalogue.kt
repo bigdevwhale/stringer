@@ -47,9 +47,12 @@ enum class Season { WINTER, SPRING, SUMMER, AUTUMN;
     }
 }
 
-/** What it's like outside, as the correspondent reports it before going out. [WET] is "it rained, it's stopped". */
+/**
+ * What it's like outside, as the correspondent reports it before going out. [WET] is "it rained, it's
+ * stopped"; [OVERCAST] is a grey sky with no sun and nothing falling.
+ */
 enum class Weather(val code: String) {
-    SUN("sun"), RAIN("rain"), WET("wet"), SNOW("snow"), FROST("frost"), FOG("fog"), WIND("wind");
+    SUN("sun"), OVERCAST("overcast"), RAIN("rain"), WET("wet"), SNOW("snow"), FROST("frost"), FOG("fog"), WIND("wind");
 
     companion object {
         fun code(s: String?) = entries.firstOrNull { it.code == s }
@@ -83,11 +86,15 @@ data class Assignment(
     /** The task in the paper's language; Russian carries {masc|fem} for the correspondent. */
     fun text(ru: Boolean, feminine: Boolean) = if (ru) inflect(this.ru, feminine) else en
 
-    /** Weather tasks only on their weather. "Wet" is any time after rain, rain itself included. */
+    /**
+     * Weather tasks only on their weather. "Wet" is any time after rain, rain itself included; a grey
+     * sky's tasks also go out under rain and after it, when the sky is just as grey.
+     */
     fun fits(w: Weather?): Boolean = when (weather) {
         null -> true
         Weather.WET -> w == Weather.WET || w == Weather.RAIN
         Weather.SUN -> w == Weather.SUN || w == Weather.FROST
+        Weather.OVERCAST -> w == Weather.OVERCAST || w == Weather.RAIN || w == Weather.WET
         else -> w == weather
     }
 
@@ -112,7 +119,7 @@ data class Fallback(val en: String, val ru: String) {
 fun inflect(s: String, feminine: Boolean): String =
     Regex("""\{([^|{}]*)\|([^|{}]*)\}""").replace(s) { if (feminine) it.groupValues[2] else it.groupValues[1] }
 
-/** The editor's card file, read once from assets: 1271 assignments, three years of walks. */
+/** The editor's card file, read once from assets: 1278 assignments, three years of walks. */
 class Catalogue(val assignments: List<Assignment>, private val fallbacks: Map<String, Fallback>) {
     private val byId = assignments.associateBy { it.id }
     operator fun get(id: String): Assignment? = byId[id]

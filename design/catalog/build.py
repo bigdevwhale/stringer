@@ -1,7 +1,7 @@
 """Assemble src/*.txt into assignments.tsv (+ things.tsv, rubrics.tsv) and check coverage.
 
 Source row: thing|level|seasons|weather|time|en|ru  (empty field = any)
-seasons: w sp su au   weather: sun rain wet snow frost fog wind   time: day dusk dark
+seasons: w sp su au   weather: sun overcast rain wet snow frost fog wind   time: day dusk dark
 Russian uses {masc|fem} where the correspondent's gender shows.
 """
 import os
@@ -78,7 +78,7 @@ for c in "texture count frame angle mood way".split():
     OR[c] = ("", "")
 
 SEASONS = {"w", "sp", "su", "au"}
-WEATHER = {"sun", "rain", "wet", "snow", "frost", "fog", "wind"}
+WEATHER = {"sun", "overcast", "rain", "wet", "snow", "frost", "fog", "wind"}
 TIME = {"day", "dusk", "dark"}
 
 here = os.path.dirname(os.path.abspath(__file__))

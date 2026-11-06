@@ -14,6 +14,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.PhotoCamera
+import androidx.compose.material.icons.rounded.PhotoLibrary
 import androidx.compose.material.icons.rounded.SwapHoriz
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,6 +42,7 @@ import app.stringer.ui.components.SoftButton
 import app.stringer.ui.components.TextLink
 import app.stringer.ui.components.TopBar
 import app.stringer.ui.components.rememberCamera
+import app.stringer.ui.components.rememberGallery
 import app.stringer.ui.ctx
 import app.stringer.ui.theme.SType
 import kotlinx.coroutines.Dispatchers
@@ -59,6 +61,7 @@ fun TelegramScreen(home: Home, go: Go) {
     val t = home.settings.telegram
     var grumble by rememberSaveable { mutableStateOf<String?>(null) }
     val camera = rememberCamera { go.develop(it, "tg") }
+    val gallery = rememberGallery { go.develop(it, "tg") }
     val stop = stringResource(R.string.stop)
     val fallback = home.catalogue.fallback(a.thing)
 
@@ -86,6 +89,8 @@ fun TelegramScreen(home: Home, go: Go) {
             }
             Spacer(Modifier.height(22.dp))
             PrimaryButton(stringResource(R.string.shoot), camera, Modifier.fillMaxWidth(), icon = Icons.Rounded.PhotoCamera)
+            Spacer(Modifier.height(10.dp))
+            SoftButton(stringResource(R.string.photo_from_gallery), gallery, Modifier.fillMaxWidth(), icon = Icons.Rounded.PhotoLibrary)
             Spacer(Modifier.height(10.dp))
             Row {
                 SoftButton(

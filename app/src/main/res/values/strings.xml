@@ -12,6 +12,11 @@
         <item quantity="other">%d days ago</item>
     </plurals>
     <string name="no_camera">No camera app found</string>
+    <string name="no_photo">Couldn\'t open that photo</string>
+    <string name="no_gallery">No gallery found</string>
+    <string name="photo_from">Where\'s the frame from?</string>
+    <string name="photo_from_camera">Camera</string>
+    <string name="photo_from_gallery">From the gallery</string>
     <string name="no_share">Nothing to share it with</string>
 
     <!-- The paper -->
@@ -38,6 +43,7 @@
     <!-- Weather -->
     <string name="w_plain">As usual</string>
     <string name="w_sun">Sunny</string>
+    <string name="w_overcast">Overcast</string>
     <string name="w_rain">Raining</string>
     <string name="w_wet">After rain</string>
     <string name="w_snow">Snowing</string>
@@ -114,7 +120,7 @@
     <string name="caption_hint">One line under the frame, as in a paper. No caption, no print.</string>
     <string name="caption_task">As the task</string>
     <string name="to_press">To press</string>
-    <string name="retake">Shoot again</string>
+    <string name="retake">Another frame</string>
     <string name="to_bin">Bin it</string>
 
     <!-- Filed frame -->
@@ -154,7 +160,7 @@
     <string name="case_cats">Ten cats</string>
     <string name="case_cats_b">Ten cats of the district, each its own.</string>
     <string name="case_progress">%1$d of %2$d</string>
-    <string name="case_hint">Tap an empty slot when you see one: the camera opens.</string>
+    <string name="case_hint">Tap an empty slot when you see one: the camera, or a photo from the gallery.</string>
     <string name="case_done">Solved! Special edition goes to press.</string>
     <string name="solved">Solved</string>
 
@@ -203,7 +209,7 @@
     <string name="lang_en">English</string>
     <string name="lang_ru">Русский</string>
     <string name="about">About</string>
-    <string name="about_text">Every walk is an assignment. The editor of a small district paper sends a telegram: one ordinary thing to shoot, with a twist. Shoot it, caption it, and on Sunday the week\'s frames come out as an issue. 1271 assignments: three years of daily walks without a repeat.</string>
+    <string name="about_text">Every walk is an assignment. The editor of a small district paper sends a telegram: one ordinary thing to shoot, with a twist. Shoot it, caption it, and on Sunday the week\'s frames come out as an issue. 1278 assignments: three years of daily walks without a repeat.</string>
     <string name="privacy">Everything stays on this phone. No account, no internet, no ads.</string>
 
     <!-- The editor's red pencil. -->

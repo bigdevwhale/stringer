@@ -162,3 +162,11 @@ reflection|2||||A reflection that looks like a second street|Отражение,
 reflection|1||||A road mirror at a corner|Дорожное зеркало на повороте
 reflection|1||||A reflection in a shop window|Отражение в витрине
 reflection|2||||A reflection in water|Отражение в воде
+# A grey day: no sun, nothing falling. Kept last so the ids above don't move.
+cloud|1||overcast||Low clouds over the roofs|Низкие облака над крышами
+cloud|1||overcast||The lightest spot in a grey sky, where the sun is hiding|Самое светлое место в сером небе, где прячется солнце
+cloud|2||overcast||Where the clouds are thinnest|Где облака тоньше всего
+reflection|1||overcast||A grey sky in a window|Серое небо в окне
+light|1||overcast||A window lit in the middle of the day|Окно, в котором горит свет средь бела дня
+colors|1||overcast||The brightest colour on a grey day|Самый яркий цвет в серый день
+wall|2||overcast||A wall in even light, without a single shadow|Стена в ровном свете, без единой тени
