@@ -6,6 +6,19 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.3.0] - 2026-11-08
+
+### Added
+- Cropping: «Crop» on the proof screen moves and zooms the photo under a frame in one of the paper's shapes (4:5, 1:1, 5:4, 3:2), and only what is inside goes to press. (#7)
+
+### Fixed
+- A frame shot by the «or» is captioned with the «or» itself, on its page and in the issue, instead of the main assignment. (#6)
+
+<!-- tg
+Снимок теперь можно кадрировать перед сдачей в номер: кнопка «Кадрировать» на гранке.
+Если снят запасной вариант «или», в подписи и в газете теперь стоит он, а не основное задание.
+-->
+
 ## [1.2.0] - 2026-11-07
 
 ### Added

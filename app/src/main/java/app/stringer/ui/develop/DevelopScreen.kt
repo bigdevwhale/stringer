@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Crop
 import androidx.compose.material.icons.rounded.Delete
 import androidx.compose.material.icons.rounded.PhotoCamera
 import androidx.compose.material.icons.rounded.Print
@@ -46,6 +47,7 @@ import app.stringer.ui.T
 import app.stringer.ui.art.Original
 import app.stringer.ui.art.Printed
 import app.stringer.ui.components.Chip
+import app.stringer.ui.components.CropDialog
 import app.stringer.ui.components.Field
 import app.stringer.ui.components.PrimaryButton
 import app.stringer.ui.components.Segmented
@@ -74,6 +76,8 @@ fun DevelopScreen(photo: String, mode: String, case: String, slot: String, home:
     var printed by rememberSaveable { mutableStateOf(true) }
     var busy by rememberSaveable { mutableStateOf(false) }
     val retake = rememberPhoto { name -> Photos.delete(c, current); current = name }
+    var cropping by rememberSaveable { mutableStateOf(false) }
+    if (cropping) CropDialog(current, { cropping = false }) { name -> Photos.delete(c, current); current = name; cropping = false }
     val a = home.telegram.takeIf { mode == "tg" }
     val k = Case.of(case).takeIf { mode == "case" }
     val task = when {
@@ -97,6 +101,8 @@ fun DevelopScreen(photo: String, mode: String, case: String, slot: String, home:
             }
             Spacer(Modifier.height(10.dp))
             Segmented(listOf(true, false), printed, { stringResource(if (it) R.string.as_printed else R.string.as_shot) }, { printed = it })
+            Spacer(Modifier.height(10.dp))
+            SoftButton(stringResource(R.string.crop), { cropping = true }, Modifier.fillMaxWidth(), icon = Icons.Rounded.Crop)
             Spacer(Modifier.height(16.dp))
             if (a != null) {
                 val fb = home.catalogue.fallback(a.thing)

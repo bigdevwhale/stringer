@@ -138,7 +138,10 @@
     <string name="stamp_front">Первая полоса</string>
     <string name="edit_caption">Изменить подпись</string>
     <string name="task_line">Задание: %1$s</string>
-    <string name="task_or">Задание: %1$s (по «или»)</string>
+    <string name="task_or">Задание по «или»: %1$s</string>
+    <string name="crop">Кадрировать</string>
+    <string name="crop_hint">Двигайте и увеличивайте снимок пальцами – в номер пойдёт то, что в рамке.</string>
+    <string name="crop_done">Обрезать</string>
     <string name="open_issue">Открыть номер %1$d</string>
     <string name="to_front">На первую полосу</string>
     <string name="open_case">Открыть расследование</string>

@@ -68,8 +68,17 @@ class Home(
     fun shot(id: Long) = shots.firstOrNull { it.id == id }
     fun assignment(s: Shot): Assignment? = catalogue[s.assignment]
 
-    /** The task line as printed under a frame: the assignment, or the rubric for a free frame. */
-    fun task(s: Shot): String = assignment(s)?.text(ru, feminine).orEmpty()
+    /**
+     * The task line as printed under a frame: the assignment, or, when the "or" was shot instead, the
+     * "or" itself (#6).
+     */
+    fun task(s: Shot): String {
+        val a = assignment(s) ?: return ""
+        if (!s.fallback) return a.text(ru, feminine)
+        val fb = catalogue.fallback(a.thing)
+        val or = if (fb.blank) (if (ru) "любой кадр по теме" else "any frame on the theme") else fb.text(ru)
+        return or.replaceFirstChar { it.uppercase() }
+    }
 
     /** The telegram in hand, if any. */
     val telegram: Assignment? = catalogue[settings.telegram.id]

@@ -128,7 +128,10 @@
     <string name="stamp_front">Front page</string>
     <string name="edit_caption">Edit caption</string>
     <string name="task_line">Assignment: %1$s</string>
-    <string name="task_or">Assignment: %1$s (the «or»)</string>
+    <string name="task_or">Assignment, the «or»: %1$s</string>
+    <string name="crop">Crop</string>
+    <string name="crop_hint">Move and pinch the photo; the frame is what goes to press.</string>
+    <string name="crop_done">Crop</string>
     <string name="open_issue">Open issue № %1$d</string>
     <string name="to_front">Put on the front page</string>
     <string name="open_case">Open the investigation</string>

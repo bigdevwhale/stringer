@@ -155,6 +155,23 @@ object Photos {
 
     private const val MAX = 2000
 
+    /**
+     * The part of [b] inside a crop frame of [ratio] (width / height), saved as a new photo (#7). The
+     * photo covers the frame at [zoom] 1 and is shifted by [dx], [dy], both as parts of the frame's width.
+     */
+    fun crop(context: Context, b: Bitmap, ratio: Float, zoom: Float, dx: Float, dy: Float): String? = runCatching {
+        val h = 1f / ratio
+        val s = maxOf(1f / b.width, h / b.height) * zoom
+        val left = ((b.width * s / 2 - 0.5f - dx) / s).toInt().coerceIn(0, b.width - 1)
+        val top = ((b.height * s / 2 - h / 2 - dy) / s).toInt().coerceIn(0, b.height - 1)
+        val w = (1f / s).toInt().coerceIn(1, b.width - left)
+        val hh = (h / s).toInt().coerceIn(1, b.height - top)
+        val out = Bitmap.createBitmap(b, left, top, w, hh)
+        val f = fresh(context)
+        f.outputStream().use { out.compress(Bitmap.CompressFormat.JPEG, 92, it) }
+        f.name
+    }.getOrNull()
+
     fun delete(context: Context, name: String?) {
         if (name.isNullOrBlank()) return
         file(context, name).delete()
