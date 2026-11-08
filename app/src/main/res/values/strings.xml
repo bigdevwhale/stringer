@@ -290,6 +290,8 @@
     <string name="community_follow_sub">the bot writes when a version is out</string>
     <string name="community_chat">StillCraft chat</string>
     <string name="community_chat_sub">all the apps and people</string>
+    <string name="community_support">Support Stringer</string>
+    <string name="community_support_sub">for film and printer\'s ink</string>
 
     <string name="print">Print</string>
     <string name="article">Article</string>

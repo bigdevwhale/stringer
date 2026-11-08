@@ -6,6 +6,15 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.3.2] - 2026-11-08
+
+### Added
+- Support Stringer: Settings → StillCraft has a fifth line, «Поддержать Внештатника · на плёнку и типографскую краску», which opens the StillCraft support page in the browser.
+
+<!-- tg
+В настройках, в блоке StillCraft, появилась строчка «Поддержать Внештатника» – на плёнку и типографскую краску.
+-->
+
 ## [1.3.1] - 2026-11-08
 
 ### Fixed
