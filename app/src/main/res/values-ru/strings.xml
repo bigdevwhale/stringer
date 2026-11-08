@@ -140,6 +140,7 @@
     <string name="task_line">Задание: %1$s</string>
     <string name="task_or">Задание по «или»: %1$s</string>
     <string name="crop">Кадрировать</string>
+    <string name="no_capture">Не удалось сверстать номер в картинку. Попробуйте ещё раз.</string>
     <string name="crop_hint">Двигайте и увеличивайте снимок пальцами – в номер пойдёт то, что в рамке.</string>
     <string name="crop_done">Обрезать</string>
     <string name="open_issue">Открыть номер %1$d</string>

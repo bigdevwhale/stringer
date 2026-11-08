@@ -36,9 +36,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.asAndroidBitmap
-import androidx.compose.ui.graphics.layer.drawLayer
-import androidx.compose.ui.graphics.rememberGraphicsLayer
+import android.graphics.Picture
+import androidx.compose.ui.graphics.drawscope.ContentDrawScope
+import androidx.compose.ui.graphics.drawscope.draw
+import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
+import androidx.compose.ui.graphics.nativeCanvas
+import kotlin.math.sqrt
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.onGloballyPositioned
@@ -79,7 +82,7 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
     val c = ctx()
     val activity = LocalActivity.current
     val scope = rememberCoroutineScope()
-    val layer = rememberGraphicsLayer()
+    val capture = remember { Capture() }
     val breaks = remember { Breaks() }
     val density = LocalDensity.current
     val number = home.issueNumber(week)
@@ -88,28 +91,77 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
         TopBar(stringResource(R.string.issue_n, number), go::back) {
             IconButton(onClick = {
                 scope.launch {
-                    val bitmap = layer.toImageBitmap().asAndroidBitmap()
-                    val f = withContext(Dispatchers.IO) { save(c, bitmap, number) }
-                    share(c, f)
+                    // A long issue is a tall picture: taken in one piece on the GPU it could fail and close the app (#8).
+                    val f = withContext(Dispatchers.Default) {
+                        runCatching { capture.snapshot()?.let { save(c, it.bitmap, number) } }.getOrNull()
+                    }
+                    if (f != null) share(c, f) else Toast.makeText(c, R.string.no_capture, Toast.LENGTH_LONG).show()
                 }
             }) { Icon(Icons.Rounded.Share, stringResource(R.string.share), tint = S.c.ink) }
             IconButton(onClick = {
                 val a = activity ?: return@IconButton
                 scope.launch {
-                    val bitmap = layer.toImageBitmap().asAndroidBitmap()
-                    Printer.print(a, bitmap, c.getString(R.string.issue_n, number), breaks.ys(), with(density) { 1.dp.roundToPx() })
+                    val shot = withContext(Dispatchers.Default) { runCatching { capture.snapshot() }.getOrNull() }
+                    val ok = shot != null && runCatching {
+                        val k = shot.scale
+                        Printer.print(
+                            a, shot.bitmap, c.getString(R.string.issue_n, number),
+                            breaks.ys().map { (it * k).roundToInt() }, with(density) { (1.dp.toPx() * k).roundToInt().coerceAtLeast(1) },
+                        )
+                    }.isSuccess
+                    if (!ok) Toast.makeText(c, R.string.no_capture, Toast.LENGTH_LONG).show()
                 }
             }) { Icon(Icons.Rounded.Print, stringResource(R.string.print), tint = S.c.ink) }
         }
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).navigationBarsPadding().padding(horizontal = 10.dp)) {
-            Box(
-                Modifier.drawWithContent {
-                    layer.record { this@drawWithContent.drawContent() }
-                    drawLayer(layer)
-                },
-            ) { Page(week, home, go, breaks) }
+            Box(Modifier.drawWithContent { capture.record(this) }) { Page(week, home, go, breaks) }
             Spacer(Modifier.height(24.dp))
         }
+    }
+}
+
+/**
+ * The page as last drawn, kept as a [Picture] so it can be printed or shared (#8). It is turned into a
+ * bitmap in software, scaled down when the page is long, so a tall issue fits in memory and never
+ * meets the GPU's texture limit.
+ */
+class Capture {
+    @Volatile private var picture: Picture? = null
+
+    class Shot(val bitmap: Bitmap, val scale: Float)
+
+    fun record(scope: ContentDrawScope) = with(scope) {
+        val w = size.width.toInt()
+        val h = size.height.toInt()
+        if (w <= 0 || h <= 0) {
+            drawContent()
+            return@with
+        }
+        val p = Picture()
+        val pc = p.beginRecording(w, h)
+        draw(this, layoutDirection, androidx.compose.ui.graphics.Canvas(pc), size) { this@with.drawContent() }
+        p.endRecording()
+        drawIntoCanvas { it.nativeCanvas.drawPicture(p) }
+        picture = p
+    }
+
+    fun snapshot(): Shot? {
+        val p = picture ?: return null
+        if (p.width <= 0 || p.height <= 0) return null
+        val k = minOf(1f, MAX_HEIGHT / p.height, sqrt(MAX_PIXELS / (p.width.toFloat() * p.height)))
+        val w = (p.width * k).roundToInt().coerceAtLeast(1)
+        val h = (p.height * k).roundToInt().coerceAtLeast(1)
+        val b = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
+        android.graphics.Canvas(b).apply {
+            scale(w / p.width.toFloat(), h / p.height.toFloat())
+            drawPicture(p)
+        }
+        return Shot(b, w / p.width.toFloat())
+    }
+
+    private companion object {
+        const val MAX_HEIGHT = 12000f
+        const val MAX_PIXELS = 12_000_000f
     }
 }
 

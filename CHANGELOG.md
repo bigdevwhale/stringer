@@ -6,6 +6,15 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.3.1] - 2026-11-08
+
+### Fixed
+- Printing or sharing a long issue no longer closes the app: the page is laid out as a picture in software, scaled down when it is very tall, and a failure says so instead of crashing. (#8)
+
+<!-- tg
+Печать и «Поделиться» для длинного номера больше не закрывают приложение.
+-->
+
 ## [1.3.0] - 2026-11-08
 
 ### Added
