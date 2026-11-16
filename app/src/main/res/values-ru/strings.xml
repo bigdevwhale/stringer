@@ -143,6 +143,8 @@
     <string name="no_capture">Не удалось сверстать номер в картинку. Попробуйте ещё раз.</string>
     <string name="crop_hint">Двигайте и увеличивайте снимок пальцами – в номер пойдёт то, что в рамке.</string>
     <string name="crop_done">Обрезать</string>
+    <string name="share_preview">Для соцсетей</string>
+    <string name="share_preview_hint">Карточки 4:5 – лента покажет каждую целиком. Листайте.</string>
     <string name="open_issue">Открыть номер %1$d</string>
     <string name="to_front">На первую полосу</string>
     <string name="open_case">Открыть расследование</string>

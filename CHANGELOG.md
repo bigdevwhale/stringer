@@ -6,6 +6,15 @@ line "<!-- tg", then 2-4 short lines in Russian for users (what is new, what is 
 then close it like any HTML comment. The release notes carry it, and the chat bot posts those lines.
 -->
 
+## [1.4.0] - 2026-11-16
+
+### Changed
+- Sharing an issue sends a carousel of 4:5 cards (1080×1350) instead of one tall picture, which feeds shrank into an unreadable strip. Like printed sheets, the cards are cut only between blocks, each a whole page on the newsroom table, numbered so they keep the paper's order. A preview shows the cards to swipe through before they go.
+
+<!-- tg
+«Поделиться» теперь отдаёт номер карточками 4:5, как карусель для соцсетей, а не одной длинной картинкой. Перед отправкой карточки можно пролистать. Снимки и заголовки между карточками не разрезаются.
+-->
+
 ## [1.3.2] - 2026-11-08
 
 ### Added

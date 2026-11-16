@@ -133,6 +133,8 @@
     <string name="no_capture">Couldn\'t lay the issue out as a picture. Try again in a moment.</string>
     <string name="crop_hint">Move and pinch the photo; the frame is what goes to press.</string>
     <string name="crop_done">Crop</string>
+    <string name="share_preview">For social networks</string>
+    <string name="share_preview_hint">Cards 4:5, so a feed shows each one whole. Swipe through them.</string>
     <string name="open_issue">Open issue № %1$d</string>
     <string name="to_front">Put on the front page</string>
     <string name="open_case">Open the investigation</string>

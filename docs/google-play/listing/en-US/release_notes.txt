@@ -1,1 +1,1 @@
-A «Support Stringer» line in the settings opens the StillCraft support page.
+Sharing an issue sends a carousel of 4:5 cards for social networks instead of one tall picture, with a preview to swipe through first.

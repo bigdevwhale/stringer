@@ -1,7 +1,5 @@
 package app.stringer.ui.issue
 
-import android.content.Context
-import android.content.Intent
 import android.graphics.Bitmap
 import android.widget.Toast
 import androidx.activity.compose.LocalActivity
@@ -30,8 +28,11 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
@@ -52,7 +53,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
-import androidx.core.content.FileProvider
 import app.stringer.R
 import app.stringer.data.Rubric
 import app.stringer.data.Shot
@@ -86,16 +86,25 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
     val breaks = remember { Breaks() }
     val density = LocalDensity.current
     val number = home.issueNumber(week)
+    /** The cards laid out for sharing, shown before they go. */
+    var cards by remember { mutableStateOf<List<File>?>(null) }
+    /** The page's border (1dp) in the pixels of a snapshot taken at scale [k]. */
+    fun edge(k: Float) = with(density) { (1.dp.toPx() * k).roundToInt().coerceAtLeast(1) }
 
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         TopBar(stringResource(R.string.issue_n, number), go::back) {
             IconButton(onClick = {
                 scope.launch {
                     // A long issue is a tall picture: taken in one piece on the GPU it could fail and close the app (#8).
-                    val f = withContext(Dispatchers.Default) {
-                        runCatching { capture.snapshot()?.let { save(c, it.bitmap, number) } }.getOrNull()
+                    val files = withContext(Dispatchers.Default) {
+                        runCatching {
+                            capture.snapshot()?.let { shot ->
+                                val k = shot.scale
+                                Slides.save(c, shot.bitmap, number, breaks.ys().map { (it * k).roundToInt() }, edge(k))
+                            }
+                        }.getOrNull()
                     }
-                    if (f != null) share(c, f) else Toast.makeText(c, R.string.no_capture, Toast.LENGTH_LONG).show()
+                    if (!files.isNullOrEmpty()) cards = files else Toast.makeText(c, R.string.no_capture, Toast.LENGTH_LONG).show()
                 }
             }) { Icon(Icons.Rounded.Share, stringResource(R.string.share), tint = S.c.ink) }
             IconButton(onClick = {
@@ -106,7 +115,7 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
                         val k = shot.scale
                         Printer.print(
                             a, shot.bitmap, c.getString(R.string.issue_n, number),
-                            breaks.ys().map { (it * k).roundToInt() }, with(density) { (1.dp.toPx() * k).roundToInt().coerceAtLeast(1) },
+                            breaks.ys().map { (it * k).roundToInt() }, edge(k),
                         )
                     }.isSuccess
                     if (!ok) Toast.makeText(c, R.string.no_capture, Toast.LENGTH_LONG).show()
@@ -118,6 +127,7 @@ fun IssueScreen(week: Long, home: Home, go: Go) {
             Spacer(Modifier.height(24.dp))
         }
     }
+    cards?.let { files -> SlidesPreview(files, { cards = null }) { Slides.share(c, files); cards = null } }
 }
 
 /**
@@ -408,21 +418,3 @@ private fun Thin() = Box(Modifier.fillMaxWidth().height(1.dp).background(S.c.pri
 
 private val Ear @Composable get() = androidx.compose.ui.text.TextStyle(fontFamily = Mono, fontSize = 10.sp, lineHeight = 13.sp, color = S.c.print)
 private val Headline @Composable get() = androidx.compose.ui.text.TextStyle(fontFamily = Serif, fontWeight = FontWeight.Bold, fontSize = 25.sp, lineHeight = 29.sp, color = S.c.print)
-
-private fun save(c: Context, bitmap: Bitmap, number: Int): File {
-    val dir = File(c.cacheDir, "issues").apply { mkdirs() }
-    val f = File(dir, "issue-$number.png")
-    f.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
-    return f
-}
-
-private fun share(c: Context, f: File) {
-    val uri = FileProvider.getUriForFile(c, "${c.packageName}.files", f)
-    val send = Intent(Intent.ACTION_SEND).apply {
-        type = "image/png"
-        putExtra(Intent.EXTRA_STREAM, uri)
-        addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-    }
-    runCatching { c.startActivity(Intent.createChooser(send, null).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
-        .onFailure { Toast.makeText(c, R.string.no_share, Toast.LENGTH_LONG).show() }
-}

@@ -39,9 +39,7 @@ object Printer {
             .setColorMode(PrintAttributes.COLOR_MODE_COLOR)
             .setMinMargins(PrintAttributes.Margins.NO_MARGINS)
             .build()
-        // A captured layer can come back as a hardware bitmap, whose pixels can't be read.
-        val soft = if (page.config == Bitmap.Config.HARDWARE) page.copy(Bitmap.Config.ARGB_8888, false) else page
-        pm.print(name, Adapter(activity, soft, name, breaks, edge), attrs)
+        pm.print(name, Adapter(activity, soft(page), name, breaks, edge), attrs)
     }
 
     /**
@@ -59,6 +57,41 @@ object Printer {
         out += height
         return out
     }
+
+    /**
+     * How a page [height] pixels tall and [inner] wide (inside its border) goes onto sheets [w] by [h]:
+     * the share of a sheet's width it takes and where it is cut. A block often takes more than half a
+     * sheet at full width, leaving the rest blank, so the page may sit a little narrower, centred, if
+     * that saves a sheet, or, for as many sheets, cuts through fewer blocks; of those that tie, the
+     * widest of [widths] wins. [lead] is the space above a continued sheet's first block.
+     */
+    internal fun fit(height: Int, inner: Int, w: Float, h: Float, lead: Int, breaks: List<Int>, widths: List<Float>): Pair<Float, List<Int>> =
+        widths.map { k ->
+            val fits = (h * inner / (w * k)).toInt()
+            k to cuts(height, fits, fits - lead, breaks)
+        }.minWith(compareBy({ it.second.size }, { (_, at) -> at.drop(1).dropLast(1).count { it !in breaks } }))
+
+    /**
+     * One sheet: newsprint and its rule over [area] (narrowed to the [width] share), and the slice of
+     * the page from [top] to [bottom], drawn without the page's own border of [edge] pixels.
+     */
+    internal fun sheet(
+        canvas: Canvas, area: RectF, page: Bitmap, edge: Int, paper: Int, rule: Int, lead: Int,
+        width: Float, top: Int, bottom: Int, continued: Boolean, paint: Paint,
+    ) {
+        val side = area.width() * (1 - width) / 2
+        area.inset(side, 0f)
+        canvas.drawRect(area, Paint().apply { color = paper })
+        val scale = area.width() / (page.width - edge * 2)
+        val src = Rect(edge, maxOf(top, edge), page.width - edge, minOf(bottom, page.height - edge))
+        val y = area.top + if (continued) lead * scale else 0f
+        canvas.drawBitmap(page, src, RectF(area.left, y, area.right, y + src.height() * scale), paint)
+        val stroke = maxOf(edge * scale, 0.5f)
+        canvas.drawRect(area, Paint(Paint.ANTI_ALIAS_FLAG).apply { color = rule; style = Paint.Style.STROKE; strokeWidth = stroke })
+    }
+
+    /** A captured layer can come back as a hardware bitmap, whose pixels can't be read. */
+    internal fun soft(page: Bitmap): Bitmap = if (page.config == Bitmap.Config.HARDWARE) page.copy(Bitmap.Config.ARGB_8888, false) else page
 
     private class Adapter(
         private val c: Context,
@@ -85,14 +118,7 @@ object Printer {
             val m = new.minMargins ?: PrintAttributes.Margins.NO_MARGINS
             val w = (size.widthMils - m.leftMils - m.rightMils) * 72f / 1000 - MARGIN * 2
             val h = (size.heightMils - m.topMils - m.bottomMils) * 72f / 1000 - MARGIN * 2
-            // A block often takes more than half a sheet at full width, leaving the rest blank. So the
-            // page may print a little narrower, centred, if that saves a sheet; the widest that does wins.
-            val best = WIDTHS.map { k ->
-                val fits = (h * (page.width - edge * 2) / (w * k)).toInt()
-                k to cuts(page.height, fits, fits - lead, breaks)
-            }.minBy { it.second.size }
-            width = best.first
-            cuts = best.second
+            fit(page.height, page.width - edge * 2, w, h, lead, breaks, WIDTHS).let { (k, at) -> width = k; cuts = at }
             val info = PrintDocumentInfo.Builder("$name.pdf")
                 .setContentType(PrintDocumentInfo.CONTENT_TYPE_DOCUMENT)
                 .setPageCount(cuts.size - 1)
@@ -109,7 +135,7 @@ object Printer {
                     if (pages.none { it == PageRange.ALL_PAGES || i in it.start..it.end }) continue
                     val p = pdf.startPage(i)
                     val area = RectF(p.info.contentRect).apply { inset(MARGIN, MARGIN) }
-                    sheet(p.canvas, area, cuts[i], cuts[i + 1], i > 0, paint)
+                    sheet(p.canvas, area, page, edge, paper, rule, lead, width, cuts[i], cuts[i + 1], i > 0, paint)
                     pdf.finishPage(p)
                 }
                 FileOutputStream(destination.fileDescriptor).use { pdf.writeTo(it) }
@@ -119,19 +145,6 @@ object Printer {
             } finally {
                 pdf.close()
             }
-        }
-
-        /** One sheet: newsprint and its rule, and the slice of the page from [top] to [bottom]. */
-        private fun sheet(canvas: Canvas, area: RectF, top: Int, bottom: Int, continued: Boolean, paint: Paint) {
-            val side = area.width() * (1 - width) / 2
-            area.inset(side, 0f)
-            canvas.drawRect(area, Paint().apply { color = paper })
-            val scale = area.width() / (page.width - edge * 2)
-            val src = Rect(edge, maxOf(top, edge), page.width - edge, minOf(bottom, page.height - edge))
-            val y = area.top + if (continued) lead * scale else 0f
-            canvas.drawBitmap(page, src, RectF(area.left, y, area.right, y + src.height() * scale), paint)
-            val stroke = maxOf(edge * scale, 0.5f)
-            canvas.drawRect(area, Paint(Paint.ANTI_ALIAS_FLAG).apply { color = rule; style = Paint.Style.STROKE; strokeWidth = stroke })
         }
     }
 }
